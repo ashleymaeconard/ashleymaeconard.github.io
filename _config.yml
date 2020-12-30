@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Ashley Mae Conard"
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   bio              : "Ph.D. Candidate Computational Biology, Computer Science track, Brown University"
   #location         : "Location"
   employer         :
