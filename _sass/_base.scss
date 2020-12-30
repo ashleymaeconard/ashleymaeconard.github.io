@@ -141,7 +141,7 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
   background: $code-background-color;
-  border: 10px solid $lighter-gray;
+  border: 1px solid $lighter-gray;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
@@ -157,7 +157,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 10px solid $border-color;
+  border-top: 1px solid $border-color;
 }
 
 /* lists */
