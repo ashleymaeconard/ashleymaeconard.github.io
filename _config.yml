@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ashley Mae Conard / Site Title"
+title                    : "Ashley Mae Conard / Site In Progress"
 title_separator          : "-"
 name                     : &name "Ashley Mae Conard"
 description              : &description "personal description"
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "ashleymaeconard"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "linked"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
