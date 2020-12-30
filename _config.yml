@@ -6,10 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-plugins:
-  - jekyll-remote-theme
-remote_theme : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# plugins:
+#   - jekyll-remote-theme
+# remote_theme : "mmistakes/minimal-mistakes"
+# minimal_mistakes_skin : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 locale                   : "en-US"
 title                    : "Ashley Mae Conard / Site In Progress"
@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Ashley Mae Conard"
-  avatar           : "https://github.com/ashleymaeconard/ashleymaeconard.github.io/blob/master/images/profile.png"
+  avatar           : "images/profile.png"
   bio              : "Ph.D. Candidate Computational Biology, Computer Science track, Brown University"
   #location         : "Location"
   employer         :
