@@ -48,7 +48,7 @@ $type-size-8                : 0.625em;  // ~10px
    ========================================================================== */
 
 $gray                       : #87887a;
-$dark-gray                  : mix(rgb(237, 230, 16), $gray, 40%);
+$dark-gray                  : mix(rgb(0, 0, 0), $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(rgb(252, 252, 168), $gray, 90%); /* bkgnd color change */
