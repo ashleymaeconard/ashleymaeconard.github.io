@@ -13,6 +13,7 @@ title: "CV"
 excerpt: "Curriculum Vitae"
 author_profile: true
 --- -->
+<<insertHTML:[cv_conard.html]
 
 Below you will find my curriculum vitae. 
 ```{r, echo=FALSE}
