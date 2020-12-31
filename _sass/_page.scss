@@ -52,7 +52,7 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 5px solid $border-color;
+    border-bottom: 3px solid $border-color;
   }
 
   p, li, dl {
@@ -318,7 +318,7 @@
   margin: 1em 0;
 
   &:not(:last-child) {
-    border-bottom: 5px solid $border-color;
+    border-bottom: 3px solid $border-color;
   }
 }
 
