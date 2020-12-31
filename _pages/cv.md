@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="files/ConardResume.pdf" type="application/pdf">
-
-<!-- <object width="400" height="500" type="application/pdf" data="files/cv_conard.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+<object width="400" height="500" type="application/pdf" data="files/ConardResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
     <p>PDF cannot be displayed.</p>
-</object> -->
+</object>
