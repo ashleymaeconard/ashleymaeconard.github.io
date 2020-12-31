@@ -13,5 +13,5 @@ redirect_from:
 # While still developing my website... 
 Please see my resume below and curriculum vitae on the CV tab. Please also connect with me. I am always excited to talk science.
 <object width="400" height="500" type="application/pdf" data="files/ConardResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-    <p>Insert your error message here, if the PDF cannot be displayed.</p>
+    <p>PDF cannot be displayed.</p>
 </object>
