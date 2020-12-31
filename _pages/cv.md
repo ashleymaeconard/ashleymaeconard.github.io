@@ -1,18 +1,18 @@
 ---
-permalink: /cv/
-title: "CV"
-excerpt: "Curriculum Vitae"
-author_profile: true
----
-
-<!-- ---
 layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+---
+<!-- ---
+permalink: /cv/
+title: "CV"
+excerpt: "Curriculum Vitae"
+author_profile: true
 --- -->
+
 Below you will find my curriculum vitae. 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
