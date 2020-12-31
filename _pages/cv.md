@@ -11,5 +11,5 @@ author_profile: true
 
 Below you will find my curriculum vitae. 
 ```{r, echo=FALSE}
-htmltools::tags$iframe(title = "My embedded document", src = "files/cv_conard.html")
+htmltools::tags$iframe(title = "My embedded document", src = "https://github.com/ashleymaeconard/ashleymaeconard.github.io/blob/master/files/cv_conard.html")
 ```
