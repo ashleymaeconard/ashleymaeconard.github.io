@@ -13,9 +13,8 @@ title: "CV"
 excerpt: "Curriculum Vitae"
 author_profile: true
 --- -->
-<<insertHTML:[cv_conard.html]
 
 Below you will find my curriculum vitae. 
 ```{r, echo=FALSE}
-htmltools::includeHTML("files/cv_conard.html")
+htmltools::tags$iframe(title = "My embedded document", src = "files/cv_conard.html")
 ```
