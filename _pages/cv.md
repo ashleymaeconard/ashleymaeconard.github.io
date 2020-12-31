@@ -1,15 +1,14 @@
 ---
-title: "CV"
-output: html_document
----
-<!-- ---
+layout: archive
+title: "CV/Resume"
 permalink: /cv/
-title: "CV"
-excerpt: "Curriculum Vitae"
 author_profile: true
---- -->
+redirect_from:
+  - /resume
+---
 
-Below you will find my curriculum vitae. 
-```{r, echo=FALSE}
-htmltools::tags$iframe(title = "My embedded document", src = "https://github.com/ashleymaeconard/ashleymaeconard.github.io/blob/master/files/cv_conard.html")
-```
+Here is a link to my [curriculum vitae](https://github.com/ashleymaeconard/ashleymaeconard.github.io/blob/master/files/cv_conard.pdf), and for my [resume](https://github.com/ashleymaeconard/ashleymaeconard.github.io/blob/master/files/ConardResume.pdf).
+
+<!-- <object width="400" height="500" type="application/pdf" data="files/ConardResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+    <p>PDF cannot be displayed.</p>
+</object> -->
