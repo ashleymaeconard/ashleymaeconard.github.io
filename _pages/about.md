@@ -14,7 +14,7 @@ redirect_from:
 Please see my resume and curriculum vitae below. You can download them both on the CV tab. Please also connect with me. I am always excited to talk science.
 
 ## Resume
-<object width="400" height="500" type="application/pdf" data="files/ConardResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+<object width="400" height="500" type="application/pdf" data="files/resume_conard.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
     <p>PDF cannot be displayed.</p>
 </object>
 
