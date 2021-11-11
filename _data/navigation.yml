@@ -19,5 +19,5 @@ main:
  - title: "CV & Resume"
     url: /cv/
 
-  - title: "Connect"
-    url: /markdown/
+  # - title: "Connect"
+  #   url: /markdown/
