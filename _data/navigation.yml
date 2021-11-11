@@ -10,8 +10,8 @@ main:
   - title: "Presentations and Media"
     url: /talks/    
 
-  - title: "Software"
-    url: /teaching/   
+  # - title: "Software"
+  #   url: /teaching/   
     
   - title: "Leadership and Service"
     url: /year-archive/
