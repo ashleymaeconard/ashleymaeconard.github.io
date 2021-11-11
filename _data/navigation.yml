@@ -13,11 +13,11 @@ main:
   - title: "Software"
     url: /teaching/   
     
-  - title: "Leadership and Service"
-    url: /year-archive/
+#   - title: "Leadership and Service"
+#     url: /year-archive/
 
- - title: "CV & Resume"
-    url: /cv/
+#  - title: "CV & Resume"
+#     url: /cv/
 
   # - title: "Connect"
   #   url: /markdown/
