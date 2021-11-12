@@ -7,17 +7,17 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Presentations and Media"
+  - title: "Presentations & Media"
     url: /talks/    
 
   - title: "Software"
     url: /teaching/   
     
-  - title: "Leadership and Service"
+  - title: "Leadership & Service"
     url: /year-archive/
 
-#  - title: "CV & Resume"
-#     url: /cv/
+ - title: "CV & Resume"
+    url: /cv/
 
-#   - title: "Connect"
-#     url: /markdown/
+  - title: "Connect"
+    url: /markdown/
