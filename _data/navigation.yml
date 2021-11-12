@@ -4,7 +4,7 @@ main:
   - title: "Research"
     url: /portfolio/
 
-  - title: "Publications"
+  - title: "Publications & Software"
     url: /publications/
 
   - title: "Presentations & Media"
@@ -16,8 +16,8 @@ main:
   - title: "Leadership & Service"
     url: /year-archive/
 
- - title: "CV & Resume"
-    url: /cv/
+#  - title: "CV & Resume"
+#     url: /cv/
 
   - title: "Connect"
     url: /markdown/
