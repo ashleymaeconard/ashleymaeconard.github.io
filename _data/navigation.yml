@@ -16,8 +16,8 @@ main:
   - title: "Connect"
     url: /cv/
 
-  - title: "Connect"
-    url: /markdown/
+  # - title: "Connect"
+  #   url: /markdown/
 
-  - title: "Software"
-    url: /teaching/   
+  # - title: "Software"
+  #   url: /teaching/   
