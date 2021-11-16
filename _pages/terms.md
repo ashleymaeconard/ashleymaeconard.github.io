@@ -3,7 +3,7 @@ permalink: /terms/
 title: "Research"
 #collection: portfolio
 ---
-## *PhD*
+## *PhD and Master's, Computational Biology and Computer Science*
 ### 2019-Current
 - Ph.D. in Computational Biology, Computer Science track, Brown University (expected spring 2022), Drs. Lorin Crawford (biostatistics), Erica Larschan (molecular biology), and Charles Lawrence (applied math), RI 
     - I develop statistical and Bayesian methods and visualizations for longitudinal multi-omics studies to uncover gene regulation.
@@ -14,7 +14,7 @@ title: "Research"
     - Built deep learning method to improve DNA single-cell sequencing data for large region mutation (copy-number) inference. 
     - Created pipeline to identify subclonal driver mutations in cancer bulk sequencing tumor samples across 9 cancer types.
 
-## *Internships*
+## *Selected Internships*
 ### Fall 2021
 - Computational Biology Researcher and Creator, Google Cloud, Palo Alto, CA 						   
     - Developed new computational biology frameworks in collaboration with several biotech companies and Google Cloud.   
