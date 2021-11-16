@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, and DePauw).
+The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, Microsoft, and DePauw).
 
 # Publications
 ---
@@ -35,7 +35,7 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 Topics:
 - multi-omics modeling
-- interpretable machine learning
+- interpretable machine learning (collaboration with Microsoft)
 - tool to compare multi-omics datasets
 - math lessons in genomics and molecular biology (book)
 
@@ -45,7 +45,7 @@ Topics:
 
 Topics:
 - multi-omics data visulization
-- chronic disease modeling
+- chronic disease modeling (collaboration with Microsoft)
 - complex multi-omics data modeling
 - heat stress effects on biological system
 - RNA-protein interactions in biological system 
