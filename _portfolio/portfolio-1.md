@@ -1,3 +1,6 @@
+---
+collection: portfolio
+---
 
 ### Fall 2021
 - Computational Biology Researcher and Creator, Google Cloud, Palo Alto, CA 						   
