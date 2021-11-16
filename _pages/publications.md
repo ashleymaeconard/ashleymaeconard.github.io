@@ -38,26 +38,25 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 ### Written or submitted
 
-4 promising papers coming spring 2022. 
+- 4 promising papers coming spring 2022. 
 
-Topics:
-- multi-omics modeling
-- interpretable machine learning (collaboration with Microsoft)
-- tool to compare multi-omics datasets
-- math lessons in genomics and molecular biology (book)
+- Topics:
+  - multi-omics modeling
+  - interpretable machine learning (collaboration with Microsoft)
+  - tool to compare multi-omics datasets
+  - math lessons in genomics and molecular biology (book)
 
 ### Ongoing projects
 
-5 promising projects on track for publication in 2022.
+- 5 promising projects on track for publication in 2022.
 
-Topics:
-- multi-omics data visulization
-- chronic disease modeling (collaboration with Microsoft)
-- complex multi-omics data modeling
-- heat stress effects on biological system
-- RNA-protein interactions in biological system 
-
-
+- Topics:
+  - multi-omics data visulization
+  - chronic disease modeling (collaboration with Microsoft)
+  - complex multi-omics data modeling
+  - heat stress effects on biological system
+  - RNA-protein interactions in biological system 
+  
 
 ## *Software*
 ---
