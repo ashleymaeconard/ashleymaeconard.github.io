@@ -5,9 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
-The following sections highlight my publications and software.
+The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, and DePauw).
 
 # Publications
+---
 ## Published or under review
 Co-ﬁrst author:* , corresponding author: ‡ .
 ### 2021
@@ -52,7 +53,7 @@ Topics:
 
 
 # Software 
-===
+---
 ## Spring 2021 
 
 *time2splice* [link] 
