@@ -29,6 +29,13 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 - **A. Conard**‡ , B. Raphael ‡ . Identiﬁcation of subclonal drivers and copy-number variants from bulk and single-cell DNA sequencing of tumors. *Brown University Department of Computer Science*.
 
+### 2016 
+- Cuypers, A. Jacobsen, B. Siranosian, K. Schwahn, **A. Conard**, N. Aben, M. Hassan, N. Fatima, S. Hermans, M. Woghiren, P. Meysman, F. Rahman, A. Jigisha. Highlights from the ISCB Student Council Symposia in2016. F1000Research. 2016, 5(ISCB CommJ)
+
+### 2015 
+- **A. Conard**, S. Dodson, J. Kepner‡, D. Ricke‡. Using a Big Data Database to Identify Pathogens in ProteinData Space, arXiv:1501.05546
+
+
 ## Written or submitted
 
 4 promising papers coming spring 2022. 
