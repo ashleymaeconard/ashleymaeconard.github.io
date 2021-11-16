@@ -11,13 +11,13 @@ main:
     url: /talks/    
     
   - title: "Leadership & Service"
-    url: /year-archive/
+    url: /markdown/
 
   - title: "Connect"
     url: /cv/
 
   # - title: "Connect"
-  #   url: /markdown/
+  #   url: /year-archive/
 
   # - title: "Software"
   #   url: /teaching/   
