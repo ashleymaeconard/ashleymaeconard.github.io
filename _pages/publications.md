@@ -55,8 +55,8 @@ Topics:
 ## Spring 2021 
 
 *time2splice* [link] 
-- time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data. 
--Implementation details: Bash, Python, R 
+- time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data.
+- Implementation details: Bash, Python, R 
 
 ## Fall 2020 
 *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link] 
@@ -71,7 +71,8 @@ Topics:
 ## Spring 2014 
 
 *Chemical Inventory Database* [description link], (property of DePauw [login link]) 
-- Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts. - Implementation details: HTML, CSS, Parse Platform 
+- Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts. 
+- Implementation details: HTML, CSS, Parse Platform 
 
 ## 2013, 2014 
 *Arduino-CSSI (Computer Science Summer Institute at Google)* [link] 
