@@ -23,7 +23,7 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 - **A. Conard**‡ , N. Goodman, Y. Hu, N. Perrimon, R. Singh, C. Lawrence‡, E. Larschan‡. TIMEOR: a web-based tool to uncover regulatory mechanisms from temporal and multi-omics data. *NAR Web Server Issue*.
 
-- M. Tsarli, A. Conard, E. Larschan‡. The Drosophila CLAMP protein regulates neurogenesis in the optic lobe. *Genetics*. (Under review).
+- M. Tsarli, **A. Conard**, E. Larschan‡. The Drosophila CLAMP protein regulates neurogenesis in the optic lobe. *Genetics*. (Under review).
 
 ### 2019
 
