@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV and Resume"
+title: "Several ways to connect."
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,7 +10,7 @@ redirect_from:
 Here is a link to my [curriculum vitae](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/cv_conard.pdf), and for my [resume](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/resume_conard.pdf).
 
 You can check out my blog I am making [here](https://amcompbio.blogspot.com/).
- 
+
 Please connect with me using the sources provided on the left sidebar.
 
 
