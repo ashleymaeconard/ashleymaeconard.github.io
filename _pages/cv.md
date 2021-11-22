@@ -11,7 +11,7 @@ Here is a link to my [curriculum vitae](https://github.com/ashleymaeconard/ashle
 
 You can check out my blog I am making [here](https://amcompbio.blogspot.com/).
 
-Please connect with me using the sources provided on the left sidebar.
+Please connect with me using the sources provided on the left sidebar. I am excited to connect with you.
 
 
 <!-- <object width="400" height="500" type="application/pdf" data="files/resume_conard.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
