@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Several ways to connect."
+title: "Ways to connect"
 permalink: /cv/
 author_profile: true
 redirect_from:
