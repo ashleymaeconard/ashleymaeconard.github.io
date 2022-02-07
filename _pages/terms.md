@@ -15,6 +15,10 @@ title: "Research"
     - Created pipeline to identify subclonal driver mutations in cancer bulk sequencing tumor samples across 9 cancer types.
 
 ## *Selected Internships*
+### Spring 2022
+- Computational Biologist, Data Infrastructure, Machine Learning, Phenome Health, Deloitte, San Francisco, CA
+    - Developing scientific and business strategy for healthcare and life science start-up under Dr. Leroy Hood.
+
 ### Fall 2021
 - Computational Biology Researcher and Creator, Google Cloud, Palo Alto, CA 						   
     - Developed new computational biology frameworks in collaboration with several biotech companies and Google Cloud.   
