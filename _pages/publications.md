@@ -17,7 +17,7 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 - N. D’Silva* , K. McCullar* , **A. Conard**, T. Blackwater, R. Azanchi, U. Heberlein, E. Larschan, K. Kaun‡. Neuromolecular and behavioral adaptation associated with alcohol deprivation. *Genetics*. (Under review).
 
-- A. M. Bronikowski, R. P. Meisel, P. R. Biga, J. R. Walters, J. E. Mank, E. Larschan, G. S. Wilkinson, N. Valenzuela, **A. Conard**, J. P. de Magalhaes, J. Duan, A. E. Elias, T. Gamble, R. M. Graze, K. E. Gribble, J. A. Kreiling, and N. C. Riddle‡. Sex-speciﬁc aging in animals: Perspective and future directions. *Aging Cell* (Under review).
+- A. M. Bronikowski, R. P. Meisel, P. R. Biga, J. R. Walters, J. E. Mank, E. Larschan, G. S. Wilkinson, N. Valenzuela, **A. Conard**, J. P. de Magalhaes, J. Duan, A. E. Elias, T. Gamble, R. M. Graze, K. E. Gribble, J. A. Kreiling, and N. C. Riddle‡. Sex-speciﬁc aging in animals: Perspective and future directions. *Aging Cell*.
 
 #### 2020
 
