@@ -14,12 +14,6 @@ During my Master's in Computer Science at Brown and Princeton, I focused on mode
 
 I am currently finishing my Ph.D. while working part-time at with Phenome Health through Deloitte. I am their computational biologist working on data infrastructure and methods development. In Fall 2021 I had an apprentiship at Google Cloud working on multi-omic modeling, and in summer 2021 I worked with the Biomedical Computing Team within Health Futures at Microsoft Research. I developed and co-developed 3 methods in areas of cancer, ALS, and Parkinson's.
 
-<!--- I am a Computational Biology Ph.D. candidate and NSF Graduate Research Fellow at Brown University. My research focuses on building accessible time-series and multi-omics statistical and Bayesian inference methods to study gene regulation. I create interactive web. platforms and visualization tools to enable users to interpret the complex biology I model. 
- 
- I am currently finishing my Ph.D. while working part-time at with Phenome Health through Deloitte. I am their computational biologist working on data infrastructure and methods development. In Fall 2021 I had an apprentiship at Google Cloud working on multi-omic modeling, and in summer 2021 I worked with the Biomedical Computing Team within Health Futures at Microsoft Research. I developed and co-developed 3 methods in areas of cancer, ALS, and Parkinson's.
- 
- During my Brown Master’s in Computer Science, I focused on modeling subclonal drivers in cancer and single-cell DNA copy-number mutations. At that time, I served on the Board of Trustees for the Anita Borg Institute and as Finance Chair for the ISCB Student Council. I was a 2015 Fulbright Research Scholar using game theory to identify protein binding preferences. I serve on the Board of Trustees for the Fulbright Association. I hold a Computer Science and Biochemistry degree from DePauw University, and spent my summers doing research projects at MIT Lincoln Laboratory, Vanderbilt University, and Eli Lilly. --> 
-
 # While still developing my website 
 Please see my resume and curriculum vitae below. You can download them both on the Connect tab. Please also connect with me (left sidebar). I am always excited to talk science.
 
