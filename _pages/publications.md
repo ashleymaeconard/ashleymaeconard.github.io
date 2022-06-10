@@ -41,17 +41,18 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 
 ### Written or submitted
 
-- 4 promising papers coming spring 2022. 
+- 4 promising papers coming soon. 
 
 - Topics:
   - multi-omics modeling
   - interpretable machine learning (collaboration with Microsoft)
   - tool to compare multi-omics datasets
+  - review of interpretable machine learning
   - math lessons in genomics and molecular biology (book)
 
 ### Ongoing projects
 
-- 5 promising projects on track for publication in 2022.
+- 5 promising projects on track for publication in 2022/2023.
 
 - Topics:
   - multi-omics data visulization
