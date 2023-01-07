@@ -12,7 +12,7 @@ remote_theme : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 locale                   : "en-US"
-title                    : "Site In Progress"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Ashley Mae Conard, Ph.D."
 description              : &description "personal description"
@@ -87,10 +87,7 @@ analytics:
 author:
   name             : "Ashley Mae Conard"
   avatar           : "profile.jpeg"
-  bio              : "Post-doc Biostatistics @Brown
-  
-                      Senior Researcher @MSR (fall) 
-                      
+  bio              : "Senior Researcher @MSR                      
                       Ph.D. CS, Comp. Bio. @Brown"
   #location         : "Location"
   blogger          : "..."
