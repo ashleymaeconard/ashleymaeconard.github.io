@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Welcome, it's about time!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
