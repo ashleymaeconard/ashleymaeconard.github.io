@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-# My site is moving. Please stay tuned.
+## My site is moving. Please stay tuned.
+
 I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) working on models for [rare disease diagnosis](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
 
 Previously, I was a post-doc in [Biostatistics](https://www.brown.edu/academics/public-health/biostats/home) at [Brown University](https://www.brown.edu/) working with [Dr. Lorin Crawford](http://www.lcrawlab.com/home.html). My research focuses on building interpretable methods (statistical and Bayesian), tools, and associated platforms which integrate temporal (i.e. time-series) and multi-omics data to study gene regulation in development and disease. I have expertise working on small and imbalanced data problems in fruit fly and human, across the domains of cancer, neuroscience, and development. I believe that platforms should be accessible to provide causal mechanisms on user-friendly platforms that scale, thereby enabling non-coding researchers to develop accurate follow-up experimentation and diagnostics. I received my Ph.D. in [Computer Science](https://cs.brown.edu/) and [Computational Biology](https://ccmb.brown.edu/) from Brown. I did so in collaboration with my advisors [Dr. Erica Larschan](https://www.larschanlab.com/) (molecular biology), [Dr. Lorin Crawford](http://www.lcrawlab.com/home.html) (biostatistics), and [Dr. Charles Lawrence](https://en.wikipedia.org/wiki/Charles_Lawrence_(mathematician)) (applied math). 
