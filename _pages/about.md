@@ -7,8 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-
-## My site is moving. Please stay tuned.
+# My site is moving. Stay tuned.
 
 I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) working on models for [rare disease diagnosis](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
 
