@@ -3,7 +3,7 @@ permalink: /terms/
 title: "Research"
 #collection: portfolio
 ---
-## *PhD and Master's, Computational Biology and Computer Science*
+<!-- ## *PhD and Master's, Computational Biology and Computer Science*
 ### 2019-Current
 - Ph.D. in Computational Biology, Computer Science track, Brown University (expected spring 2022), Drs. Lorin Crawford (biostatistics), Erica Larschan (molecular biology), and Charles Lawrence (applied math), RI 
     - I develop statistical and Bayesian methods and visualizations for longitudinal multi-omics studies to uncover gene regulation.
@@ -81,4 +81,4 @@ title: "Research"
 
 ### Summer 2008
 - Organic Chemistry Researcher, Eli Lilly and Company, Dr. David Bender, IN 			   	                            
-    - Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized an acyclovir prodrug and worked with a ghrelin O-acyltransferase inhibitor. This is viewed as a potential therapeutic target to treat obesity and diabetes.
+    - Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized an acyclovir prodrug and worked with a ghrelin O-acyltransferase inhibitor. This is viewed as a potential therapeutic target to treat obesity and diabetes. -->

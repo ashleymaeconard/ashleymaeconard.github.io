@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, Microsoft, and DePauw).
+<!-- The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, Microsoft, and DePauw).
 
 ## *Publications*
 ---
@@ -93,7 +93,7 @@ Co-ﬁrst author:* , corresponding author: ‡ .
 ### Summer 2012 
 *Instrument Control* (property of Eli Lilly and Elanco) 
 - Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time. 
-- Implementation details: SQL, Discoverant, and Business objects
+- Implementation details: SQL, Discoverant, and Business objects -->
 
 <!--- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
