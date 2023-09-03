@@ -1,20 +1,20 @@
 # main links links
 main:
 
-  - title: "Research"
-    url: /terms/
+  # - title: "Research"
+  #   url: /terms/
 
-  - title: "Publications & Software"
-    url: /publications/
+  # - title: "Publications & Software"
+  #   url: /publications/
 
-  - title: "Presentations & Media"
-    url: /talks/    
+  # - title: "Presentations & Media"
+  #   url: /talks/    
     
-  - title: "Leadership & Service"
-    url: /markdown/
+  # - title: "Leadership & Service"
+  #   url: /markdown/
 
-  - title: "Connect"
-    url: /cv/
+  # - title: "Connect"
+  #   url: /cv/
 
   # - title: "Connect"
   #   url: /year-archive/
