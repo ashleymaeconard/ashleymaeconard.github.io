@@ -51,8 +51,6 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  path                   : # blank (default) uses feed.xml
 
 # SEO Related
 google_site_verification :
@@ -87,7 +85,7 @@ analytics:
 author:
   name             : "Ashley Mae Conard"
   avatar           : "profile.jpeg"
-  bio              : "Senior Researcher @MSR      \\                      
+  bio              : "Senior Researcher @MSR      \                      
                       Ph.D. CS, Comp. Bio. @Brown"
   #location         : "Location"
   blogger          : "..."
