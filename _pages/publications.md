@@ -8,12 +8,12 @@ author_profile: true
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table>
   <tr>
-    <td style="padding:10px;width:50%;vertical-align:middle">
+    <td style="padding:1px;width:50%;vertical-align:middle">
       <div class="one">
   <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
       </div>
     </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
+    <td style="padding:10px;width:95%;vertical-align:middle">
       <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.abstract">
         <papertitle>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</papertitle>
       </a>
@@ -29,7 +29,7 @@ Daniel G. MacArthur, Heidi Rehm
       <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.full.pdf">pdf</a> /
       <a href="https://github.com/microsoft/healthfutures-evagg">code</a>
       <br>
-      <p> We leveraged large language model (LLM) frameworks to aggregate and synthesize all necessary rare disease relevant literature and associated content for clinical genomic analysts in a clinical research settings.</p>
+      <p> We developed a large language model (LLM)-powered framework, EvAgg, to aggregate and synthesize rare disease literature and related content, enabling clinical genomic analysts to review patient cases more rapidly and thoroughly in research settings. EvAgg reduced case review time by 34% (p < 0.002) and significantly increased the throughput of papers, variants, and cases analyzed.</p>
     </td>
   </tr>
 </table>
