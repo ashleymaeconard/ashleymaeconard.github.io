@@ -11,7 +11,7 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 
 Please find my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn (left). You can find my [curriculum vitae](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/cv_conard.pdf) and my [resume](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/resume_conard.pdf) here.
 
-My site is moving. Stay tuned!
+I am updating my site. Stay tuned!
 
 
 

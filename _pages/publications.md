@@ -1,9 +1,8 @@
----
 layout: archive
 title: "Publications & Software"
 permalink: /publications/
 author_profile: true
----
+
 
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table>
