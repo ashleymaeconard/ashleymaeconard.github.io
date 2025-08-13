@@ -5,6 +5,34 @@ permalink: /publications/
 author_profile: true
 ---
 
+
+<table>
+  <tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+  <img src='images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03574-x">
+        <papertitle>Zero-shot evaluation reveals limitations of single-cell foundation models</papertitle>
+      </a>
+      <br>
+      Kasia Z. Kedzierska,
+      Lorin Crawford,
+      <strong>Ava P. Amini</strong>,
+      Alex X. Lu
+      <br>
+      <em>Genome Biology</em>, 2025
+      <br>
+      <a href="https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-025-03574-x.pdf">pdf</a> /
+      <a href="https://github.com/microsoft/zero-shot-scfoundation">code</a>
+      <br>
+      <p> We evaluate the performance of single-cell foundation models in "zero-shot" settings where they are used without any further training, finding that they are outperformed by simpler methods.</p>
+    </td>
+  </tr>
+</table>
+
 <!-- The following sections highlight my publications and software. The software I have developed are a mix of open source (PhD, Google) and privately owned (MIT, Eli Lilly, Microsoft, and DePauw).
 
 ## *Publications*

@@ -4,8 +4,8 @@ main:
   # - title: "Research"
   #   url: /terms/
 
-  # - title: "Publications & Software"
-  #   url: /publications/
+  - title: "Publications & Software"
+    url: /publications/
 
   # - title: "Presentations & Media"
   #   url: /talks/    
