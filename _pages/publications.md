@@ -5,30 +5,31 @@ permalink: /publications/
 author_profile: true
 ---
 
-
+*Denotes co-first authorship. †Denotes corresponding authors.
 <table>
   <tr>
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
-  <img src='images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+  <img src='images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03574-x">
-        <papertitle>Zero-shot evaluation reveals limitations of single-cell foundation models</papertitle>
+      <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.abstract">
+        <papertitle>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</papertitle>
       </a>
       <br>
-      Kasia Z. Kedzierska,
-      Lorin Crawford,
-      <strong>Ava P. Amini</strong>,
-      Alex X. Lu
+      Hope Twede*,
+      <strong>Ashley Mae Conard*</strong>,
+      Lynn Pais, Samantha Bryen, Emily O’Heir, Greg Smith, Ron
+Paulsen, Christina A. Austin-Tse, Alex Bloemendal, Cas Simons, Scott Saponas, Miah Wander,
+Daniel G. MacArthur, Heidi Rehm
       <br>
-      <em>Genome Biology</em>, 2025
+      <em>bioRxiv</em>, 2025
       <br>
-      <a href="https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-025-03574-x.pdf">pdf</a> /
-      <a href="https://github.com/microsoft/zero-shot-scfoundation">code</a>
+      <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.full.pdf">pdf</a> /
+      <a href="https://github.com/microsoft/healthfutures-evagg">code</a>
       <br>
-      <p> We evaluate the performance of single-cell foundation models in "zero-shot" settings where they are used without any further training, finding that they are outperformed by simpler methods.</p>
+      <p> We leveraged large language model (LLM) frameworks to aggregate and synthesize all necessary rare disease relevant literature and associated content for clinical genomic analysts in a clinical research settings.</p>
     </td>
   </tr>
 </table>
