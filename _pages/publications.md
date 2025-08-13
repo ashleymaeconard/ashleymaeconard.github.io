@@ -8,7 +8,7 @@ author_profile: true
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table>
   <tr>
-    <td style="padding:20px;width:35%;vertical-align:middle">
+    <td style="padding:10px;width:50%;vertical-align:middle">
       <div class="one">
   <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
       </div>
