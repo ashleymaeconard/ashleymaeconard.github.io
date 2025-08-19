@@ -8,6 +8,20 @@ author_profile: true
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table style="border:none;">
   <tr>
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across …</papertitle>
+      <br>
+      V Sriram, AM Conard, I Rosenberg, D Kim, TS Saponas, AK Hall
+      <br>
+      <em>Scientific Reports 15 (1), 6291</em>, 2025
+    </td>
+  </tr>
+  <tr>
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
   <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
@@ -30,35 +44,6 @@ Daniel G. MacArthur, Heidi Rehm
       <a href="https://github.com/microsoft/healthfutures-evagg">code</a>
       <br>
       <p> We developed a large language model (LLM)-powered framework, EvAgg, to aggregate and synthesize rare disease literature and related content, enabling clinical genomic analysts to review patient cases more rapidly and thoroughly in research settings. EvAgg reduced case review time by 34% (p < 0.002) and significantly increased the throughput of papers, variants, and cases analyzed.</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across …</papertitle>
-      <br>
-      V Sriram, AM Conard, I Rosenberg, D Kim, TS Saponas, AK Hall
-      <br>
-      <em>Scientific Reports 15 (1), 6291</em>, 2025
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>AI-Enhanced Sensemaking: Exploring the Design of a Generative AI-Based Assistant to Support Genetic Professionals</papertitle>
-      <br>
-      A Mastrianni, H Twede, A Sarcevic, J Wander, C Austin-Tse, S Saponas, ...
-      <br>
-      <em>ACM Transactions on Interactive Intelligent Systems</em>, 2024
     </td>
   </tr>
   <tr>
@@ -244,18 +229,6 @@ Daniel G. MacArthur, Heidi Rehm
       <papertitle>Highlights from the ISCB Student Council Symposia in 2016 [version 1; peer review: not peer reviewed]</papertitle><br>
       A Jacobsen, B Siranosian, K Schwahn, AM Conard, N Aben, M Hassan, ...<br>
       <em>F1000Research 5 (2852)</em>, 2016
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Highlights from the ISCB student council symposia in 2016</papertitle><br>
-      B Cuypers, A Jacobsen, B Siranosian, K Schwahn, AM Conard, N Aben, ...<br>
-      <em>F1000Research 5, ISCB Comm J-2852</em>, 2016
     </td>
   </tr>
   <tr>
