@@ -13,7 +13,7 @@ author_profile: true
         <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
       </div>
     </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
       <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
       <br>
       V Sriram, AM Conard, I Rosenberg, D Kim, TS Saponas, AK Hall
