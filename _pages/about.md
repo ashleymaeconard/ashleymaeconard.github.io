@@ -11,7 +11,7 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 
 My general research theme is to build expert-centered interpretable methods and platforms to enable more effective decision-making in biomedical and clinical settings. After all, I believe for methods to be useful, they must be used.
 
-Please find my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn (left). You can find my [curriculum vitae](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/cv_conard.pdf) and my [resume](https://github.com/ashleymaeconard/ashleymaeconard.github.io/raw/master/files/resume_conard.pdf) here.
+Please check out my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn.
 
 I am updating my site. Stay tuned!
 
