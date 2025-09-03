@@ -67,30 +67,6 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Accelerating precision medicine: a proposed framework for large-scale multiomics data integrity, interoperability, analysis, and collaboration in biomedical discovery</papertitle><br>
-      V Sriram, AM Conard, I Rosenberg, D Kim, AK Hall<br>
-      <em>medRxiv, 2024.03.15.24304358</em>, 2024
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/clamp_domain.png' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Dual DNA/RNA-binding factor regulates dynamics of hnRNP splicing condensates</papertitle><br>
-      M Ray, J Zaborowsky, P Mahableshwarkar, S Vaidyanathan, J Shum, ...<br>
-      <em>bioRxiv, 2024.01.11.575216</em>, 2024
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
         <img src='/images/mzt.png' alt="Placeholder image" style="max-width:100%;height:auto;">
       </div>
     </td>
