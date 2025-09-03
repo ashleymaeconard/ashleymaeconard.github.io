@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Publications & Software"
-permalink: /publications/
+permalink: /publications_software/
 author_profile: true
 ---
 
