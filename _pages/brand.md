@@ -1,13 +1,19 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
+title: "Personal Brand"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
+permalink: /brand/
+# redirect_from:
+#   - /wordpress/blog-posts/
 ---
+I believe that for models and methods to be useful, they should be used.
 
-{% include base_path %}
+I like connecting fields, ideas, people, and biological products.
+
+I think alot about how to diversify ideas, people connecting, and data.
+
+
+<!-- {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -16,4 +22,4 @@ redirect_from:
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->

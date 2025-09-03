@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Ways to connect"
-permalink: /cv/
+title: "Connect"
+permalink: /connect/
 author_profile: true
 redirect_from:
   - /resume

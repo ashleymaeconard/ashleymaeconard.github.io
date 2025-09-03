@@ -1,23 +1,23 @@
 # main links links
 main:
 
-  - title: "Me"
+  - title: "Introduction"
     url: /about/
 
   - title: "Publications & Software"
-    url: /publications/
+    url: /publications_software/
 
-  # - title: "Presentations & Media"
-  #   url: /talks/    
+  - title: "Presentations & Media"
+    url: /presentations_media/    
     
-  # - title: "Leadership & Service"
-  #   url: /markdown/
+  - title: "Leadership & Service"
+    url: /leadership_service/
 
-  # - title: "Connect"
-  #   url: /cv/
+  - title: "Connect"
+    url: /connect/
 
-  # - title: "Connect"
-  #   url: /year-archive/
+  - title: "Experience and Education"
+    url: /experience_education/ 
 
-  # - title: "Software"
-  #   url: /teaching/   
+  - title: "Personal Brand"
+    url: /brand/
