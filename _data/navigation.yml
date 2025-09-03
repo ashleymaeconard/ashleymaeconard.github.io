@@ -4,6 +4,9 @@ main:
   - title: "Introduction"
     url: /about/
 
+  - title: "Experience & Education"
+    url: /experience_education/ 
+
   - title: "Publications & Software"
     url: /publications_software/
 
@@ -16,8 +19,5 @@ main:
   - title: "Connect"
     url: /connect/
 
-  - title: "Experience and Education"
-    url: /experience_education/ 
-
-  - title: "Personal Brand"
-    url: /brand/
+  # - title: "Personal Brand"
+  #   url: /brand/
