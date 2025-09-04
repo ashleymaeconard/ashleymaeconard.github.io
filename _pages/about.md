@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) working on building models for [rare disease diagnosis](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
+I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/) working on building faster and more accurate AI models for [rare disease diagnoses](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) and [cancer therapeutics](https://www.microsoft.com/en-us/research/project/project-ex-vivo/) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
 
-My general research theme is to build expert-centered interpretable methods and platforms to enable more effective decision-making in biomedical and clinical settings. After all, I believe for methods to be useful, they must be used.
+My general research theme is to build expert-centered interpretable AI methods and interactive platforms to enable more effective decision-making in biomedical and clinical settings. After all, I believe for methods to be useful, they must be used.
 
-Please check out my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn.
+Check out my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn.
 
 I am updating my site. Stay tuned!
 

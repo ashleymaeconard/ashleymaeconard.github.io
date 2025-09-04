@@ -100,7 +100,7 @@ author:
   dribbble         :
   flickr           :
   facebook         :
-  blogger          : "https://amcompbio.blogspot.com/"
+  # blogger          : "https://amcompbio.blogspot.com/"
   github           : "ashleymaeconard"
   google_plus      :
   keybase          :
@@ -111,7 +111,7 @@ author:
   #orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    :  "3444703"
+  # stackoverflow    :  "3444703"
   steam            :
   tumblr           :
   twitter          : "AshleyMaeConard"
