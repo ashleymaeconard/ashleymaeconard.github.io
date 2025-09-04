@@ -16,7 +16,7 @@ author_profile: true
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
       <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
       <br>
-      V Sriram, AM Conard, I Rosenberg, D Kim, TS Saponas, AK Hall
+      V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
       <br>
       <em>Scientific Reports 15 (1), 6291</em>, 2025
     </td>
@@ -55,7 +55,7 @@ Daniel G. MacArthur, Heidi Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
       <br>
-      H Xie, L Crawford, AM Conard
+      H Xie, L Crawford, <strong>AM Conard</strong>
       <br>
       <em>BMC bioinformatics 25 (1), 249</em>, 2024
     </td>
@@ -72,7 +72,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
-      M Ray, AM Conard, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
+      M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
     </td>
   </tr>
@@ -84,7 +84,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
-      AM Conard, A DenAdel, L Crawford<br>
+      <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
       <em>WIREs Computational Statistics</em>, 2023
     </td>
   </tr>
@@ -96,7 +96,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
-      AM Conard, C Lawrence, L Crawford, E Larschan<br>
+      <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
       <em>Brown University</em>, 2022
     </td>
   </tr>
@@ -119,7 +119,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
-      AM Conard, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
+      <strong>AM Conard</strong>, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
       <em>Nucleic Acids Research</em>, 2021
     </td>
   </tr>
@@ -131,7 +131,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Sex-specific transcript diversity is regulated by a maternal pioneer factor in early Drosophila embryos</papertitle><br>
-      AM Conard, M Ray, J Urban, E Larschan<br>
+      <strong>AM Conard</strong>, M Ray, J Urban, E Larschan<br>
       <em>bioRxiv</em>, 2021
     </td>
   </tr>
@@ -155,7 +155,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
-      MA Tsiarli, JA Kentro, AM Conard, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
+      MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
       <em>bioRxiv, 2020.10.09.333831</em>, 2020
     </td>
   </tr>
@@ -179,7 +179,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
-      AM Conard, B Raphael<br>
+      <strong>AM Conard</strong>, B Raphael<br>
       <em>Brown University, Princeton University</em>, 2019
     </td>
   </tr>
@@ -191,7 +191,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Highlights from the ISCB Student Council Symposia in 2016 [version 1; peer review: not peer reviewed]</papertitle><br>
-      A Jacobsen, B Siranosian, K Schwahn, AM Conard, N Aben, M Hassan, ...<br>
+      A Jacobsen, B Siranosian, K Schwahn, <strong>AM Conard</strong>, N Aben, M Hassan, ...<br>
       <em>F1000Research 5 (2852)</em>, 2016
     </td>
   </tr>
@@ -203,7 +203,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
-      AM Conard, S Dodson, J Kepner, D Ricke<br>
+      <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
       <em>arXiv preprint arXiv:1501.05546</em>, 2015
     </td>
   </tr>
@@ -215,7 +215,7 @@ Daniel G. MacArthur, Heidi Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Determining the winning SH3 coalition: how cooperative game theory reveals the importance of domain residues in peptide binding</papertitle><br>
-      AM Conard, E Cilia, T Lenaerts<br>
+      <strong>AM Conard</strong>, E Cilia, T Lenaerts<br>
       <em>Proceedings of the Benelux Bioinformatics Conference</em>, 2014
     </td>
   </tr>
