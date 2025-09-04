@@ -4,12 +4,12 @@ main:
   - title: "Introduction"
     url: /about/
 
-  - title: "Experience & Education"
-    url: /experience_education/ 
-
   - title: "Publications & Software"
     url: /publications_software/
 
+  - title: "Experience & Education"
+    url: /experience_education/ 
+    
   - title: "Presentations & Media"
     url: /presentations_media/    
     
