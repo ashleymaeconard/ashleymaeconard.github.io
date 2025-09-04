@@ -223,34 +223,27 @@ Daniel G. MacArthur, Heidi Rehm
 
 ## *Software*
 ---
-### Spring 2021 
 
-*time2splice* [link] 
+### *time2splice* [link] 
 - time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data.
 - Implementation details: Bash, Python, R 
 
-### Fall 2020 
-*TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link] 
+### *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link] 
 - TIMEOR is a web server and Dockerized command line tool to identify gene regulatory networks and assign mechanism from temporal and multi-omics data. 
 - Implementation details: Bash, Python, R, RShiny 
 
-### Summer 2014 
-*PRIPS (Pathogen Rapid ID from Protein Sequences)*  (property of MIT Lincoln Laboratory) 
+### *PRIPS (Pathogen Rapid ID from Protein Sequences)*  (property of MIT Lincoln Laboratory) 
 - A fast protein analysis algorithm, using Dynamic Distributed Dimensional Data Model (D4M - by Dr. Jeremy Kepner), merging triplestore/NoSQL databases (Accumulo) with associative and distributed array representations of proteomic sequences for fast genomic big data analysis using sparse linear algebra. Our approach efﬁciently extracts statistical patterns to relate protein sequences, with the end goal of rapidly identiﬁng novel pathogens. 
 - Implementation details: Matlab 
 
-### Spring 2014 
-
-*Chemical Inventory Database* [description link], (property of DePauw [login link]) 
+### *Chemical Inventory Database* [description link], (property of DePauw [login link]) 
 - Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts. 
 - Implementation details: HTML, CSS, Parse Platform 
 
-### 2013, 2014 
-*Arduino-CSSI (Computer Science Summer Institute at Google)* [link] 
+### *Arduino-CSSI (Computer Science Summer Institute at Google)* [link] 
 - Set of Arduino workshop modules and Fritzing diagrams to teach students how to programas part of the Google Computer Science Summer Institute (CSSI). 
 - Implementation details: C 
 
-### Summer 2012 
-*Instrument Control* (property of Eli Lilly and Elanco) 
+### *Instrument Control* (property of Eli Lilly and Elanco) 
 - Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time. 
 - Implementation details: SQL, Discoverant, and Business objects -->
