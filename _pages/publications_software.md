@@ -8,20 +8,6 @@ author_profile: true
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table style="border:none;">
   <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
-      <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
-      <br>
-      V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
-      <br>
-      <em>Scientific Reports 15 (1), 6291</em>, 2025
-    </td>
-  </tr>
-  <tr>
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
   <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
@@ -44,6 +30,20 @@ D G. MacArthur, H Rehm
       <a href="https://github.com/microsoft/healthfutures-evagg">code</a>
       <br>
       <p> We developed a large language model (LLM)-powered framework, EvAgg, to aggregate and synthesize rare disease literature and related content, enabling clinical genomic analysts to review patient cases more rapidly and thoroughly in research settings. EvAgg reduced case review time by 34% (p < 0.002) and significantly increased the throughput of papers, variants, and cases analyzed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
+      <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
+      <br>
+      V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
+      <br>
+      <em>Scientific Reports 15 (1), 6291</em>, 2025
     </td>
   </tr>
   <tr>
