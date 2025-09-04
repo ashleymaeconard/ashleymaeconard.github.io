@@ -10,7 +10,7 @@ author_profile: true
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/vivek.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/vivek.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
@@ -24,7 +24,7 @@ author_profile: true
   <tr>
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-  <img src='/images/evagg.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+  <img src='/images/evagg.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
   <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -49,7 +49,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/multioviz.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/multioviz.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -67,7 +67,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/mzt.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/mzt.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -79,7 +79,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/wires.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/wires.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -91,7 +91,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -103,7 +103,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/aging.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/aging.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -114,7 +114,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/timeor.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/timeor.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -126,7 +126,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -138,7 +138,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/alcohol.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/alcohol.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -150,7 +150,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -162,7 +162,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -174,7 +174,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -186,7 +186,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -198,7 +198,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/jeremy.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/jeremy.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -210,7 +210,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
