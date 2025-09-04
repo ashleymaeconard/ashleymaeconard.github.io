@@ -10,7 +10,7 @@ author_profile: true
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/vivek.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
@@ -24,7 +24,7 @@ author_profile: true
   <tr>
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-  <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+  <img src='/images/evagg.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
   <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -49,7 +49,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/multioviz.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/multioviz.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -67,7 +67,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/mzt.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/mzt.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -79,7 +79,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/wires.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/wires.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -91,7 +91,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -103,7 +103,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/aging.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/aging.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -114,7 +114,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/timeor.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/timeor.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -126,7 +126,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -138,19 +138,19 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/alcohol.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/alcohol.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
-      NM D’Silva, KS McCullar, A Conard, T Blackwater, R Azanchi, ...<br>
+      NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
     </td>
   </tr>
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -162,19 +162,19 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <papertitle>Neuromolecular and Behavioral Adaptation Associated with Alcohol Deprivation</papertitle><br>
-      NM D'Silva, K McCullar, A Conard, T Blackwater, U Heberlein, R Azanchi, ...<br>
+      NM D'Silva, K McCullar, <strong>AM Conard</strong>, T Blackwater, U Heberlein, R Azanchi, ...<br>
       <em>Alcoholism-Clinical and Experimental Research 44, 12-12</em>, 2020
     </td>
   </tr>
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -186,7 +186,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -198,7 +198,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/jeremy.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/jeremy.png' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -210,7 +210,7 @@ Daniel G. MacArthur, Heidi Rehm
   <tr>
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="width:120px;height:120px;object-fit:cover;"">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
