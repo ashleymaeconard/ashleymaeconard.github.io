@@ -7,14 +7,14 @@ main:
   - title: "Publications & Software"
     url: /publications_software/
 
-  - title: "Experience & Education"
-    url: /experience_education/ 
+  # - title: "Experience & Education"
+  #   url: /experience_education/ 
     
-  - title: "Presentations & Media"
-    url: /presentations_media/    
+  # - title: "Presentations & Media"
+  #   url: /presentations_media/    
     
-  - title: "Leadership & Service"
-    url: /leadership_service/
+  # - title: "Leadership & Service"
+  #   url: /leadership_service/
 
   - title: "Connect"
     url: /connect/
