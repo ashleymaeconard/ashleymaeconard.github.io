@@ -39,7 +39,9 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
-      <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
+      </a>
       <br>
       V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
       <br>
@@ -53,7 +55,9 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
+      </a>
       <br>
       H Xie, L Crawford, <strong>AM Conard</strong>
       <br>
@@ -71,9 +75,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
       M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
+      </a>
     </td>
   </tr>
   <tr>
@@ -83,7 +89,9 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
+      </a>
       <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
       <em>WIREs Computational Statistics</em>, 2023
     </td>
@@ -95,9 +103,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
       <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
       <em>Brown University</em>, 2022
+      </a>
     </td>
   </tr>
   <tr>
@@ -107,8 +117,10 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Sex-specific aging in animals: Perspective and future directions</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Sex-specific aging in animals: Perspective and future directions</papertitle><br>
       <em>Aging Cell</em>, 2022
+      </a>
     </td>
   </tr>
   <tr>
@@ -118,9 +130,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
       <strong>AM Conard</strong>, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
       <em>Nucleic Acids Research</em>, 2021
+      </a>
     </td>
   </tr>
   <tr>
@@ -130,9 +144,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Sex-specific transcript diversity is regulated by a maternal pioneer factor in early Drosophila embryos</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Sex-specific transcript diversity is regulated by a maternal pioneer factor in early Drosophila embryos</papertitle><br>
       <strong>AM Conard</strong>, M Ray, J Urban, E Larschan<br>
       <em>bioRxiv</em>, 2021
+      </a>
     </td>
   </tr>
   <tr>
@@ -142,9 +158,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
       NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
+      </a>
     </td>
   </tr>
   <tr>
@@ -154,9 +172,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
       MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
       <em>bioRxiv, 2020.10.09.333831</em>, 2020
+      </a>
     </td>
   </tr>
   <tr>
@@ -166,9 +186,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Neuromolecular and Behavioral Adaptation Associated with Alcohol Deprivation</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Neuromolecular and Behavioral Adaptation Associated with Alcohol Deprivation</papertitle><br>
       NM D'Silva, K McCullar, <strong>AM Conard</strong>, T Blackwater, U Heberlein, R Azanchi, ...<br>
       <em>Alcoholism-Clinical and Experimental Research 44, 12-12</em>, 2020
+      </a>
     </td>
   </tr>
   <tr>
@@ -178,9 +200,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
-      <strong>AM Conard</strong>, B Raphael<br>
-      <em>Brown University, Princeton University</em>, 2019
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
+        <strong>AM Conard</strong>, B Raphael<br>
+        <em>Brown University, Princeton University</em>, 2019
+      </a>
     </td>
   </tr>
   <tr>
@@ -190,9 +214,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Highlights from the ISCB Student Council Symposia in 2016 [version 1; peer review: not peer reviewed]</papertitle><br>
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Highlights from the ISCB Student Council Symposia in 2016 [version 1; peer review: not peer reviewed]</papertitle><br>
       A Jacobsen, B Siranosian, K Schwahn, <strong>AM Conard</strong>, N Aben, M Hassan, ...<br>
       <em>F1000Research 5 (2852)</em>, 2016
+      </a>
     </td>
   </tr>
   <tr>
@@ -202,9 +228,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
-      <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
-      <em>arXiv preprint arXiv:1501.05546</em>, 2015
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
+        <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
+        <em>arXiv preprint arXiv:1501.05546</em>, 2015
+      </a>
     </td>
   </tr>
   <tr>
@@ -214,9 +242,11 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <papertitle>Determining the winning SH3 coalition: how cooperative game theory reveals the importance of domain residues in peptide binding</papertitle><br>
-      <strong>AM Conard</strong>, E Cilia, T Lenaerts<br>
-      <em>Proceedings of the Benelux Bioinformatics Conference</em>, 2014
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Determining the winning SH3 coalition: how cooperative game theory reveals the importance of domain residues in peptide binding</papertitle><br>
+        <strong>AM Conard</strong>, E Cilia, T Lenaerts<br>
+        <em>Proceedings of the Benelux Bioinformatics Conference</em>, 2014
+      </a>
     </td>
   </tr>
 </table>
