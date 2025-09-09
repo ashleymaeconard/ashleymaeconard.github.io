@@ -97,6 +97,7 @@ D G. MacArthur, H Rehm
       </a>
       <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
       <em>WIREs Computational Statistics</em>, 2023
+      <p> We discuss the spectrum of machine learning model transparency—from black box to explainable to interpretable—highlighting methods tailored for genomic studies. Our focus was on how incorporating biological knowledge into model design can improve both predictive performance and scientific insight for precision medicine.</p>
     </td>
   </tr>
   <tr>
