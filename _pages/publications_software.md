@@ -55,7 +55,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05819-1">
         <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
       </a>
       <br>
@@ -75,7 +75,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/37466240/">
         <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
       M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
@@ -89,7 +89,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1617">
         <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
       </a>
       <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
@@ -103,7 +103,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://repository.library.brown.edu/studio/item/bdr:tetss7s9/">
         <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
       <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
       <em>Brown University</em>, 2022
@@ -117,7 +117,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/35072344/">
         <papertitle>Sex-specific aging in animals: Perspective and future directions</papertitle><br>
       <em>Aging Cell</em>, 2022
       </a>
@@ -130,24 +130,10 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://academic.oup.com/nar/article/49/W1/W641/6298618">
         <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
       <strong>AM Conard</strong>, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
       <em>Nucleic Acids Research</em>, 2021
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
-        <papertitle>Sex-specific transcript diversity is regulated by a maternal pioneer factor in early Drosophila embryos</papertitle><br>
-      <strong>AM Conard</strong>, M Ray, J Urban, E Larschan<br>
-      <em>bioRxiv</em>, 2021
       </a>
     </td>
   </tr>
@@ -158,7 +144,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://www.biorxiv.org/content/10.1101/2021.01.02.425101v3">
         <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
       NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
@@ -172,7 +158,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40672222/">
         <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
       MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
       <em>bioRxiv, 2020.10.09.333831</em>, 2020
@@ -186,21 +172,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
-        <papertitle>Neuromolecular and Behavioral Adaptation Associated with Alcohol Deprivation</papertitle><br>
-      NM D'Silva, K McCullar, <strong>AM Conard</strong>, T Blackwater, U Heberlein, R Azanchi, ...<br>
-      <em>Alcoholism-Clinical and Experimental Research 44, 12-12</em>, 2020
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
-      </div>
-    </td>
-    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://cs.brown.edu/media/filer_public/af/d7/afd74c80-5c15-482d-9e60-9572e2b903d8/conardashley.pdf">
         <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
         <strong>AM Conard</strong>, B Raphael<br>
         <em>Brown University, Princeton University</em>, 2019
@@ -214,8 +186,8 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
-        <papertitle>Highlights from the ISCB Student Council Symposia in 2016 [version 1; peer review: not peer reviewed]</papertitle><br>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/28003876/">
+        <papertitle>Highlights from the ISCB Student Council Symposia in 2016</papertitle><br>
       A Jacobsen, B Siranosian, K Schwahn, <strong>AM Conard</strong>, N Aben, M Hassan, ...<br>
       <em>F1000Research 5 (2852)</em>, 2016
       </a>
@@ -228,7 +200,7 @@ D G. MacArthur, H Rehm
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
-      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+      <a href="https://arxiv.org/abs/1501.05546">
         <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
         <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
         <em>arXiv preprint arXiv:1501.05546</em>, 2015
@@ -253,12 +225,15 @@ D G. MacArthur, H Rehm
 
 ## *Software*
 ---
+### *The Evidence Aggregator* [link](https://github.com/microsoft/healthfutures-evagg)
+- The Evidence Aggregator is a large language model (LLM)-powered framework that aggregates and synthesizes rare disease literature and related content.
+- Implementation details: Bash, Python
 
-### *time2splice* [link] 
+### *time2splice* [link](https://github.com/ashleymaeconard/time2splice)
 - time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data.
 - Implementation details: Bash, Python, R 
 
-### *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link] 
+### *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link](https://timeor.brown.edu/app/timeor)
 - TIMEOR is a web server and Dockerized command line tool to identify gene regulatory networks and assign mechanism from temporal and multi-omics data. 
 - Implementation details: Bash, Python, R, RShiny 
 
@@ -276,4 +251,4 @@ D G. MacArthur, H Rehm
 
 ### *Instrument Control* (property of Eli Lilly and Elanco) 
 - Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time. 
-- Implementation details: SQL, Discoverant, and Business objects -->
+- Implementation details: SQL, Discoverant, and Business Objects
