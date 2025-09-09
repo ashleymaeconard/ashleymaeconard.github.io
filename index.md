@@ -7,12 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I work to build a world where people age healthily, and then die suddenly, peacefully, at a very old age. I do this through my general research theme, where I build expert-centered interpretable AI methods and interactive platforms to enable more effective decision-making in biomedical and clinical settings. These models integrate omic and environmental data, which is missing in todays gold standard therapeutic practice.
+I work to build a world where people age healthily, and then die suddenly, peacefully, at a very old age. I do this through my general research theme, where I build expert-centered interpretable AI methods and interactive platforms to enable more effective decision-making in biomedical and clinical settings. These models integrate omic and environmental data, a combination that is largely missing in current gold standard therapeutic practice.
 
-Here, I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/) working on building faster and more accurate AI models for [rare disease diagnoses](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) and [cancer therapeutics](https://www.microsoft.com/en-us/research/project/project-ex-vivo/) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
+By day, I am as a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/) working on building faster and more accurate AI models for [rare disease diagnoses](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) and [cancer therapeutics](https://www.microsoft.com/en-us/research/project/project-ex-vivo/) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
 
-by integrating the two types of data that give rise to our observable characteristics: omics (data from inside the body) and environment (data about the person from outside of the body). Most models today do not consider both when interpreting or predicting development, aging or disease.
-
+By night, I have serve on several Boards and develop lasting programs to empower the next generation of underrepresented groups in science, particularly computer science.
 
 Check out my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn.
 
