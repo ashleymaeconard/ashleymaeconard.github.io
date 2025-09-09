@@ -63,6 +63,8 @@ D G. MacArthur, H Rehm
       H Xie, L Crawford, <strong>AM Conard</strong>
       <br>
       <em>BMC bioinformatics 25 (1), 249</em>, 2024
+      <p>This is a user-friendly platform for visualizing and perturbing gene regulatory networks using multi-omics data. It enables researchers to test biological hypotheses in silico and identify molecular candidates for follow-up experiments, without requiring coding expertise.
+      </p>
     </td>
   </tr>
 </table>
@@ -78,9 +80,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://pubmed.ncbi.nlm.nih.gov/37466240/">
         <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
+      </a>
       M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
-      </a>
     </td>
   </tr>
   <tr>
@@ -106,9 +108,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://repository.library.brown.edu/studio/item/bdr:tetss7s9/">
         <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
+      </a>
       <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
       <em>Brown University</em>, 2022
-      </a>
     </td>
   </tr>
   <tr>
@@ -120,8 +122,8 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://pubmed.ncbi.nlm.nih.gov/35072344/">
         <papertitle>Sex-specific aging in animals: Perspective and future directions</papertitle><br>
-      <em>Aging Cell</em>, 2022
       </a>
+      <em>Aging Cell</em>, 2022
     </td>
   </tr>
   <tr>
@@ -133,9 +135,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://academic.oup.com/nar/article/49/W1/W641/6298618">
         <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
+      </a>
       <strong>AM Conard</strong>, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
       <em>Nucleic Acids Research</em>, 2021
-      </a>
     </td>
   </tr>
   <tr>
@@ -147,9 +149,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://www.biorxiv.org/content/10.1101/2021.01.02.425101v3">
         <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
+      </a>
       NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
-      </a>
     </td>
   </tr>
   <tr>
