@@ -165,9 +165,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://pubmed.ncbi.nlm.nih.gov/40672222/">
         <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
+      </a>
       MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
       <em>bioRxiv, 2020.10.09.333831</em>, 2020
-      </a>
     </td>
   </tr>
   <tr style="padding-bottom:30px;">
@@ -179,9 +179,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://cs.brown.edu/media/filer_public/af/d7/afd74c80-5c15-482d-9e60-9572e2b903d8/conardashley.pdf">
         <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
+      </a>
         <strong>AM Conard</strong>, B Raphael<br>
         <em>Brown University, Princeton University</em>, 2019
-      </a>
     </td>
   </tr>
   <tr style="padding-bottom:30px;">
@@ -194,8 +194,8 @@ D G. MacArthur, H Rehm
       <a href="https://pubmed.ncbi.nlm.nih.gov/28003876/">
         <papertitle>Highlights from the ISCB Student Council Symposia in 2016</papertitle><br>
       A Jacobsen, B Siranosian, K Schwahn, <strong>AM Conard</strong>, N Aben, M Hassan, ...<br>
-      <em>F1000Research 5 (2852)</em>, 2016
       </a>
+      <em>F1000Research 5 (2852)</em>, 2016
     </td>
   </tr>
   <tr style="padding-bottom:30px;">
@@ -207,9 +207,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://arxiv.org/abs/1501.05546">
         <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
+      </a>
         <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
         <em>arXiv preprint arXiv:1501.05546</em>, 2015
-      </a>
     </td>
   </tr>
   <tr style="padding-bottom:30px;">
@@ -221,9 +221,9 @@ D G. MacArthur, H Rehm
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://www.nature.com/articles/s41598-025-90453-x">
         <papertitle>Determining the winning SH3 coalition: how cooperative game theory reveals the importance of domain residues in peptide binding</papertitle><br>
+      </a>
         <strong>AM Conard</strong>, E Cilia, T Lenaerts<br>
         <em>Proceedings of the Benelux Bioinformatics Conference</em>, 2014
-      </a>
     </td>
   </tr>
 </table>
