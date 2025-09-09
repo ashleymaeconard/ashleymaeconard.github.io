@@ -7,10 +7,10 @@ author_profile: true
 
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table style="border:none;">
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-  <img src='/images/evagg.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+  <img src='/images/evagg.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
   <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -32,10 +32,10 @@ D G. MacArthur, H Rehm
       <p> We developed a large language model (LLM)-powered framework, EvAgg, to aggregate and synthesize rare disease literature and related content, enabling clinical genomic analysts to review patient cases more rapidly and thoroughly in research settings. EvAgg reduced case review time by 34% (p < 0.002) and significantly increased the throughput of papers, variants, and cases analyzed.</p>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/vivek.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/vivek.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
@@ -49,10 +49,10 @@ D G. MacArthur, H Rehm
       <p> We conducted a qualitative study to identify common challenges and data tasks across the biomedical discovery lifecycle by interviewing professionals from diverse roles in the field. Based on these insights, we proposed seven actionable recommendations to improve data quality, interoperability, and collaboration for precision medicine research.</p>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/multioviz.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/multioviz.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -71,10 +71,10 @@ D G. MacArthur, H Rehm
 
 <!-- Additional publications from Book_2.csv -->
 <table style="border:none;">
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/mzt.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/mzt.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -85,10 +85,10 @@ D G. MacArthur, H Rehm
       <em>Elife 12, e87865</em>, 2023
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/wires.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/wires.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -100,10 +100,10 @@ D G. MacArthur, H Rehm
       <p> We discuss the spectrum of machine learning model transparency—from black box to explainable to interpretable—highlighting methods tailored for genomic studies. Our focus was on how incorporating biological knowledge into model design can improve both predictive performance and scientific insight for precision medicine.</p>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/itsabouttime.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -112,12 +112,13 @@ D G. MacArthur, H Rehm
       </a>
       <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
       <em>Brown University</em>, 2022
+      <p>We developed three interactive computational tools to uncover gene regulatory networks from temporal multi-omics data, focusing on transcription factor dynamics and sex-specific regulation. These platforms empower researchers to generate hypotheses, validate findings, and accelerate discovery, bringing us closer to personalized therapeutics.</p>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/aging.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/aging.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -127,10 +128,10 @@ D G. MacArthur, H Rehm
       <em>Aging Cell</em>, 2022
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/timeor.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/timeor.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -141,10 +142,10 @@ D G. MacArthur, H Rehm
       <em>Nucleic Acids Research</em>, 2021
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/alcohol.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/alcohol.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -155,10 +156,10 @@ D G. MacArthur, H Rehm
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -169,10 +170,10 @@ D G. MacArthur, H Rehm
       </a>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -183,10 +184,10 @@ D G. MacArthur, H Rehm
       </a>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -197,10 +198,10 @@ D G. MacArthur, H Rehm
       </a>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/jeremy.png' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/jeremy.png' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
@@ -211,10 +212,10 @@ D G. MacArthur, H Rehm
       </a>
     </td>
   </tr>
-  <tr style="padding-bottom:15px;">
+  <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
-        <img src='/images/bio-photo.jpg' alt="Placeholder image" style="max-width:100%;height:auto;">
+        <img src='/images/bio-photo.jpg' alt="image" style="max-width:100%;height:auto;">
       </div>
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
