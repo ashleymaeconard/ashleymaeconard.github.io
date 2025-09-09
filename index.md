@@ -11,7 +11,7 @@ I work to build a world where people age healthily, and then die suddenly, peace
 
 By day, I am as a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/) [Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/) in [Cambridge, MA](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/) working on building faster and more accurate AI models for [rare disease diagnoses](https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical) and [cancer therapeutics](https://www.microsoft.com/en-us/research/project/project-ex-vivo/) with the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/). 
 
-By night, I have serve on several Boards and develop lasting programs to empower the next generation of underrepresented groups in science, particularly computer science.
+By night, I serve on several Boards and develop programs to empower the next generation of underrepresented groups in science, particularly computer science.
 
 Check out my biography on [my Microsoft page](https://www.microsoft.com/en-us/research/people/ashleyconard/), and connect with me on LinkedIn.
 
