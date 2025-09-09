@@ -46,6 +46,7 @@ D G. MacArthur, H Rehm
       V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
       <br>
       <em>Scientific Reports 15 (1), 6291</em>, 2025
+      <p> We conducted a qualitative study to identify common challenges and data tasks across the biomedical discovery lifecycle by interviewing professionals from diverse roles in the field. Based on these insights, we proposed seven actionable recommendations to improve data quality, interoperability, and collaboration for precision medicine research.</p>
     </td>
   </tr>
   <tr>
@@ -241,11 +242,11 @@ D G. MacArthur, H Rehm
 - A fast protein analysis algorithm, using Dynamic Distributed Dimensional Data Model (D4M - by Dr. Jeremy Kepner), merging triplestore/NoSQL databases (Accumulo) with associative and distributed array representations of proteomic sequences for fast genomic big data analysis using sparse linear algebra. Our approach efﬁciently extracts statistical patterns to relate protein sequences, with the end goal of rapidly identiﬁng novel pathogens. 
 - Implementation details: Matlab 
 
-### *Chemical Inventory Database* [description link], (property of DePauw [login link]) 
+### *Chemical Inventory Database* [description link], (property of DePauw) 
 - Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts. 
 - Implementation details: HTML, CSS, Parse Platform 
 
-### *Arduino-CSSI (Computer Science Summer Institute at Google)* [link] 
+### *Arduino-CSSI (Computer Science Summer Institute at Google)*
 - Set of Arduino workshop modules and Fritzing diagrams to teach students how to programas part of the Google Computer Science Summer Institute (CSSI). 
 - Implementation details: C 
 
