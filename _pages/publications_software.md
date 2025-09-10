@@ -8,6 +8,23 @@ author_profile: true
 *Denotes co-first authorship. †Denotes corresponding authors.
 <table style="border:none;">
   <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/angela.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
+      <a href="https://dl.acm.org/doi/abs/10.1145/3756326">
+        <papertitle>AI-Enhanced Sensemaking: Exploring the Design of a Generative AI-Based Assistant to Support Genetic Professionals</papertitle>
+      </a>
+      <br>
+      A Mastrianni, H Twede, A Sarcevic, J Wander, C Austin-Tse, S Saponas, H Rehm, <strong>AM Conard†</strong>, AK Hall†
+      <br>
+      <em>ACM Transactions on Interactive Intelligent Systems</em>, 2025
+      <p> We co-designed a generative AI assistant with genetics professionals to support genome sequencing analysis for rare disease diagnosis. By identifying key challenges in sensemaking and reanalysis, we developed and prototyped AI features that help synthesize variant evidence and flag cases for reanalysis, ultimately aiming to increase diagnostic yield and reduce time to diagnosis.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
   <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
       <div class="one">
   <img src='/images/evagg.png' alt="image" style="max-width:100%;height:auto;">
