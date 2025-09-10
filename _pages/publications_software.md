@@ -9,8 +9,8 @@ author_profile: true
 <table style="border:none;">
   <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
-      <div class="one">
-        <img src='/images/angela.png' alt="image" style="max-width:50%;height:50%;">
+      <div class="one" style="text-align:center;">
+        <img src='/images/angela.png' alt="image" style="max-width:70%;height:50%;">
       </div>
     </td>
     <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
