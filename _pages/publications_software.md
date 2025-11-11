@@ -5,7 +5,7 @@ permalink: /publications_software/
 author_profile: true
 ---
 
-*Denotes co-first authorship. †Denotes corresponding authors.
+Key: * co-first authors; † co-senior authors
 <table style="border:none;">
   <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
@@ -35,11 +35,10 @@ author_profile: true
         <papertitle>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</papertitle>
       </a>
       <br>
-      H Twede*,
-      <strong>AM Conard*</strong>,
+      H Twede,
       L Pais, S Bryen, E O’Heir, G Smith, R
 Paulsen, C A. Austin-Tse, A Bloemendal, C Simons, S Saponas, M Wander,
-D G. MacArthur, H Rehm
+D G. MacArthur, H Rehm†, <strong>AM Conard†</strong>
       <br>
       <em>bioRxiv</em>, 2025
       <br>
@@ -77,7 +76,7 @@ D G. MacArthur, H Rehm
         <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
       </a>
       <br>
-      H Xie, L Crawford, <strong>AM Conard</strong>
+      H Xie, L Crawford†, <strong>AM Conard†</strong>
       <br>
       <em>BMC bioinformatics 25 (1), 249</em>, 2024
       <p>This is a user-friendly platform for visualizing and perturbing gene regulatory networks using multi-omics data. It enables researchers to test biological hypotheses in silico and identify molecular candidates for follow-up experiments, without requiring coding expertise.
@@ -98,7 +97,7 @@ D G. MacArthur, H Rehm
       <a href="https://pubmed.ncbi.nlm.nih.gov/37466240/">
         <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
       </a>
-      M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
+      M Ray*, <strong>AM Conard*</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
     </td>
   </tr>
@@ -112,7 +111,7 @@ D G. MacArthur, H Rehm
       <a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1617">
         <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
       </a>
-      <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
+      <strong>AM Conard*</strong>, A DenAdel*, L Crawford<br>
       <em>WIREs Computational Statistics</em>, 2023
       <p> We discuss the spectrum of machine learning model transparency, from black box to explainable to interpretable, highlighting methods tailored for genomic studies. Our focus was on how incorporating biological knowledge into model design can improve both predictive performance and scientific insight for precision medicine.</p>
     </td>
@@ -167,7 +166,7 @@ D G. MacArthur, H Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://www.biorxiv.org/content/10.1101/2021.01.02.425101v3">
-        <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
+        <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
       </a>
       NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
       <em>bioRxiv, 2021.01.02.425101</em>, 2021
@@ -181,7 +180,7 @@ D G. MacArthur, H Rehm
     </td>
     <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
       <a href="https://pubmed.ncbi.nlm.nih.gov/40672222/">
-        <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
+        <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
       </a>
       MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
       <em>bioRxiv, 2020.10.09.333831</em>, 2020
@@ -253,24 +252,24 @@ D G. MacArthur, H Rehm
 
 ### *time2splice* [link](https://github.com/ashleymaeconard/time2splice)
 - time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data.
-- Implementation details: Bash, Python, R 
+- Implementation details: Bash, Python, R
 
 ### *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link](https://timeor.brown.edu/app/timeor)
-- TIMEOR is a web server and Dockerized command line tool to identify gene regulatory networks and assign mechanism from temporal and multi-omics data. 
-- Implementation details: Bash, Python, R, RShiny 
+- TIMEOR is a web server and Dockerized command line tool to identify gene regulatory networks and assign mechanism from temporal and multi-omics data.
+- Implementation details: Bash, Python, R, RShiny
 
-### *PRIPS (Pathogen Rapid ID from Protein Sequences)*  (property of MIT Lincoln Laboratory) 
-- A fast protein analysis algorithm, using Dynamic Distributed Dimensional Data Model (D4M - by Dr. Jeremy Kepner), merging triplestore/NoSQL databases (Accumulo) with associative and distributed array representations of proteomic sequences for fast genomic big data analysis using sparse linear algebra. Our approach efﬁciently extracts statistical patterns to relate protein sequences, with the end goal of rapidly identiﬁng novel pathogens. 
-- Implementation details: Matlab 
+### *PRIPS (Pathogen Rapid ID from Protein Sequences)*  (property of MIT Lincoln Laboratory)
+- A fast protein analysis algorithm, using Dynamic Distributed Dimensional Data Model (D4M - by Dr. Jeremy Kepner), merging triplestore/NoSQL databases (Accumulo) with associative and distributed array representations of proteomic sequences for fast genomic big data analysis using sparse linear algebra. Our approach efﬁciently extracts statistical patterns to relate protein sequences, with the end goal of rapidly identiﬁng novel pathogens.
+- Implementation details: Matlab
 
-### *Chemical Inventory Database* [description link], (property of DePauw) 
-- Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts. 
-- Implementation details: HTML, CSS, Parse Platform 
+### *Chemical Inventory Database* [description link], (property of DePauw)
+- Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts.
+- Implementation details: HTML, CSS, Parse Platform
 
 ### *Arduino-CSSI (Computer Science Summer Institute at Google)*
-- Set of Arduino workshop modules and Fritzing diagrams to teach students how to programas part of the Google Computer Science Summer Institute (CSSI). 
-- Implementation details: C 
+- Set of Arduino workshop modules and Fritzing diagrams to teach students how to programas part of the Google Computer Science Summer Institute (CSSI).
+- Implementation details: C
 
-### *Instrument Control* (property of Eli Lilly and Elanco) 
-- Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time. 
+### *Instrument Control* (property of Eli Lilly and Elanco)
+- Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time.
 - Implementation details: SQL, Discoverant, and Business Objects
