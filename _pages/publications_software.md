@@ -5,7 +5,7 @@ permalink: /publications_software/
 author_profile: true
 ---
 
-*Denotes co-first authorship. †Denotes corresponding authors.
+Key: * co-first authors; † co-senior authors
 <table style="border:none;">
   <tr style="padding-bottom:30px;">
     <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
@@ -35,11 +35,10 @@ author_profile: true
         <papertitle>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</papertitle>
       </a>
       <br>
-      H Twede*,
-      <strong>AM Conard*</strong>,
+      H Twede,
       L Pais, S Bryen, E O’Heir, G Smith, R
 Paulsen, C A. Austin-Tse, A Bloemendal, C Simons, S Saponas, M Wander,
-D G. MacArthur, H Rehm
+D G. MacArthur, H Rehm†, <strong>AM Conard†</strong>
       <br>
       <em>bioRxiv</em>, 2025
       <br>
@@ -77,7 +76,7 @@ D G. MacArthur, H Rehm
         <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
       </a>
       <br>
-      H Xie, L Crawford, <strong>AM Conard</strong>
+      H Xie, L Crawford†, <strong>AM Conard†</strong>
       <br>
       <em>BMC bioinformatics 25 (1), 249</em>, 2024
       <p>This is a user-friendly platform for visualizing and perturbing gene regulatory networks using multi-omics data. It enables researchers to test biological hypotheses in silico and identify molecular candidates for follow-up experiments, without requiring coding expertise.
@@ -98,7 +97,7 @@ D G. MacArthur, H Rehm
       <a href="https://pubmed.ncbi.nlm.nih.gov/37466240/">
         <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
       </a>
-      M Ray, <strong>AM Conard</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
+      M Ray*, <strong>AM Conard*</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
       <em>Elife 12, e87865</em>, 2023
     </td>
   </tr>
@@ -112,7 +111,7 @@ D G. MacArthur, H Rehm
       <a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1617">
         <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
       </a>
-      <strong>AM Conard</strong>, A DenAdel, L Crawford<br>
+      <strong>AM Conard*</strong>, A DenAdel*, L Crawford<br>
       <em>WIREs Computational Statistics</em>, 2023
       <p> We discuss the spectrum of machine learning model transparency, from black box to explainable to interpretable, highlighting methods tailored for genomic studies. Our focus was on how incorporating biological knowledge into model design can improve both predictive performance and scientific insight for precision medicine.</p>
     </td>
