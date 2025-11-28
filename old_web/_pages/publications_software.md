@@ -1,0 +1,275 @@
+---
+layout: archive
+title: "Publications & Software"
+permalink: /publications_software/
+author_profile: true
+---
+
+Key: * co-first authors; † co-senior authors
+<table style="border:none;">
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one" style="text-align:center;">
+        <img src='/images/angela.png' alt="image" style="max-width:70%;height:50%;">
+      </div>
+    </td>
+    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
+      <a href="https://dl.acm.org/doi/abs/10.1145/3756326">
+        <papertitle>AI-Enhanced Sensemaking: Exploring the Design of a Generative AI-Based Assistant to Support Genetic Professionals</papertitle>
+      </a>
+      <br>
+      A Mastrianni, H Twede, A Sarcevic, J Wander, C Austin-Tse, S Saponas, H Rehm, <strong>AM Conard†</strong>, AK Hall†
+      <br>
+      <em>ACM Transactions on Interactive Intelligent Systems</em>, 2025
+      <p> We co-designed a generative AI assistant with genetics professionals to support genome sequencing analysis for rare disease diagnosis. By identifying key challenges in sensemaking and reanalysis, we developed and prototyped AI features that help synthesize variant evidence and flag cases for reanalysis, ultimately aiming to increase diagnostic yield and reduce time to diagnosis.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+  <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+  <img src='/images/evagg.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+  <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.abstract">
+        <papertitle>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</papertitle>
+      </a>
+      <br>
+      H Twede,
+      L Pais, S Bryen, E O’Heir, G Smith, R
+Paulsen, C A. Austin-Tse, A Bloemendal, C Simons, S Saponas, M Wander,
+D G. MacArthur, H Rehm†, <strong>AM Conard†</strong>
+      <br>
+      <em>bioRxiv</em>, 2025
+      <br>
+      <a href="https://www.biorxiv.org/content/10.1101/2025.03.10.642480v1.full.pdf">pdf</a> /
+      <a href="https://github.com/microsoft/healthfutures-evagg">code</a>
+      <br>
+      <p> We developed a large language model (LLM)-powered framework, EvAgg, to aggregate and synthesize rare disease literature and related content, enabling clinical genomic analysts to review patient cases more rapidly and thoroughly in research settings. EvAgg reduced case review time by 34% (p < 0.002) and significantly increased the throughput of papers, variants, and cases analyzed.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/vivek.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:40%;vertical-align:middle;border:none;">
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Addressing biomedical data challenges and opportunities to inform a large-scale data lifecycle for enhanced data sharing, interoperability, analysis, and collaboration across stakeholders</papertitle>
+      </a>
+      <br>
+      V Sriram, <strong>AM Conard</strong>, I Rosenberg, D Kim, TS Saponas, AK Hall
+      <br>
+      <em>Scientific Reports 15 (1), 6291</em>, 2025
+      <p> We conducted a qualitative study to identify common challenges and data tasks across the biomedical discovery lifecycle by interviewing professionals from diverse roles in the field. Based on these insights, we proposed seven actionable recommendations to improve data quality, interoperability, and collaboration for precision medicine research.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/multioviz.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05819-1">
+        <papertitle>Multioviz: an interactive platform for in silico perturbation and interrogation of gene regulatory networks</papertitle>
+      </a>
+      <br>
+      H Xie, L Crawford†, <strong>AM Conard†</strong>
+      <br>
+      <em>BMC bioinformatics 25 (1), 249</em>, 2024
+      <p>This is a user-friendly platform for visualizing and perturbing gene regulatory networks using multi-omics data. It enables researchers to test biological hypotheses in silico and identify molecular candidates for follow-up experiments, without requiring coding expertise.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<!-- Additional publications from Book_2.csv -->
+<table style="border:none;">
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/mzt.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/37466240/">
+        <papertitle>Sex-specific splicing occurs genome-wide during early Drosophila embryogenesis</papertitle><br>
+      </a>
+      M Ray*, <strong>AM Conard*</strong>, J Urban, P Mahableshwarkar, J Aguilera, A Huang, ...<br>
+      <em>Elife 12, e87865</em>, 2023
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/wires.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.1617">
+        <papertitle>A spectrum of explainable and interpretable machine learning approaches for genomic studies</papertitle><br>
+      </a>
+      <strong>AM Conard*</strong>, A DenAdel*, L Crawford<br>
+      <em>WIREs Computational Statistics</em>, 2023
+      <p> We discuss the spectrum of machine learning model transparency, from black box to explainable to interpretable, highlighting methods tailored for genomic studies. Our focus was on how incorporating biological knowledge into model design can improve both predictive performance and scientific insight for precision medicine.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/itsabouttime.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://repository.library.brown.edu/studio/item/bdr:tetss7s9/">
+        <papertitle>It’s About Time: Interpretable Methods and Associated Interactive Platforms to Uncover Regulatory Mechanisms from Temporal and Multi-Omics Data</papertitle><br>
+      </a>
+      <strong>AM Conard</strong>, C Lawrence, L Crawford, E Larschan<br>
+      <em>Brown University</em>, 2022
+      <p>We developed three interactive computational tools to uncover gene regulatory networks from temporal multi-omics data, focusing on transcription factor dynamics and sex-specific regulation. These platforms empower researchers to generate hypotheses, validate findings, and accelerate discovery, bringing us closer to personalized therapeutics.</p>
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/aging.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/35072344/">
+        <papertitle>Sex-specific aging in animals: Perspective and future directions</papertitle><br>
+      </a>
+      <em>Aging Cell</em>, 2022
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/timeor.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://academic.oup.com/nar/article/49/W1/W641/6298618">
+        <papertitle>TIMEOR: a web-based tool to uncover temporal regulatory mechanisms from multi-omics data</papertitle><br>
+      </a>
+      <strong>AM Conard</strong>, N Goodman, Y Hu, N Perrimon, R Singh, C Lawrence, ...<br>
+      <em>Nucleic Acids Research</em>, 2021
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/alcohol.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://www.biorxiv.org/content/10.1101/2021.01.02.425101v3">
+        <papertitle>Neuromolecular and behavioral effects of ethanol deprivation in Drosophila</papertitle><br>
+      </a>
+      NM D’Silva, KS McCullar, <strong>AM Conard</strong>, T Blackwater, R Azanchi, ...<br>
+      <em>bioRxiv, 2021.01.02.425101</em>, 2021
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/maria.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40672222/">
+        <papertitle>The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster</papertitle><br>
+      </a>
+      MA Tsiarli, JA Kentro, <strong>AM Conard</strong>, L Xu, E Nguyen, K O’Connor-Giles, ...<br>
+      <em>bioRxiv, 2020.10.09.333831</em>, 2020
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/scCNV.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://cs.brown.edu/media/filer_public/af/d7/afd74c80-5c15-482d-9e60-9572e2b903d8/conardashley.pdf">
+        <papertitle>Identification of Subclonal Drivers and Copy-Number Variants from Bulk and Single-Cell DNA Sequencing of Tumors</papertitle><br>
+      </a>
+        <strong>AM Conard</strong>, B Raphael<br>
+        <em>Brown University, Princeton University</em>, 2019
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/iscb.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/28003876/">
+        <papertitle>Highlights from the ISCB Student Council Symposia in 2016</papertitle><br>
+      A Jacobsen, B Siranosian, K Schwahn, <strong>AM Conard</strong>, N Aben, M Hassan, ...<br>
+      </a>
+      <em>F1000Research 5 (2852)</em>, 2016
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/jeremy.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://arxiv.org/abs/1501.05546">
+        <papertitle>Using a Big Data Database to Identify Pathogens in Protein Data Space</papertitle><br>
+      </a>
+        <strong>AM Conard</strong>, S Dodson, J Kepner, D Ricke<br>
+        <em>arXiv preprint arXiv:1501.05546</em>, 2015
+    </td>
+  </tr>
+  <tr style="padding-bottom:30px;">
+    <td style="padding:1px;width:40%;vertical-align:middle;border:none;">
+      <div class="one">
+        <img src='/images/sh3.png' alt="image" style="max-width:100%;height:auto;">
+      </div>
+    </td>
+    <td style="padding:10px;width:95%;vertical-align:middle;border:none;">
+      <a href="https://www.nature.com/articles/s41598-025-90453-x">
+        <papertitle>Determining the winning SH3 coalition: how cooperative game theory reveals the importance of domain residues in peptide binding</papertitle><br>
+      </a>
+        <strong>AM Conard</strong>, E Cilia, T Lenaerts<br>
+        <em>Proceedings of the Benelux Bioinformatics Conference</em>, 2014
+    </td>
+  </tr>
+</table>
+
+## *Software*
+---
+### *The Evidence Aggregator* [link](https://github.com/microsoft/healthfutures-evagg)
+- The Evidence Aggregator is a large language model (LLM)-powered framework that aggregates and synthesizes rare disease literature and related content.
+- Implementation details: Bash, Python
+
+### *time2splice* [link](https://github.com/ashleymaeconard/time2splice)
+- time2splice is a method to ﬁnd temporal and sex-speciﬁc alternative splicing from multi-omics data.
+- Implementation details: Bash, Python, R
+
+### *TIMEOR (Trajectory Inference and Mechanism Exploration using Omics data in R)* [link](https://timeor.brown.edu/app/timeor)
+- TIMEOR is a web server and Dockerized command line tool to identify gene regulatory networks and assign mechanism from temporal and multi-omics data.
+- Implementation details: Bash, Python, R, RShiny
+
+### *PRIPS (Pathogen Rapid ID from Protein Sequences)*  (property of MIT Lincoln Laboratory)
+- A fast protein analysis algorithm, using Dynamic Distributed Dimensional Data Model (D4M - by Dr. Jeremy Kepner), merging triplestore/NoSQL databases (Accumulo) with associative and distributed array representations of proteomic sequences for fast genomic big data analysis using sparse linear algebra. Our approach efﬁciently extracts statistical patterns to relate protein sequences, with the end goal of rapidly identiﬁng novel pathogens.
+- Implementation details: Matlab
+
+### *Chemical Inventory Database* [description link], (property of DePauw)
+- Web-based inventory management system used in many academic departments, mainly chemistry. Users log inanduse a phone to scanbarcodes for automatic itementry. The applicationuses the Parse Platform as a relational database to house inventory for DePauw University. This system has been updatedby the maintainer Dr. DaveRoberts.
+- Implementation details: HTML, CSS, Parse Platform
+
+### *Arduino-CSSI (Computer Science Summer Institute at Google)*
+- Set of Arduino workshop modules and Fritzing diagrams to teach students how to programas part of the Google Computer Science Summer Institute (CSSI).
+- Implementation details: C
+
+### *Instrument Control* (property of Eli Lilly and Elanco)
+- Online internal system to monitor product batch data. Batch data is extracted fromEli Lilly’s Data Mart and Data Warehouse databases and then visualized for the researcher (such as potency, and solubility ﬂuctuations). This system continues tobe run automatically daily, enabling employees to easily inspect and verify internal processes, saving signiﬁcant money and time.
+- Implementation details: SQL, Discoverant, and Business Objects
