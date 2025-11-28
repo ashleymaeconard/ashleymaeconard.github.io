@@ -38,9 +38,37 @@
 
             <!-- Publications Tab Content -->
             <div id="publications-content" class="tab-content active">
-                <p class="hero-note">*Denotes co-first authorship. †Denotes corresponding authors.</p>
+                <p class="hero-note">*Denotes co-first authorship. †Denotes co-last authors.</p>
 
                 <!-- All Publications in chronological order -->
+                
+                <div class="pub-card collapsed">
+                    <div class="pub-header">
+                        <div class="pub-image-small">
+                            <img src="../../photos/publications/scGeneScope.png" alt="scGeneScope">
+                        </div>
+                        <div class="pub-header-content">
+                            <div class="pub-date">2025</div>
+                            <h3>scGeneScope: A Treatment-Matched Single Cell Imaging and Transcriptomics Dataset and Benchmark for Treatment Response Modeling</h3>
+                            <div class="pub-authors">J Dapello, M Nassar, R Eksi, B Wang, J Gagnon-Marchand, KT Gao, A Baharlouei, K Thrush-Evensen, N Riehs, AF Peterson, A Tolpadi, A Rajagopal, HE Miller, <strong>AM Conard</strong>, D Alvarez-Melis, R Stark, S Bianco, M Levine, AP Amini, AX Lu, N Fusi, R Pandya, V Pedoia, H El-Samad
+                            </div>
+                            <div class="pub-venue">NeurIPs Datasets and Benchmarks Track</div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand publication details">
+                            <span class="arrow">▼</span>
+                        </button>
+                    </div>
+                    <div class="pub-details">
+                        <p class="pub-summary">scGeneScope as the first large-scale, high-quality treatment-matched multiprofile dataset for single-cell biology. In our paper, we present this dataset and challenge the hype around foundation models by providing a realistic testbed to enable rigorous benchmarking of ML models (linear to foundation models) for drug discovery.</p>
+                        <div class="pub-links">
+                            <a href="https://openreview.net/forum?id=918POZbZ50"
+                                target="_blank">paper</a>
+                            <a href="https://github.com/altoslabs/scGeneScope" target="_blank">code</a>
+                            <a href="https://huggingface.co/datasets/altoslabs/scGeneScope" target="_blank">data</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="pub-card collapsed">
                     <div class="pub-header">
                         <div class="pub-image-small">
@@ -81,10 +109,10 @@
                         <div class="pub-header-content">
                             <div class="pub-date">2025</div>
                             <h3>Evidence Aggregator: AI reasoning applied to rare disease diagnostics</h3>
-                            <div class="pub-authors">H Twede*, <strong>AM Conard*</strong>, L Pais, S Bryen, E O'Heir, G
+                            <div class="pub-authors">H Twede, L Pais, S Bryen, E O'Heir, G
                                 Smith,
                                 R Paulsen, C A. Austin-Tse, A Bloemendal, C Simons, S Saponas, M Wander, D G. MacArthur, H
-                                Rehm
+                                Rehm†, <strong>AM Conard†</strong>
                             </div>
                             <div class="pub-venue">bioRxiv</div>
                         </div>
@@ -152,7 +180,7 @@
                             <div class="pub-date">2024</div>
                             <h3>Multioviz: an interactive platform for in silico perturbation and interrogation of gene
                                 regulatory networks</h3>
-                            <div class="pub-authors">H Xie, L Crawford, <strong>AM Conard</strong></div>
+                            <div class="pub-authors">H Xie, L Crawford†, <strong>AM Conard†</strong></div>
                             <div class="pub-venue">BMC bioinformatics 25 (1), 249</div>
                         </div>
                         <button class="expand-btn" aria-label="Expand publication details">
@@ -207,7 +235,7 @@
                             <h3>A spectrum of explainable and interpretable machine learning approaches for genomic
                                 studies
                             </h3>
-                            <div class="pub-authors"><strong>AM Conard</strong>, A DenAdel, L Crawford</div>
+                            <div class="pub-authors"><strong>AM Conard*</strong>, A DenAdel*, L Crawford</div>
                             <div class="pub-venue">WIREs Computational Statistics</div>
                         </div>
                         <button class="expand-btn" aria-label="Expand publication details">
