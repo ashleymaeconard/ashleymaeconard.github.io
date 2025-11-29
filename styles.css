@@ -260,6 +260,22 @@ body {
     line-height: 1.7;
 }
 
+/* Improve bullet indentation and spacing inside the about box */
+.about-box ul {
+    margin: 0.5rem 0 1rem 1.25rem; /* top, right, bottom, left */
+    padding-left: 1rem; /* ensure bullets are indented from container */
+}
+
+.about-box ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.about-box ul li ul {
+    margin-top: 0.25rem;
+    margin-left: 1rem; /* further indent nested lists */
+}
+
 .about-box a {
     color: var(--link-color);
     text-decoration: underline;
