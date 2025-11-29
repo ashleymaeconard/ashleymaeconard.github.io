@@ -10,7 +10,8 @@
 
 /* Publications Section */
 .publications-section {
-    padding: 3rem 0;
+    /* Reduce top padding to bring section up closer to the hero component */
+    padding: 1.25rem 0 3rem;
 }
 
 .section-title {
