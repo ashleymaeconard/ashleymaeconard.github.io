@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Mae Conard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Apply theme immediately to prevent flash
+        (function () {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Component (loaded dynamically) -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Component (loaded dynamically) -->
+    <div id="hero-placeholder"></div>
+
+    <!-- About & Connect -->
+    <section class="main-content" id="about">
+        <div class="container">
+            <!-- About -->
+            <div class="about-box">
+                <h2>About</h2>
+                <p>
+                    I work to build a world where people age healthily, and then die peacefully,
+                    at a very old age without protracted illness or disability. I do this through my general research theme, where <b>I build expert-centered
+                    interpretable AI methods and interactive platforms to enable more effective human-in-the-loop
+                    <em>in-silico</em> hypothesis testing and downstream decision-making in biomedical and clinical
+                    settings</b>. I build these tools by contributing to the data generation or aggregation process,
+                    followed by integrating omic data beyond the genome, in combination with clinical, and environment data, an essential combination often
+                    missing from current therapeutic practice.
+                </p>
+                <p>
+                    ☀️ By day, I am a Senior Researcher on the <a href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/" target="_blank">Biomedical ML</a> team at
+                    <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>
+                    <a href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/"
+                        target="_blank">Health Futures</a>
+                    at the <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/"
+                        target="_blank">New England Research Division (NERD)</a> in Cambridge, MA.
+                    There, I build faster and more accurate <b>AI models for biology, focusing on epigenetics and the interactions with transcriptomics and genomics</b>. 
+                    </p>
+                <p>
+                    In partnership with the <a href="https://www.broadinstitute.org/" target="_blank">Broad Institute of MIT and develop
+                        Harvard</a>, I am both a researcher within Project Ex Vivo, where we aim to <a href="https://www.microsoft.com/en-us/research/project/project-ex-vivo/"
+                        target="_blank">AI models to improve
+                    personalized cancer therapeutics</a>, and</li> a research lead in an initiative with Dr. Heidi Rehm and team to build
+                        <a href="https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical"
+                        target="_blank"> AI tools to reduce latency and improve solve rates in rare disease diagnoses</a>.</li>
+                        </ul>
+                </p>
+                <p>
+                    🌙 By night, I serve on several Boards and develop programs to empower the next generation of
+                    underrepresented groups in science, particularly computer science.
+                </p>
+                <p>
+                    Check out my biography on
+                    <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank">my Microsoft
+                        page</a>,
+                    and connect with me on LinkedIn.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component (loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="components/load-components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
