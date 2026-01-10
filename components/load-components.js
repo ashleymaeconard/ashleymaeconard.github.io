@@ -3,6 +3,34 @@ const isInTabsFolder = window.location.pathname.includes('/tabs/');
 const isInTabsSubfolder = window.location.pathname.match(/\/tabs\/[^\/]+\//);
 const basePath = isInTabsSubfolder ? '../../components/' : (isInTabsFolder ? '../components/' : 'components/');
 
+// Add favicon to document head (works on all pages)
+(function() {
+    // Determine the correct path to favicon.ico based on current page location
+    const faviconPath = isInTabsSubfolder ? '../../favicon.ico' : (isInTabsFolder ? '../favicon.ico' : 'favicon.ico');
+    
+    // Check if favicon link already exists to avoid duplicates
+    const existingFavicon = document.querySelector('link[rel="icon"], link[rel="shortcut icon"]');
+    
+    if (!existingFavicon) {
+        // Create and add favicon link
+        const faviconLink = document.createElement('link');
+        faviconLink.rel = 'icon';
+        faviconLink.type = 'image/x-icon';
+        faviconLink.href = faviconPath;
+        
+        // Also add shortcut icon for older browsers
+        const shortcutLink = document.createElement('link');
+        shortcutLink.rel = 'shortcut icon';
+        shortcutLink.type = 'image/x-icon';
+        shortcutLink.href = faviconPath;
+        
+        // Insert both at the beginning of head for priority
+        const head = document.head || document.getElementsByTagName('head')[0];
+        head.insertBefore(shortcutLink, head.firstChild);
+        head.insertBefore(faviconLink, head.firstChild);
+    }
+})();
+
 // Load navbar component
 fetch(basePath + 'navbar.html')
     .then(response => response.text())
