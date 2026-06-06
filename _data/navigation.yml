@@ -8,16 +8,19 @@ main:
     url: /publications_software/
 
   # - title: "Experience & Education"
-  #   url: /experience_education/ 
-    
+  #   url: /experience_education/
+
   # - title: "Presentations & Media"
-  #   url: /presentations_media/    
-    
+  #   url: /presentations_media/
+
   # - title: "Leadership & Service"
   #   url: /leadership_service/
 
   - title: "Connect"
     url: /connect/
+
+  - title: "Book Time With Me"
+    url: /book/
 
   # - title: "Personal Brand"
   #   url: /brand/
