@@ -69,7 +69,7 @@ I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, c
 <div class="booking-grid">
   <div class="booking-card">
     <h3>☕ 30-Minute Session</h3>
-    <div class="price-tag">$100</div>
+    <div class="price-tag">$80</div>
     <div class="price-sub">Quick focused consultation</div>
     <ul>
       <li>Focused Q&amp;A or problem-solving</li>
@@ -80,7 +80,7 @@ I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, c
   </div>
   <div class="booking-card">
     <h3>🔬 1-Hour Session</h3>
-    <div class="price-tag">$200</div>
+    <div class="price-tag">$150</div>
     <div class="price-sub">Deep-dive consultation</div>
     <ul>
       <li>In-depth research or methods discussion</li>
@@ -95,7 +95,7 @@ I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, c
 
 ## Payment
 
-Payment is collected securely **at the time of booking** via Stripe (credit/debit card). You can also pay via **Venmo** (`@AshleyConard`) before the session — just note your booking date in the Venmo description.
+Payment is collected securely **at the time of booking** via Stripe (credit/debit card). You can also pay via **Venmo** (`@Ashley-Con`) before the session — just note your booking date in the Venmo description.
 
 <div class="payment-info">
   <strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email you receive after booking.
