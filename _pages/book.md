@@ -30,8 +30,8 @@ author_profile: true
 }
 .book-btn {
   display: inline-block;
-  background: #c0392b;
-  color: #fff !important;
+  background: #f5e642;
+  color: #2a2a2a !important;
   padding: 12px 28px;
   border-radius: 6px;
   font-weight: bold;
@@ -40,8 +40,8 @@ author_profile: true
   transition: background 0.2s;
 }
 .book-btn:hover {
-  background: #922b21;
-  color: #fff !important;
+  background: #e0d020;
+  color: #2a2a2a !important;
 }
 .payment-info {
   background: #f8f8f8;
@@ -95,7 +95,7 @@ As a former college soccer athlete, Board member (AnitaB.org, Fulbright, researc
 
 ## Payment
 
-Payment is collected securely **at the time of booking** via Stripe (credit/debit card). You can also pay via **Venmo** (`@Ashley-Con`) before the session. Just note your booking date in the Venmo description.
+Payment is collected securely **at the time of booking** via Stripe (credit/debit card).
 
 <div class="payment-info">
   <strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email you receive after booking.
