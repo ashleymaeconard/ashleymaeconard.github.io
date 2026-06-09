@@ -60,7 +60,17 @@ author_profile: true
 }
 </style>
 
-I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, career advice for researchers, and navigating industry research roles.
+I offer **1:1 consultations** in 4 areas: **obtaining an industrial research position**, **biomedical AI research**, **school and award applications**, and **life alignment and optimization**.
+
+**Obtaining an industrial research position** — my efficient model to secure 1:1 discussions with virtually anyone, how to prepare for interviews, how to apply, how to secure internships/jobs, how to progress, career advice, network connections (depending on need).
+
+**Biomedical AI** — AI in biology, interpretable ML, genomics, epigenomics, rare disease, development, and cancer research.
+
+**School and award applications** — how to structure your thinking, choosing topics, positioning your work, telling your story, how to follow-up, and use the momentum to apply, network connections (depending on need).
+
+**Life alignment and optimization** — scheduling your day in and outside of working hours, how to build financial stability, building a family as a working mom leading our family, leveraging struggle and setbacks, how to **always win**.
+
+As a former college soccer athlete, Board member (AnitaB.org, Fulbright, research organizations), AI researcher at MSFT, financial and life optimizer, NSF GRFP and Fulbright awardee, this last topic is essential for overall success.
 
 ---
 
@@ -69,7 +79,7 @@ I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, c
 <div class="booking-grid">
   <div class="booking-card">
     <h3>☕ 30-Minute Session</h3>
-    <div class="price-tag">$80</div>
+    <div class="price-tag">$60</div>
     <div class="price-sub">Quick focused consultation</div>
     <ul>
       <li>Focused Q&amp;A or problem-solving</li>
@@ -80,7 +90,7 @@ I offer **1:1 consultations** on biomedical AI, interpretable ML, epigenomics, c
   </div>
   <div class="booking-card">
     <h3>🔬 1-Hour Session</h3>
-    <div class="price-tag">$150</div>
+    <div class="price-tag">$140</div>
     <div class="price-sub">Deep-dive consultation</div>
     <ul>
       <li>In-depth research or methods discussion</li>
