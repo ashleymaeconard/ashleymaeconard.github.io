@@ -81,22 +81,12 @@ As a former college soccer athlete, Board member (AnitaB.org, Fulbright, researc
     <h3>☕ 30-Minute Session</h3>
     <div class="price-tag">$60</div>
     <div class="price-sub">Quick focused consultation</div>
-    <ul>
-      <li>Focused Q&amp;A or problem-solving</li>
-      <li>Career or research advice</li>
-      <li>Code / method review</li>
-    </ul>
     <a class="book-btn" href="https://cal.com/ashleymaeconard/30min" target="_blank">Book 30 min →</a>
   </div>
   <div class="booking-card">
     <h3>🔬 1-Hour Session</h3>
     <div class="price-tag">$140</div>
     <div class="price-sub">Deep-dive consultation</div>
-    <ul>
-      <li>In-depth research or methods discussion</li>
-      <li>Project scoping &amp; strategy</li>
-      <li>Manuscript or grant feedback</li>
-    </ul>
     <a class="book-btn" href="https://cal.com/ashleymaeconard/60min" target="_blank">Book 1 hour →</a>
   </div>
 </div>
@@ -105,7 +95,7 @@ As a former college soccer athlete, Board member (AnitaB.org, Fulbright, researc
 
 ## Payment
 
-Payment is collected securely **at the time of booking** via Stripe (credit/debit card). You can also pay via **Venmo** (`@Ashley-Con`) before the session — just note your booking date in the Venmo description.
+Payment is collected securely **at the time of booking** via Stripe (credit/debit card). You can also pay via **Venmo** (`@Ashley-Con`) before the session. Just note your booking date in the Venmo description.
 
 <div class="payment-info">
   <strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email you receive after booking.
@@ -115,6 +105,6 @@ Payment is collected securely **at the time of booking** via Stripe (credit/debi
 
 ## What to Expect
 
-After booking you'll receive a calendar invite with a Zoom link. Come with your questions ready — I'll come prepared to make the most of our time together.
+After booking you'll receive an invite with a video chat link. Please come with your questions/topics prepared, and I'll come prepared to make the most of our time together.
 
 *Questions before booking? Reach out via the [Connect](/connect/) page.*
