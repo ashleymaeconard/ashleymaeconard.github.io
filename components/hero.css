@@ -34,14 +34,14 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary);
-    box-shadow: 0 4px 20px rgba(184, 137, 31, 0.18), var(--shadow);
+    box-shadow: 0 4px 20px rgba(240, 216, 0, 0.20), var(--shadow);
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-photo:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 28px rgba(184, 137, 31, 0.24), var(--shadow-lg);
+    box-shadow: 0 6px 28px rgba(240, 216, 0, 0.28), var(--shadow-lg);
 }
 
 /* ---- Text Area ---- */
@@ -121,7 +121,7 @@
 .quick-links a:hover {
     opacity: 1;
     background-color: var(--primary-bg);
-    border-color: rgba(184, 137, 31, 0.20);
+    border-color: rgba(240, 216, 0, 0.40);
     transform: translateY(-2px);
 }
 
