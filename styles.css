@@ -637,19 +637,44 @@ body {
     gap: 1rem;
 }
 
+/* Cards are <a> tags — reset anchor defaults */
+a.research-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .research-card {
     background: var(--bg-white);
     border: 1px solid var(--border);
     border-top: 3px solid var(--primary-dark);
     border-radius: var(--radius);
-    padding: 1.25rem 1.25rem 1rem;
+    padding: 1.25rem 1.25rem 0.875rem;
     box-shadow: var(--shadow-sm);
-    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
 .research-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow);
+    border-color: var(--primary-dark);
+}
+
+.card-cta {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    margin-top: 0.625rem;
+    transition: color 0.2s;
+}
+
+[data-theme="dark"] .card-cta {
+    color: var(--primary);
+}
+
+.research-card:hover .card-cta {
+    color: var(--text-dark);
 }
 
 .research-card-icon {
