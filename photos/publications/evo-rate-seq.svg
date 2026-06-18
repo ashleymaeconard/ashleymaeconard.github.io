@@ -1,0 +1,126 @@
+<svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="220" height="200" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="110" y="15" text-anchor="middle" font-size="8" fill="#333" font-weight="700" letter-spacing="0.5">SEQUENCE + EVOLUTIONARY-RATE</text>
+
+  <!-- Top row: input sequence boxes -->
+  <!-- Colors per nucleotide: A=coral/pink, T=teal, G=orange, C=blue-green -->
+  <!-- A -->
+  <rect x="5" y="22" width="20" height="18" rx="2" fill="#FFCDD2" stroke="#E57373" stroke-width="1"/>
+  <text x="15" y="34" text-anchor="middle" font-size="9" fill="#c62828" font-weight="700">A</text>
+  <!-- T -->
+  <rect x="27" y="22" width="20" height="18" rx="2" fill="#B2EBF2" stroke="#4DD0E1" stroke-width="1"/>
+  <text x="37" y="34" text-anchor="middle" font-size="9" fill="#006064" font-weight="700">T</text>
+  <!-- G -->
+  <rect x="49" y="22" width="20" height="18" rx="2" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1"/>
+  <text x="59" y="34" text-anchor="middle" font-size="9" fill="#e65100" font-weight="700">G</text>
+  <!-- C -->
+  <rect x="71" y="22" width="20" height="18" rx="2" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="81" y="34" text-anchor="middle" font-size="9" fill="#1b5e20" font-weight="700">C</text>
+  <!-- A -->
+  <rect x="93" y="22" width="20" height="18" rx="2" fill="#FFCDD2" stroke="#E57373" stroke-width="1"/>
+  <text x="103" y="34" text-anchor="middle" font-size="9" fill="#c62828" font-weight="700">A</text>
+  <!-- MASK box -->
+  <rect x="115" y="22" width="24" height="18" rx="2" fill="#757575" stroke="#424242" stroke-width="1.5"/>
+  <text x="127" y="31" text-anchor="middle" font-size="5.5" fill="white" font-weight="700">MASK</text>
+  <!-- G -->
+  <rect x="141" y="22" width="20" height="18" rx="2" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1"/>
+  <text x="151" y="34" text-anchor="middle" font-size="9" fill="#e65100" font-weight="700">G</text>
+  <!-- C -->
+  <rect x="163" y="22" width="20" height="18" rx="2" fill="#C8E6C9" stroke="#81C784" stroke-width="1"/>
+  <text x="173" y="34" text-anchor="middle" font-size="9" fill="#1b5e20" font-weight="700">C</text>
+  <!-- A -->
+  <rect x="185" y="22" width="20" height="18" rx="2" fill="#FFCDD2" stroke="#E57373" stroke-width="1"/>
+  <text x="195" y="34" text-anchor="middle" font-size="9" fill="#c62828" font-weight="700">A</text>
+  <!-- T -->
+  <rect x="207" y="22" width="13" height="18" rx="2" fill="#B2EBF2" stroke="#4DD0E1" stroke-width="1"/>
+  <text x="213" y="34" text-anchor="middle" font-size="9" fill="#006064" font-weight="700">T</text>
+
+  <!-- Arrow down from MASK -->
+  <line x1="127" y1="41" x2="127" y2="55" stroke="#333" stroke-width="1.2" marker-end="url(#arr2)"/>
+
+  <!-- Function text -->
+  <text x="110" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">f(x₁, ..., x</text>
+  <text x="152" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">i-1</text>
+  <text x="162" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">, x</text>
+  <text x="172" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">i+1</text>
+  <text x="185" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">, ..., x</text>
+  <text x="205" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">n</text>
+  <text x="210" y="67" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">)</text>
+  <!-- = p line -->
+  <text x="110" y="79" text-anchor="middle" font-size="7.5" fill="#333" font-style="italic">= p(x̂ᵢ, ŷ₁, ..., ŷₙ)</text>
+
+  <!-- Arrow down -->
+  <line x1="110" y1="83" x2="110" y2="97" stroke="#333" stroke-width="1.2" marker-end="url(#arr2)"/>
+
+  <!-- Bottom sequence (predicted, faded) -->
+  <!-- A faded -->
+  <rect x="5" y="100" width="20" height="18" rx="2" fill="#FFEBEE" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="15" y="112" text-anchor="middle" font-size="9" fill="#ef9a9a" font-weight="700">A</text>
+  <!-- T faded -->
+  <rect x="27" y="100" width="20" height="18" rx="2" fill="#E0F7FA" stroke="#B2EBF2" stroke-width="1"/>
+  <text x="37" y="112" text-anchor="middle" font-size="9" fill="#80DEEA" font-weight="700">T</text>
+  <!-- G faded -->
+  <rect x="49" y="100" width="20" height="18" rx="2" fill="#FFF3E0" stroke="#FFE0B2" stroke-width="1"/>
+  <text x="59" y="112" text-anchor="middle" font-size="9" fill="#FFCC80" font-weight="700">G</text>
+  <!-- C faded -->
+  <rect x="71" y="100" width="20" height="18" rx="2" fill="#F1F8E9" stroke="#DCEDC8" stroke-width="1"/>
+  <text x="81" y="112" text-anchor="middle" font-size="9" fill="#AED581" font-weight="700">C</text>
+  <!-- A faded -->
+  <rect x="93" y="100" width="20" height="18" rx="2" fill="#FFEBEE" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="103" y="112" text-anchor="middle" font-size="9" fill="#ef9a9a" font-weight="700">A</text>
+  <!-- T PREDICTED (highlighted with blue border) -->
+  <rect x="115" y="98" width="24" height="22" rx="3" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="127" y="113" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="700">T</text>
+  <!-- G faded -->
+  <rect x="141" y="100" width="20" height="18" rx="2" fill="#FFF3E0" stroke="#FFE0B2" stroke-width="1"/>
+  <text x="151" y="112" text-anchor="middle" font-size="9" fill="#FFCC80" font-weight="700">G</text>
+  <!-- C faded -->
+  <rect x="163" y="100" width="20" height="18" rx="2" fill="#F1F8E9" stroke="#DCEDC8" stroke-width="1"/>
+  <text x="173" y="112" text-anchor="middle" font-size="9" fill="#AED581" font-weight="700">C</text>
+  <!-- A faded -->
+  <rect x="185" y="100" width="20" height="18" rx="2" fill="#FFEBEE" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="195" y="112" text-anchor="middle" font-size="9" fill="#ef9a9a" font-weight="700">A</text>
+  <!-- T faded -->
+  <rect x="207" y="100" width="13" height="18" rx="2" fill="#E0F7FA" stroke="#B2EBF2" stroke-width="1"/>
+  <text x="213" y="112" text-anchor="middle" font-size="9" fill="#80DEEA" font-weight="700">T</text>
+
+  <!-- x̂ᵢ label -->
+  <text x="220" y="112" text-anchor="end" font-size="8" fill="#333" font-style="italic">x̂ᵢ</text>
+
+  <!-- Evolutionary rate row boxes -->
+  <!-- rate boxes with purple/pink gradient for high values -->
+  <rect x="5" y="128" width="20" height="16" rx="2" fill="#F8BBD0" stroke="#F48FB1" stroke-width="1"/>
+  <text x="15" y="139" text-anchor="middle" font-size="6.5" fill="#880E4F">0.1</text>
+  <rect x="27" y="128" width="20" height="16" rx="2" fill="#F8BBD0" stroke="#F48FB1" stroke-width="1"/>
+  <text x="37" y="139" text-anchor="middle" font-size="6.5" fill="#880E4F">0.2</text>
+  <rect x="49" y="128" width="20" height="16" rx="2" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1"/>
+  <text x="59" y="139" text-anchor="middle" font-size="6.5" fill="#6A1B9A">0.4</text>
+  <rect x="71" y="128" width="20" height="16" rx="2" fill="#EDE7F6" stroke="#B39DDB" stroke-width="1"/>
+  <text x="81" y="139" text-anchor="middle" font-size="6.5" fill="#4527A0">1.1</text>
+  <rect x="93" y="128" width="20" height="16" rx="2" fill="#E8EAF6" stroke="#9FA8DA" stroke-width="1"/>
+  <text x="103" y="139" text-anchor="middle" font-size="6.5" fill="#283593">2.3</text>
+  <!-- Highlighted rate (highest) -->
+  <rect x="115" y="126" width="24" height="20" rx="3" fill="#CE93D8" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="127" y="139" text-anchor="middle" font-size="7" fill="white" font-weight="700">3.6</text>
+  <rect x="141" y="128" width="20" height="16" rx="2" fill="#E8EAF6" stroke="#9FA8DA" stroke-width="1"/>
+  <text x="151" y="139" text-anchor="middle" font-size="6.5" fill="#283593">2.1</text>
+  <rect x="163" y="128" width="20" height="16" rx="2" fill="#EDE7F6" stroke="#B39DDB" stroke-width="1"/>
+  <text x="173" y="139" text-anchor="middle" font-size="6.5" fill="#4527A0">1.0</text>
+  <rect x="185" y="128" width="20" height="16" rx="2" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1"/>
+  <text x="195" y="139" text-anchor="middle" font-size="6.5" fill="#6A1B9A">0.8</text>
+  <rect x="207" y="128" width="13" height="16" rx="2" fill="#F8BBD0" stroke="#F48FB1" stroke-width="1"/>
+  <text x="213" y="139" text-anchor="middle" font-size="6.5" fill="#880E4F">0.5</text>
+
+  <!-- ŷ labels -->
+  <text x="5" y="154" text-anchor="start" font-size="8" fill="#333" font-style="italic">ŷ₁</text>
+  <text x="213" y="154" text-anchor="end" font-size="8" fill="#333" font-style="italic">ŷₙ</text>
+  <text x="110" y="154" text-anchor="middle" font-size="8" fill="#aaa">· · · · · · ·</text>
+
+  <defs>
+    <marker id="arr2" markerWidth="5" markerHeight="5" refX="3" refY="2.5" orient="auto">
+      <path d="M0,0 L0,5 L5,2.5 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

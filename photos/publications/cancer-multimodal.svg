@@ -1,0 +1,93 @@
+<svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="220" height="180" fill="#fafafa"/>
+
+  <!-- Title row -->
+  <rect x="4" y="6" width="212" height="20" rx="3" fill="#f0f0f0" stroke="#ddd" stroke-width="1"/>
+  <!-- Small molecule icon -->
+  <text x="14" y="20" font-size="9" fill="#555">⬡△▢</text>
+  <text x="42" y="20" font-size="8.5" fill="#333" font-weight="700">Multimodal fusion</text>
+
+  <!-- ">>" prompt token -->
+  <text x="6" y="44" font-size="9" fill="#333" font-weight="700">&gt;&gt;</text>
+  <text x="20" y="44" font-size="8" fill="#555">Screen this chemical</text>
+  <text x="6" y="56" font-size="8" fill="#555">compounds library</text>
+
+  <!-- Angle bracket open -->
+  <text x="6" y="72" font-size="9" fill="#888">&lt;</text>
+
+  <!-- Chemical structure 1 (benzene ring with COOH) -->
+  <g transform="translate(18, 60)">
+    <!-- Hexagon benzene -->
+    <polygon points="8,2 16,2 20,9 16,16 8,16 4,9" fill="none" stroke="#555" stroke-width="1.2"/>
+    <!-- Double bond marks -->
+    <line x1="8" y1="3" x2="16" y2="3" stroke="#555" stroke-width="0.7"/>
+    <!-- COOH group -->
+    <line x1="20" y1="9" x2="26" y2="9" stroke="#555" stroke-width="1"/>
+    <text x="26" y="7" font-size="5.5" fill="#555">O</text>
+    <text x="26" y="13" font-size="5.5" fill="#555">OH</text>
+  </g>
+
+  <!-- comma separator -->
+  <text x="52" y="72" font-size="8" fill="#888">,</text>
+
+  <!-- Chemical structure 2 (penicillin-like) -->
+  <g transform="translate(58, 60)">
+    <!-- Simple ring structure -->
+    <rect x="2" y="4" width="10" height="10" rx="1" fill="none" stroke="#555" stroke-width="1.2"/>
+    <polygon points="12,4 20,0 22,9 12,14" fill="none" stroke="#555" stroke-width="1"/>
+    <!-- N in ring -->
+    <text x="5" y="12" font-size="5.5" fill="#555">N</text>
+    <!-- S at corner -->
+    <text x="13" y="7" font-size="5.5" fill="#555">S</text>
+    <!-- COOH tail -->
+    <line x1="22" y1="9" x2="28" y2="11" stroke="#555" stroke-width="1"/>
+    <text x="28" y="10" font-size="5" fill="#555">COOH</text>
+  </g>
+
+  <!-- comma + ellipsis -->
+  <text x="98" y="72" font-size="8" fill="#888">, ...</text>
+
+  <!-- Angle bracket close -->
+  <text x="117" y="72" font-size="9" fill="#888">&gt;</text>
+
+  <!-- "in the" text -->
+  <text x="6" y="88" font-size="8" fill="#555">in the A549 lung cancer cell lines</text>
+
+  <!-- Angle bracket open -->
+  <text x="6" y="104" font-size="9" fill="#888">&lt;</text>
+
+  <!-- Cell image 1 (simple circle with nucleus) -->
+  <g transform="translate(16, 92)">
+    <circle cx="9" cy="9" r="9" fill="#FFCDD2" stroke="#E57373" stroke-width="1.2"/>
+    <!-- Nucleus -->
+    <ellipse cx="9" cy="9" rx="4" ry="3.5" fill="#EF9A9A" stroke="#E57373" stroke-width="0.8"/>
+    <!-- Nucleolus -->
+    <circle cx="9" cy="9" r="1.5" fill="#C62828"/>
+  </g>
+
+  <!-- comma -->
+  <text x="38" y="104" font-size="8" fill="#888">,</text>
+
+  <!-- Cell image 2 -->
+  <g transform="translate(44, 92)">
+    <circle cx="9" cy="9" r="9" fill="#FFCDD2" stroke="#E57373" stroke-width="1.2"/>
+    <ellipse cx="9" cy="9" rx="4" ry="3.5" fill="#EF9A9A" stroke="#E57373" stroke-width="0.8"/>
+    <circle cx="9" cy="9" r="1.5" fill="#C62828"/>
+  </g>
+
+  <!-- ellipsis + close -->
+  <text x="66" y="104" font-size="8" fill="#888">, ...</text>
+  <text x="88" y="104" font-size="9" fill="#888">&gt;</text>
+
+  <!-- "at 5μM and 18 h dosage" -->
+  <text x="100" y="104" font-size="8" fill="#555">at 5 μM and 18 h</text>
+  <text x="6" y="118" font-size="8" fill="#555">dosage.</text>
+
+  <!-- Divider line -->
+  <line x1="4" y1="128" x2="216" y2="128" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Framework label -->
+  <text x="110" y="145" text-anchor="middle" font-size="7.5" fill="#777">Multimodal token-based</text>
+  <text x="110" y="157" text-anchor="middle" font-size="7.5" fill="#777">compound screening</text>
+  <text x="110" y="169" text-anchor="middle" font-size="7" fill="#aaa">Cell 2026 — Conard et al.</text>
+</svg>
