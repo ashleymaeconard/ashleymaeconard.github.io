@@ -6,11 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience & Education - Ashley Mae Conard, Ph.D.</title>
     <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="../../components/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+    <style>
+        /* ---- page wrapper ---- */
+        .exp-page { padding: 2rem 0 4rem; }
+
+        /* ---- category divider ---- */
+        .cat-divider {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 2.5rem 0 1.25rem;
+            padding: 0.75rem 1.25rem;
+            background: #FFF59D;           /* pale lemon */
+            border-left: 5px solid #c8a600;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .cat-divider i {
+            font-size: 1.4rem;
+            color: #7a6000;
+            flex-shrink: 0;
+        }
+        .cat-divider h2 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #3a2e00;
+            margin: 0;
+        }
+        .cat-divider p {
+            font-size: 0.8125rem;
+            color: #7a6000;
+            margin: 0 0 0 auto;
+            white-space: nowrap;
+        }
+
+        /* ---- entry block ---- */
+        .exp-entry {
+            display: flex;
+            gap: 1rem;
+            padding: 0.875rem 1rem;
+            border: 1px solid #E8E8E8;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            background: #fff;
+            transition: box-shadow 0.15s;
+        }
+        .exp-entry:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+
+        .exp-logo {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #E8E8E8;
+            border-radius: 0.375rem;
+            background: #fafafa;
+            padding: 3px;
+            overflow: hidden;
+        }
+        .exp-logo img { width: 100%; height: 100%; object-fit: contain; }
+        .exp-logo i { font-size: 1.5rem; color: #c8a600; }
+
+        .exp-body { flex: 1; min-width: 0; }
+        .exp-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .exp-date {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #7a6000;
+            background: rgba(255,245,157,0.5);
+            border: 1px solid #c8a600;
+            border-radius: 999px;
+            padding: 0.1rem 0.5rem;
+        }
+        .exp-role {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: #555;
+        }
+        .exp-title {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 0.3rem;
+            line-height: 1.4;
+        }
+        .exp-desc {
+            font-size: 0.875rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .exp-link {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #0070f3;
+            text-decoration: none;
+            margin-top: 0.25rem;
+        }
+        .exp-link:hover { text-decoration: underline; }
+
+        /* ---- skills & honors ---- */
+        .skills-block, .honors-block {
+            background: #fff;
+            border: 1px solid #E8E8E8;
+            border-radius: 0.5rem;
+            padding: 1.125rem 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        .skills-block h3, .honors-block h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 0.625rem;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .skills-block h3 i, .honors-block h3 i { color: #c8a600; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+        .skill-tags span {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.55rem;
+            background: #FFFDE7;
+            border: 1px solid #E8E8E8;
+            border-radius: 999px;
+            color: #555;
+        }
+        .honors-block ul { list-style: none; padding: 0; margin: 0; }
+        .honors-block li {
+            font-size: 0.875rem;
+            color: #555;
+            line-height: 1.55;
+            padding: 0.2rem 0 0.2rem 1rem;
+            position: relative;
+        }
+        .honors-block li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #c8a600;
+            font-weight: 700;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        @media (max-width: 700px) {
+            .two-col { grid-template-columns: 1fr; }
+            .exp-entry { flex-direction: column; }
+            .exp-logo { width: 40px; height: 40px; }
+        }
+    </style>
     <script>
         (function () {
             const theme = localStorage.getItem('theme') || 'light';
@@ -26,506 +188,361 @@
     <main class="exp-page">
         <div class="container">
 
-            <!-- Page header -->
-            <div class="page-header">
-                <h1 class="page-title">Experience &amp; Education</h1>
-                <p class="page-intro"><strong>Research Theme:</strong> Building expert-centered interpretable methods and platforms to enable more effective decision-making in biomedical and clinical settings. For methods to be useful, they must be used.</p>
-                <p class="page-intro"><strong>Research Interests:</strong> Temporal and multi-omics integration, rare disease research, interpretable statistical &amp; Bayesian models, large language models, time-series models, human-in-the-loop computation, gene regulatory networks, visualization and perturbation, reproducibility, high-performance computing, game theory, protein binding prediction</p>
+            <p style="font-size:0.9375rem;color:#555;line-height:1.7;margin-bottom:0.5rem;"><strong>Research Theme:</strong> Building expert-centered interpretable methods and platforms to enable more effective decision-making in biomedical and clinical settings. For methods to be useful, they must be used.</p>
+            <p style="font-size:0.9375rem;color:#555;line-height:1.7;margin-bottom:2rem;"><strong>Research Interests:</strong> Temporal and multi-omics integration, rare disease research, interpretable statistical &amp; Bayesian models, large language models, time-series models, human-in-the-loop computation, gene regulatory networks, visualization and perturbation, reproducibility, high-performance computing, game theory, protein binding prediction</p>
+
+            <!-- ============================================================
+                 RESEARCH EXPERIENCE
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-building-skyscraper"></i>
+                <h2>Current &amp; Industry Research</h2>
             </div>
 
-            <!-- ================================================
-                 SECTION: CURRENT RESEARCH
-                 ================================================ -->
-            <section class="exp-section">
-                <div class="exp-section-header" style="background-image: url('https://www.microsoft.com/en-us/research/wp-content/uploads/2023/07/ashleymaeconard_square_2-scaled.jpeg')">
-                    <div class="exp-section-overlay"></div>
-                    <div class="exp-section-header-content">
-                        <i class="ti ti-building-skyscraper"></i>
-                        <h2>Current Research</h2>
-                        <p>Industry biomedical AI research</p>
-                    </div>
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2023–present</span><span class="exp-role">Senior Researcher</span></div>
+                    <p class="exp-title">Health Futures, Microsoft Research, Cambridge, MA, USA</p>
+                    <p class="exp-desc">Build novel methods and pipelines to improve rare disease solve and diagnostic rates in partnership with the Broad Institute of MIT and Harvard, and the Center for Population Genomics, Australia.</p>
+                    <a class="exp-link" href="https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical" target="_blank">Learn more ↗</a>
                 </div>
-                <div class="exp-cards">
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2023–present</span>
-                                <span class="exp-role">Senior Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Health Futures, Microsoft Research, Cambridge, MA, USA</h3>
-                            <p class="exp-card-desc">Build novel methods and pipelines to improve rare disease solve and diagnostic rates in partnership with the Broad Institute of MIT and Harvard, and the Center for Population Genomics, Australia.</p>
-                            <a href="https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical" target="_blank" class="exp-link">Learn more ↗</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <!-- ================================================
-                 SECTION: ACADEMIC RESEARCH
-                 ================================================ -->
-            <section class="exp-section">
-                <div class="exp-section-header" style="background-image: url('https://www.brown.edu/sites/default/files/styles/large/public/2024-08/BrownProvidenceRI_Commencement2024_BrownUniversity_AnnieTiegreen_0.jpg')">
-                    <div class="exp-section-overlay"></div>
-                    <div class="exp-section-header-content">
-                        <i class="ti ti-microscope"></i>
-                        <h2>Academic Research</h2>
-                        <p>University &amp; institutional research roles</p>
-                    </div>
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/phenome_health_logo.jpg" alt="Phenome Health"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Spring 2022</span><span class="exp-role">Computational Biologist, Data Infrastructure, ML</span></div>
+                    <p class="exp-title">Phenome Health, Deloitte, San Francisco, CA, USA</p>
+                    <p class="exp-desc">Developed scientific and business strategy for healthcare and life science start-up under Dr. Leroy Hood.</p>
                 </div>
-                <div class="exp-cards">
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/brownlogo.png" alt="Brown University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2022</span>
-                                <span class="exp-role">Post-doctoral Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Biostatistics Department, Brown University, Providence, RI, USA</h3>
-                            <p class="exp-card-desc">Developed interpretable Bayesian machine learning and statistical models from multi-omics data.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/brownlogo.png" alt="Brown University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2019–2022</span>
-                                <span class="exp-role">Ph.D. Computer Science, Computational Biology</span>
-                            </div>
-                            <h3 class="exp-card-title">Center for Computational and Molecular Biology (CCMB), Brown University, Providence, RI, USA</h3>
-                            <p class="exp-card-desc">Developed interpretable Bayesian machine learning models for longitudinal multi-omic studies and platforms to understand gene regulation. Formulated novel research directions, performed experiment design, method development, result and wet-lab validation.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Logo_of_the_Rhode_Island_Department_of_Health.svg.png" alt="RI Dept of Health">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Fall 2018</span>
-                                <span class="exp-role">Machine Learning Scholar</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Health, Rhode Island, USA</h3>
-                            <p class="exp-card-desc">Designed predictive model to address a need in Rhode Island's hospital systems. Findings aimed to inform state legislation.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/brownlogo.png" alt="Brown University / Princeton">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2015–2017</span>
-                                <span class="exp-role">Graduate Student</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Computer Science, Princeton University &amp; Brown University, MA, RI, USA</h3>
-                            <p class="exp-card-desc">Designed deep learning model to improve DNA single-cell sequencing data for large region mutation (copy-number) inference. Developed pipeline to identify subclonal driver mutations in bulk sequencing cancer tumor samples across nine cancer types.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2014–2015</span>
-                                <span class="exp-role">Game Theory Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Computer Science, Université Libre de Bruxelles, Belgium</h3>
-                            <p class="exp-card-desc">Created a method to uncover binding specificities in SH3 protein domain using machine learning, cooperative game theory, and structural bioinformatics.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/lincoln lab.png" alt="MIT Lincoln Lab">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2013, 2014</span>
-                                <span class="exp-role">Bioinformatics Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Massachusetts Institute of Technology Lincoln Laboratory, MA, USA</h3>
-                            <p class="exp-card-desc">Developed a fast protein analysis algorithm using Dynamic Distributed Dimensional Data Model (by Dr. Jeremy Kepner), merging sparse algebra, associative and distributed arrays, and triplestore/NoSQL databases (Accumulo).</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/vanderbilt-university-1-logo-png-transparent.png" alt="Vanderbilt">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">January 2013</span>
-                                <span class="exp-role">Visiting Scholar</span>
-                            </div>
-                            <h3 class="exp-card-title">Center for Structural Biology, Vanderbilt University, TN, USA</h3>
-                            <p class="exp-card-desc">Assisted in development of new structure prediction algorithms in RosettaLigand program and proposed new machine learning techniques in Biochemical Library (BCL) drug discovery project.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Spring 2012</span>
-                                <span class="exp-role">Visiting Scholar</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Computer Science, Université Libre de Bruxelles, Belgium</h3>
-                            <p class="exp-card-desc">Analyzed the role of core amino acids in a FYN SH3 protein domain using structural bioinformatics and game theory techniques.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2012–2014</span>
-                                <span class="exp-role">Bioinformatics Researcher &amp; Tutor</span>
-                            </div>
-                            <h3 class="exp-card-title">DePauw University, Dr. Chester Fornari, IN, USA</h3>
-                            <p class="exp-card-desc">Devised labs &amp; tutored Bioinformatics and Cells &amp; Genes. Research: Integrated MEGA and Chimera to analyze TP53.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2011</span>
-                                <span class="exp-role">Behavioral Ecology Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Biology, Science Research Fellowship Program, DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Developed procedures to test and analyze different advertisement and aggressive calling patterns of <em>Acris blanchardi</em>. Tested parachuting behavior of <em>Hyla chrysosclis</em>, <em>Acris blanchardi</em>, and <em>Anaxyrus fowleri</em>.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Fall 2010</span>
-                                <span class="exp-role">Inorganic Chemistry Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Chemistry, Science Research Fellowship Program, DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Synthesized ionogel and determined chemical and physical properties to use as a catalyst for biosensing, optics, and electrolytes.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <!-- ================================================
-                 SECTION: INDUSTRY
-                 ================================================ -->
-            <section class="exp-section">
-                <div class="exp-section-header" style="background-image: url('https://www.microsoft.com/en-us/research/wp-content/themes/microsoft-research-theme/images/admin/profiles/banners-06.png')">
-                    <div class="exp-section-overlay"></div>
-                    <div class="exp-section-header-content">
-                        <i class="ti ti-briefcase"></i>
-                        <h2>Industry</h2>
-                        <p>Research &amp; engineering roles in tech &amp; biotech</p>
-                    </div>
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/googleCloud.jpg" alt="Google Cloud"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Fall 2021</span><span class="exp-role">Researcher and Creator</span></div>
+                    <p class="exp-title">Google Cloud, Palo Alto, CA, USA</p>
+                    <p class="exp-desc">Developed new computational biology frameworks in collaboration with several biotech companies and Google Cloud.</p>
                 </div>
-                <div class="exp-cards">
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/phenome_health_logo.jpg" alt="Phenome Health">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Spring 2022</span>
-                                <span class="exp-role">Computational Biologist, Data Infrastructure, ML</span>
-                            </div>
-                            <h3 class="exp-card-title">Phenome Health, Deloitte, San Francisco, CA, USA</h3>
-                            <p class="exp-card-desc">Developing scientific and business strategy for healthcare and life science start-up under Dr. Leroy Hood.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/googleCloud.jpg" alt="Google Cloud">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Fall 2021</span>
-                                <span class="exp-role">Researcher and Creator</span>
-                            </div>
-                            <h3 class="exp-card-title">Google Cloud, Palo Alto, CA, USA</h3>
-                            <p class="exp-card-desc">Developed new computational biology frameworks in collaboration with several biotech companies and Google Cloud.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft Research">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2021</span>
-                                <span class="exp-role">Research Intern</span>
-                            </div>
-                            <h3 class="exp-card-title">Biomedical Computing, Health Futures, Microsoft Research, Redmond, WA, USA</h3>
-                            <p class="exp-card-desc">Developed three interpretable Bayesian inference models leveraging temporal and multi-omic data to uncover dysregulation in breast cancer, ALS, and Parkinson's disease.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/Google__G__logo.svg.png" alt="Google">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2013, 2014</span>
-                                <span class="exp-role">Google Cambridge Arduino Workshop Creator</span>
-                            </div>
-                            <h3 class="exp-card-title">Google, Computer Science Summer Institute, Chelsea Pollen, MA, USA</h3>
-                            <p class="exp-card-desc">Created, recruited, implemented, and led Arduino workshop for 40 students at Summer Institute.</p>
-                            <a href="https://github.com/ashleymaeconard/cssi-2014" target="_blank" class="exp-link">Learn more ↗</a>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/lilly.png" alt="Eli Lilly">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2012</span>
-                                <span class="exp-role">Quality Control Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Eli Lilly and Company (Elanco), IN, USA</h3>
-                            <p class="exp-card-desc">Designed, tested and implemented two software programs — one for deviation documentation, the other for instrument control. The former went GLOBAL for Elanco plants in Nov. 2012. Worked with Gas Chromatography, Atomic Absorption Spectroscopy, and HPLC.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/JDS-Uniphase-logo.jpg" alt="JDS Uniphase">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2011</span>
-                                <span class="exp-role">Technology Sales and Marketing Associate</span>
-                            </div>
-                            <h3 class="exp-card-title">JDS Uniphase, TX, NY, USA</h3>
-                            <p class="exp-card-desc">Researched, tested, taught, and marketed communication software, services, and solutions for Verizon, AT&amp;T.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/lilly.png" alt="Eli Lilly">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2008</span>
-                                <span class="exp-role">Inorganic Chemistry Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Eli Lilly and Company, IN, USA</h3>
-                            <p class="exp-card-desc">Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized an acyclovir prodrug and worked with a ghrelin O-acyltransferase inhibitor to evaluate use as a potential therapeutic target to treat obesity and diabetes.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <!-- ================================================
-                 SECTION: CAMPUS LEADERSHIP & ADMIN
-                 ================================================ -->
-            <section class="exp-section">
-                <div class="exp-section-header" style="background-image: url('../../photos/experience/depaw.png'); background-size: auto 60%; background-repeat: no-repeat; background-position: center; background-color: #1a3a6e;">
-                    <div class="exp-section-overlay" style="background: rgba(20,40,100,0.65)"></div>
-                    <div class="exp-section-header-content">
-                        <i class="ti ti-school"></i>
-                        <h2>Campus Roles &amp; Administration</h2>
-                        <p>Student leadership and technology roles</p>
-                    </div>
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft Research"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2021</span><span class="exp-role">Research Intern</span></div>
+                    <p class="exp-title">Biomedical Computing, Health Futures, Microsoft Research, Redmond, WA, USA</p>
+                    <p class="exp-desc">Developed three interpretable Bayesian inference models leveraging temporal and multi-omic data to uncover dysregulation in breast cancer, ALS, and Parkinson's disease.</p>
                 </div>
-                <div class="exp-cards">
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">Summer 2013</span>
-                                <span class="exp-role">Chemical Inventory Database Creator — Senior Project</span>
-                            </div>
-                            <h3 class="exp-card-title">Department of Chemistry, DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Designed, built, and deployed database (Parse Platform) and front end (HTML, CSS). ~2000 users for many departments.</p>
-                            <a href="https://www.depauw.edu/academics/departments-programs/computer-science/for-students/senior-projects/2013--2014-abstracts/ashley-conard-chemical-inventory-management-program/" target="_blank" class="exp-link">Learn more ↗</a>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2011–2012</span>
-                                <span class="exp-role">Student Worker</span>
-                            </div>
-                            <h3 class="exp-card-title">Technology Associate of Alumni Office, DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Provided information technology solutions for faculty and staff. Built video presentations for award lectures and conducted interviews for alumni networking.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/experience/depaw.png" alt="DePauw">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2010–2011</span>
-                                <span class="exp-role">Technology Associate</span>
-                            </div>
-                            <h3 class="exp-card-title">Information Technology Help Desk, Information Technology Associates Program, DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Project manager for team of ten that implemented technology solutions for students and faculty, including revamping websites and software troubleshooting.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <!-- ================================================
-                 SECTION: EDUCATION
-                 ================================================ -->
-            <section class="exp-section">
-                <div class="exp-section-header" style="background: linear-gradient(135deg, #4e2a84 0%, #843e2a 100%);">
-                    <div class="exp-section-overlay" style="background: rgba(30,10,60,0.55)"></div>
-                    <div class="exp-section-header-content">
-                        <i class="ti ti-certificate"></i>
-                        <h2>Education</h2>
-                        <p>Degrees and formal training</p>
-                    </div>
-                </div>
-                <div class="exp-cards">
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/brownlogo.png" alt="Brown University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2022</span>
-                                <span class="exp-role">Post-doctoral Researcher</span>
-                            </div>
-                            <h3 class="exp-card-title">Biostatistics Department, Brown University, RI, USA</h3>
-                            <p class="exp-card-desc">Developed statistical (mostly Bayesian) methods for multi-omics studies to uncover gene regulation. Advisor: Dr. Lorin Crawford.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/brownlogo.png" alt="Brown University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2022</span>
-                                <span class="exp-role">Ph.D. Computer Science, Computational Biology</span>
-                            </div>
-                            <h3 class="exp-card-title">Center for Computational and Molecular Biology, Brown University, RI, USA</h3>
-                            <p class="exp-card-desc"><strong>Thesis:</strong> <em>It's about time: developing interpretable models to uncover regulatory mechanisms from temporal and multi-omics data.</em> Advisors: Dr. Lorin Crawford, Dr. Erica Larschan, Dr. Charles Lawrence.</p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/brownlogo.png" alt="Brown University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2019</span>
-                                <span class="exp-role">M.S. in Computer Science</span>
-                            </div>
-                            <h3 class="exp-card-title">Computer Science, Brown University, RI, USA</h3>
-                            <p class="exp-card-desc">Cancer Genomics concentration (Brown &amp; Princeton 2015-2017). Built DNA single-cell copy-number inference method, and tool to find subclonal mutations in bulk tumors. Advisor: Dr. B. Raphael. <a href="http://cs.brown.edu/research/pubs/theses/masters/2019/conard.ashley.pdf" target="_blank">Thesis ↗</a></p>
-                        </div>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-card-logo">
-                            <img src="../../photos/depaw.png" alt="DePauw University">
-                        </div>
-                        <div class="exp-card-body">
-                            <div class="exp-card-meta">
-                                <span class="exp-date">2014</span>
-                                <span class="exp-role">B.A. in Computer Science, magna cum laude</span>
-                            </div>
-                            <h3 class="exp-card-title">DePauw University, IN, USA</h3>
-                            <p class="exp-card-desc">Biochemistry specialization, minor French. GPA: 3.7. Honors societies: Mortar Board, Chi Alpha Sigma, Phi Eta Sigma, Order of Omega, NSCS, Alpha Lambda Delta.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- ============================================================
+                 ACADEMIC RESEARCH
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-microscope"></i>
+                <h2>Academic Research</h2>
+            </div>
 
-            <!-- ================================================
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2022</span><span class="exp-role">Post-doctoral Researcher</span></div>
+                    <p class="exp-title">Biostatistics Department, Brown University, Providence, RI, USA</p>
+                    <p class="exp-desc">Developed interpretable Bayesian machine learning and statistical models from multi-omics data.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2019–2022</span><span class="exp-role">Ph.D. Computer Science, Computational Biology</span></div>
+                    <p class="exp-title">Center for Computational and Molecular Biology (CCMB), Brown University, Providence, RI, USA</p>
+                    <p class="exp-desc">Developed interpretable Bayesian machine learning models for longitudinal multi-omic studies and platforms to understand gene regulation. Formulated novel research directions, performed experiment design, method development, result and wet-lab validation.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Logo_of_the_Rhode_Island_Department_of_Health.svg.png" alt="RI DoH"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Fall 2018</span><span class="exp-role">Machine Learning Scholar</span></div>
+                    <p class="exp-title">Department of Health, Rhode Island, USA</p>
+                    <p class="exp-desc">Designed predictive model to address a need in Rhode Island's hospital systems. Findings aimed to inform state legislation.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown/Princeton"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2015–2017</span><span class="exp-role">Graduate Student</span></div>
+                    <p class="exp-title">Departments of Computer Science, Princeton University &amp; Brown University, MA, RI, USA</p>
+                    <p class="exp-desc">Designed deep learning model to improve DNA single-cell sequencing data for large region mutation (copy-number) inference. Developed pipeline to identify subclonal driver mutations in bulk sequencing cancer tumor samples across nine cancer types.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2014–2015</span><span class="exp-role">Game Theory Researcher</span></div>
+                    <p class="exp-title">Département d'Informatique, Université Libre de Bruxelles, Belgium</p>
+                    <p class="exp-desc">Created a method to uncover binding specificities in SH3 protein domain using machine learning, cooperative game theory, and structural bioinformatics.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/lincoln lab.png" alt="MIT LL"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2013, 2014</span><span class="exp-role">Bioinformatics Researcher</span></div>
+                    <p class="exp-title">Massachusetts Institute of Technology Lincoln Laboratory, MA, USA</p>
+                    <p class="exp-desc">Developed a fast protein analysis algorithm using Dynamic Distributed Dimensional Data Model (Dr. Jeremy Kepner), merging sparse algebra, associative and distributed arrays, and triplestore/NoSQL databases (Accumulo).</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/vanderbilt-university-1-logo-png-transparent.png" alt="Vanderbilt"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">January 2013</span><span class="exp-role">Visiting Scholar</span></div>
+                    <p class="exp-title">Center for Structural Biology, Vanderbilt University, TN, USA</p>
+                    <p class="exp-desc">Assisted in development of new structure prediction algorithms in RosettaLigand and proposed new machine learning techniques in Biochemical Library (BCL) drug discovery project.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Spring 2012</span><span class="exp-role">Visiting Scholar</span></div>
+                    <p class="exp-title">Département d'Informatique, Université Libre de Bruxelles, Belgium</p>
+                    <p class="exp-desc">Analyzed the role of core amino acids in a FYN SH3 protein domain using structural bioinformatics and game theory techniques.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2012–2014</span><span class="exp-role">Bioinformatics Researcher &amp; Tutor</span></div>
+                    <p class="exp-title">DePauw University, Dr. Chester Fornari, IN, USA</p>
+                    <p class="exp-desc">Devised labs &amp; tutored Bioinformatics and Cells &amp; Genes. Integrated MEGA and Chimera to analyze TP53.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-role">Behavioral Ecology Researcher</span></div>
+                    <p class="exp-title">Science Research Fellowship Program, DePauw University, IN, USA</p>
+                    <p class="exp-desc">Developed procedures to test and analyze calling patterns of <em>Acris blanchardi</em>. Tested parachuting behavior of <em>Hyla chrysosclis</em>, <em>Acris blanchardi</em>, and <em>Anaxyrus fowleri</em>.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Fall 2010</span><span class="exp-role">Inorganic Chemistry Researcher</span></div>
+                    <p class="exp-title">Science Research Fellowship Program, DePauw University, IN, USA</p>
+                    <p class="exp-desc">Synthesized ionogel and determined chemical and physical properties to use as a catalyst for biosensing, optics, and electrolytes.</p>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 INDUSTRY & COMPUTING
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-briefcase"></i>
+                <h2>Industry &amp; Computing</h2>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/Google__G__logo.svg.png" alt="Google"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2013, 2014</span><span class="exp-role">Arduino Workshop Creator</span></div>
+                    <p class="exp-title">Google Computer Science Summer Institute (CSSI), Cambridge, MA, USA</p>
+                    <p class="exp-desc">Created, recruited, implemented, and led Arduino workshop for 40 students at Google's Summer Institute.</p>
+                    <a class="exp-link" href="https://github.com/ashleymaeconard/cssi-2014" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2013</span><span class="exp-role">Chemical Inventory Database Creator — Senior Project</span></div>
+                    <p class="exp-title">Department of Chemistry, DePauw University, IN, USA</p>
+                    <p class="exp-desc">Designed, built, and deployed database (Parse Platform) and front end (HTML, CSS). ~2000 users across many departments.</p>
+                    <a class="exp-link" href="https://www.depauw.edu/academics/departments-programs/computer-science/for-students/senior-projects/2013--2014-abstracts/ashley-conard-chemical-inventory-management-program/" target="_blank">Learn more ↗</a>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2012</span><span class="exp-role">Quality Control Researcher</span></div>
+                    <p class="exp-title">Eli Lilly and Company (Elanco), IN, USA</p>
+                    <p class="exp-desc">Designed, tested and implemented two software programs for deviation documentation and instrument control. The former went GLOBAL for Elanco plants in Nov. 2012. Worked with GC, AA Spectroscopy, and HPLC.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/JDS-Uniphase-logo.jpg" alt="JDS Uniphase"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-role">Technology Sales and Marketing Associate</span></div>
+                    <p class="exp-title">JDS Uniphase, TX, NY, USA</p>
+                    <p class="exp-desc">Researched, tested, taught, and marketed communication software, services, and solutions for Verizon, AT&amp;T.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">Summer 2008</span><span class="exp-role">Inorganic Chemistry Researcher</span></div>
+                    <p class="exp-title">Eli Lilly and Company, IN, USA</p>
+                    <p class="exp-desc">Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized an acyclovir prodrug and evaluated a ghrelin O-acyltransferase inhibitor as a therapeutic target for obesity and diabetes.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2011–2012</span><span class="exp-role">Student Worker</span></div>
+                    <p class="exp-title">Technology Associate of Alumni Office, DePauw University, IN, USA</p>
+                    <p class="exp-desc">Provided information technology solutions for faculty and staff. Built video presentations for award lectures and conducted interviews for alumni networking.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2010–2011</span><span class="exp-role">Technology Associate</span></div>
+                    <p class="exp-title">Information Technology Help Desk, ITAP, DePauw University, IN, USA</p>
+                    <p class="exp-desc">Project manager for team of ten implementing technology solutions for students and faculty, including revamping websites and software troubleshooting.</p>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 EDUCATION
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-certificate"></i>
+                <h2>Education</h2>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/brownlogo.png" alt="Brown"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2022</span><span class="exp-role">Post-doctoral Researcher</span></div>
+                    <p class="exp-title">Biostatistics Department, Brown University, RI, USA</p>
+                    <p class="exp-desc">Developed statistical (mostly Bayesian) methods for multi-omics studies to uncover gene regulation. Advisor: Dr. Lorin Crawford.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/brownlogo.png" alt="Brown"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2022</span><span class="exp-role">Ph.D. Computer Science, Computational Biology</span></div>
+                    <p class="exp-title">Center for Computational and Molecular Biology, Brown University, RI, USA</p>
+                    <p class="exp-desc"><strong>Thesis:</strong> <em>It's about time: developing interpretable models to uncover regulatory mechanisms from temporal and multi-omics data.</em> Advisors: Dr. Lorin Crawford, Dr. Erica Larschan, Dr. Charles Lawrence.</p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/brownlogo.png" alt="Brown"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2019</span><span class="exp-role">M.S. in Computer Science</span></div>
+                    <p class="exp-title">Computer Science, Brown University &amp; Princeton University, RI/NJ, USA</p>
+                    <p class="exp-desc">Cancer genomics concentration. Built DNA single-cell copy-number inference method and tool to find subclonal mutations in bulk tumors. Advisor: Dr. B. Raphael. <a class="exp-link" href="http://cs.brown.edu/research/pubs/theses/masters/2019/conard.ashley.pdf" target="_blank">Thesis ↗</a></p>
+                </div>
+            </div>
+
+            <div class="exp-entry">
+                <div class="exp-logo"><img src="../../photos/depaw.png" alt="DePauw"></div>
+                <div class="exp-body">
+                    <div class="exp-meta"><span class="exp-date">2014</span><span class="exp-role">B.A. Computer Science, <em>magna cum laude</em></span></div>
+                    <p class="exp-title">DePauw University, IN, USA</p>
+                    <p class="exp-desc">Biochemistry specialization, minor French. GPA: 3.7. Honors: Mortar Board, Chi Alpha Sigma, Phi Eta Sigma, Order of Omega, NSCS, Alpha Lambda Delta. ITAP and SRF selective honors programs.</p>
+                </div>
+            </div>
+
+            <!-- ============================================================
                  SKILLS
-                 ================================================ -->
-            <section class="skills-section">
-                <h2 class="skills-title">Skills &amp; Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3><i class="ti ti-code"></i> Programming Languages</h3>
-                        <div class="skill-tags">
-                            <span>Bash</span><span>C++</span><span>C</span><span>CSS</span><span>HTML</span>
-                            <span>Julia</span><span>Java</span><span>MATLAB</span><span>pMatlab</span>
-                            <span>Markdown</span><span>Python</span><span>R</span><span>RShiny</span><span>SQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h3><i class="ti ti-tool"></i> Dev. Tools &amp; Environments</h3>
-                        <div class="skill-tags">
-                            <span>Azure Dev Ops</span><span>Arduino IDE</span><span>BlueJ</span>
-                            <span>Conda</span><span>Docker</span><span>Eclipse</span><span>Jupyter</span>
-                            <span>Putty</span><span>RStudio</span><span>Terminal</span><span>VS Code</span><span>Xcode</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h3><i class="ti ti-database"></i> Big Data Tools</h3>
-                        <div class="skill-tags">
-                            <span>Apache Accumulo</span><span>Apache Hadoop</span><span>Azure</span>
-                            <span>Cuda</span><span>MPI</span><span>OpenMP</span><span>Slurm</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h3><i class="ti ti-language"></i> Languages</h3>
-                        <div class="skill-tags">
-                            <span>English (native)</span><span>French (fluent)</span>
-                            <span>Spanish (fluent)</span><span>Dutch (beginner)</span><span>Portuguese (beginner)</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-tool"></i>
+                <h2>Skills &amp; Expertise</h2>
+            </div>
 
-            <!-- ================================================
-                 HONORS & AWARDS
-                 ================================================ -->
-            <section class="honors-section">
-                <h2 class="skills-title">Honors &amp; Awards</h2>
-                <div class="honors-grid">
-                    <div class="honor-group">
-                        <h3><i class="ti ti-award"></i> International &amp; National</h3>
-                        <ul>
-                            <li><strong>2014–2019</strong> National Science Foundation Graduate Research Fellowship (NSF GRFP)</li>
-                            <li><strong>2014–2015</strong> Fulbright Research Scholar, Machine Learning &amp; Game Theory, Belgium</li>
-                            <li><strong>2015</strong> Belgian American Education Foundation Fellow, Belgium</li>
-                            <li><strong>2014</strong> Science Mathematics and Research for Transformation (SMART) — Declined due to NSF GRFP</li>
-                            <li><strong>2010–2014</strong> Grace Hopper International Celebration of Women in Computing: Poster Award 2013 (scholarships: NSF 2010, Xerox 2012, Intel 2013)</li>
-                            <li><strong>2011</strong> Ohio Celebration of Women in Computing (OCWiC), scholarship to attend</li>
-                            <li>National Society of Collegiate Scholars (NSCS)</li>
-                            <li><strong>2010</strong> Science National Honor Society</li>
-                            <li><strong>2009</strong> Indiana High School Athletic Association Role Model</li>
-                        </ul>
-                    </div>
-                    <div class="honor-group">
-                        <h3><i class="ti ti-star"></i> DePauw University</h3>
-                        <ul>
-                            <li><strong>2014</strong> Old Gold Award: academic excellence and high achievement</li>
-                            <li><strong>2012</strong> Internships in Francophone Europe: fellowship to study in Belgium</li>
-                            <li><strong>2010–2014</strong> Dean's List (every semester)</li>
-                            <li>Information Technology Associates Program (ITAP) — selective honors program</li>
-                            <li>Science Research Fellows (SRF) — selective honors program</li>
-                            <li>Honors Societies: Mortar Board, Chi Alpha Sigma, Phi Eta Sigma, Order of Omega, NSCS, Alpha Lambda Delta</li>
-                        </ul>
+            <div class="two-col">
+                <div class="skills-block">
+                    <h3><i class="ti ti-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>Bash</span><span>C++</span><span>C</span><span>CSS</span><span>HTML</span>
+                        <span>Julia</span><span>Java</span><span>MATLAB</span><span>pMatlab</span>
+                        <span>Python</span><span>R</span><span>RShiny</span><span>SQL</span><span>Markdown</span>
                     </div>
                 </div>
-            </section>
+                <div class="skills-block">
+                    <h3><i class="ti ti-tool"></i> Dev Tools &amp; Environments</h3>
+                    <div class="skill-tags">
+                        <span>Azure DevOps</span><span>Arduino IDE</span><span>Conda</span><span>Docker</span>
+                        <span>Jupyter</span><span>RStudio</span><span>VS Code</span><span>Xcode</span>
+                    </div>
+                </div>
+                <div class="skills-block">
+                    <h3><i class="ti ti-database"></i> Big Data &amp; HPC</h3>
+                    <div class="skill-tags">
+                        <span>Apache Accumulo</span><span>Apache Hadoop</span><span>Azure</span>
+                        <span>Cuda</span><span>MPI</span><span>OpenMP</span><span>Slurm</span>
+                    </div>
+                </div>
+                <div class="skills-block">
+                    <h3><i class="ti ti-language"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>English (native)</span><span>French (fluent)</span>
+                        <span>Spanish (fluent)</span><span>Dutch (beginner)</span><span>Portuguese (beginner)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 HONORS & AWARDS
+                 ============================================================ -->
+            <div class="cat-divider">
+                <i class="ti ti-award"></i>
+                <h2>Honors &amp; Awards</h2>
+            </div>
+
+            <div class="two-col">
+                <div class="honors-block">
+                    <h3><i class="ti ti-world"></i> International &amp; National</h3>
+                    <ul>
+                        <li><strong>2014–2019</strong> NSF Graduate Research Fellowship (NSF GRFP)</li>
+                        <li><strong>2014–2015</strong> Fulbright Research Scholar, Belgium</li>
+                        <li><strong>2015</strong> Belgian American Education Foundation Fellow</li>
+                        <li><strong>2014</strong> SMART Fellowship (declined — NSF GRFP)</li>
+                        <li><strong>2013</strong> Grace Hopper Poster Award; scholarships: NSF 2010, Xerox 2012, Intel 2013</li>
+                        <li><strong>2011</strong> Ohio Celebration of Women in Computing scholarship</li>
+                        <li><strong>2010</strong> Science National Honor Society; NSCS</li>
+                        <li><strong>2009</strong> Indiana HSAA Role Model</li>
+                    </ul>
+                </div>
+                <div class="honors-block">
+                    <h3><i class="ti ti-school"></i> DePauw University</h3>
+                    <ul>
+                        <li><strong>2014</strong> Old Gold Award: academic excellence and high achievement</li>
+                        <li><strong>2012</strong> Internships in Francophone Europe fellowship</li>
+                        <li><strong>2010–2014</strong> Dean's List (every semester)</li>
+                        <li>ITAP and SRF — selective honors programs</li>
+                        <li>Mortar Board, Chi Alpha Sigma, Phi Eta Sigma, Order of Omega, NSCS, Alpha Lambda Delta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Relevant coursework (collapsed details) -->
+            <div class="honors-block" style="margin-top:0.75rem;">
+                <h3><i class="ti ti-books"></i> Relevant Coursework</h3>
+                <p style="font-size:0.875rem;color:#555;margin:0;">
+                    <strong>CS/Math:</strong> Bayesian Inference in Genomics &amp; Molecular Biology, Advanced Probabilistic Methods, Computational Molecular Biology, Advanced Algorithms in Computational Biology, Coalescent Theory, Statistical Inference, Bioinformatics<br>
+                    <strong>Biochemistry/Biology:</strong> Genetics, Function &amp; Structure of Biomolecules, Ecology &amp; Evolution, Cells &amp; Genes, Enzyme Mechanisms<br>
+                    <strong>Chem/Bio lab skills:</strong> NMR, Mass Spectroscopy, IR Spectroscopy, Chromatography, PCR, Gel Electrophoresis, GC, HPLC, AA Spectrometry
+                </p>
+            </div>
 
         </div>
     </main>
