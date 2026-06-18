@@ -7,7 +7,7 @@ const CATEGORIES = [
     { id: 'rare-disease',     label: 'Rare Disease Diagnostics',    icon: 'ti-stethoscope' },
     { id: 'cancer',           label: 'Cancer Therapeutics',         icon: 'ti-microscope' },
     { id: 'platforms',        label: 'Interactive Platforms',       icon: 'ti-device-desktop-analytics' },
-    { id: 'interpretable-ml', label: 'Interpretable ML',            icon: 'ti-brain' },
+    { id: 'interpretable-ml', label: 'Interpretable AI',             icon: 'ti-brain' },
     { id: 'equity',           label: 'Equity in Science',           icon: 'ti-users' },
 ];
 

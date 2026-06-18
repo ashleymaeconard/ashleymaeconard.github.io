@@ -1,145 +1,263 @@
-/* Connect Page Styles */
+/* ============================================================
+   Connect page styles
+   ============================================================ */
 
-.book-cta {
+.connect-page { padding: 2.5rem 0 4rem; }
+
+/* ---- Page header ---- */
+.connect-header {
     text-align: center;
-    margin: 0 0 2.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
 }
 
-.book-cta-btn {
-    display: inline-block;
-    background: #fff;
-    color: var(--text-dark, #2a2a2a) !important;
-    padding: 14px 36px;
-    border-radius: 8px;
-    border: 2px solid var(--border, #e0e0e0);
+.connect-title {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.25rem;
     font-weight: 700;
-    font-size: 1.1rem;
-    text-decoration: none !important;
-    transition: all 0.2s;
-    letter-spacing: 0.01em;
-}
-
-.book-cta-btn:hover {
-    border-color: var(--primary, #c0392b);
-    color: var(--primary, #c0392b) !important;
-    background: #fff;
-}
-
-.connect-section {
-    padding: 3rem 0;
-    min-height: 50vh;
-}
-
-.connect-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.intro-text {
-    font-size: 1.125rem;
-    color: var(--text-medium);
-    text-align: center;
-    margin-bottom: 3rem;
-    line-height: 1.7;
-}
-
-.intro-text a {
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-.intro-text a:hover {
-    color: var(--link-hover);
-}
-
-/* Download Cards */
-.download-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.download-card {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    gap: 1.25rem;
-    align-items: center;
-    background-color: var(--bg-white);
-    border: 2px solid var(--border);
-    border-radius: 0.75rem;
-    padding: 2rem;
-    text-decoration: none;
     color: var(--text-dark);
-    transition: all 0.3s ease;
+    margin-bottom: 0.625rem;
 }
 
-.download-card:hover {
-    border-color: var(--primary);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-3px);
-}
-
-.card-icon {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.card-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
-}
-
-.card-content p {
-    font-size: 0.9375rem;
-    color: var(--text-light);
-    line-height: 1.5;
-}
-
-/* Connect Message */
-.connect-message {
-    background-color: var(--bg-light);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    padding: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.connect-message h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-}
-
-.connect-message p {
+.connect-intro {
     font-size: 1.0625rem;
     color: var(--text-medium);
-    line-height: 1.8;
-    max-width: 700px;
+    max-width: 540px;
     margin: 0 auto;
+    line-height: 1.65;
 }
 
-/* Responsive */
+/* ---- Section label ---- */
+.section-label {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+}
+
+/* ---- Social section ---- */
+.social-section { margin-bottom: 3rem; }
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.875rem;
+}
+
+/* ---- Social card ---- */
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.625rem;
+    border: 1.5px solid var(--border);
+    background: var(--bg-white);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.social-card:hover::before { opacity: 1; }
+
+/* Brand-specific accent colors */
+.social-linkedin:hover { border-color: #0A66C2; }
+.social-linkedin .social-icon { background: #0A66C2; }
+
+.social-scholar:hover { border-color: #4285F4; }
+.social-scholar .social-icon { background: #4285F4; }
+
+.social-github:hover { border-color: #24292e; }
+.social-github .social-icon { background: #24292e; }
+[data-theme="dark"] .social-github .social-icon { background: #444; }
+
+.social-x:hover { border-color: #000; }
+.social-x .social-icon { background: #000; }
+[data-theme="dark"] .social-x .social-icon { background: #333; }
+
+.social-msr:hover { border-color: #00A4EF; }
+.social-msr .social-icon { background: #00A4EF; }
+
+.social-email:hover { border-color: var(--primary-dark); }
+.social-email .social-icon { background: var(--primary-dark); }
+
+/* ---- Social icon bubble ---- */
+.social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.social-card:hover .social-icon { transform: scale(1.05); }
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* ---- Social text ---- */
+.social-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.social-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+}
+
+.social-handle {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.social-arrow {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    flex-shrink: 0;
+    transition: color 0.2s;
+}
+
+.social-card:hover .social-arrow { color: var(--text-dark); }
+
+/* ---- Documents section ---- */
+.docs-section { margin-bottom: 3rem; }
+
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.875rem;
+}
+
+.doc-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.625rem;
+    border: 1.5px solid var(--border);
+    background: var(--bg-white);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.doc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.09);
+    border-color: var(--primary-dark);
+}
+
+.doc-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.5rem;
+    background: var(--primary-bg);
+    border: 1px solid var(--primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.doc-icon i {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    flex: 1;
+}
+
+.doc-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+}
+
+.doc-desc {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+}
+
+.doc-dl {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    flex-shrink: 0;
+    transition: color 0.2s;
+}
+
+.doc-card:hover .doc-dl { color: var(--primary-dark); }
+
+/* ---- Collaboration interests ---- */
+.collab-section { margin-bottom: 2rem; }
+
+.collab-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.collab-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.125rem;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-white);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.collab-item:hover {
+    border-color: var(--primary-dark);
+    background: var(--primary-bg);
+}
+
+.collab-item i {
+    font-size: 1.125rem;
+    color: var(--primary-dark);
+}
+
+/* ---- Responsive ---- */
 @media (max-width: 640px) {
-    .download-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .download-card {
-        grid-template-columns: 50px 1fr;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .card-icon {
-        font-size: 2.5rem;
-    }
-
-    .connect-message {
-        padding: 2rem 1.5rem;
-    }
+    .social-grid { grid-template-columns: 1fr; }
+    .docs-grid   { grid-template-columns: 1fr; }
+    .connect-title { font-size: 1.75rem; }
 }
