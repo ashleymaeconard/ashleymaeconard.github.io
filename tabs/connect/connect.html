@@ -1,173 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect - Ashley Mae Conard, Ph.D.</title>
     <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="connect.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
-    <script>
-        (function () {
-            const theme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', theme);
-        })();
-    </script>
+    <style>
+        .connect-page { padding: 2.5rem 0 5rem; }
+
+        /* ---- Intro ---- */
+        .connect-intro-block { margin-bottom: 2.5rem; }
+        .connect-intro-block h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0 0 0.5rem;
+        }
+        .connect-intro-block p {
+            font-size: 0.9375rem;
+            color: var(--text-medium);
+            max-width: 540px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        /* ---- Small icon row ---- */
+        .icon-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.625rem;
+            margin-bottom: 2.5rem;
+        }
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.4rem 0.875rem 0.4rem 0.625rem;
+            border: 1.5px solid #E8E8E8;
+            border-radius: 999px;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            background: #fafafa;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+            white-space: nowrap;
+        }
+        .icon-link i { font-size: 1rem; }
+        .icon-link:hover { background: #FFF59D; border-color: #c8a600; color: #3a2e00; }
+
+        /* ---- Documents ---- */
+        .section-label {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0 0 0.875rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E8E8E8;
+        }
+        .doc-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.625rem;
+            margin-bottom: 2.5rem;
+        }
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.4rem 0.875rem 0.4rem 0.625rem;
+            border: 1.5px solid #E8E8E8;
+            border-radius: 0.5rem;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            background: #fafafa;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .doc-link i { font-size: 1rem; color: #c8a600; }
+        .doc-link:hover { background: #FFF59D; border-color: #c8a600; }
+
+        /* ---- Book Time section ---- */
+        .book-section { margin-bottom: 2.5rem; }
+        .book-cards {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .book-card {
+            flex: 1;
+            min-width: 220px;
+            max-width: 320px;
+            border: 1.5px solid #E8E8E8;
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.25rem 1rem;
+            background: #fafafa;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition: box-shadow 0.15s, border-color 0.15s;
+        }
+        .book-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: #c8a600; }
+        .book-card-title {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .book-card-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #7a6000;
+        }
+        .book-card-desc {
+            font-size: 0.8125rem;
+            color: #555;
+            line-height: 1.55;
+            flex: 1;
+        }
+        .book-card-desc ul { margin: 0.3rem 0 0 1rem; padding: 0; }
+        .book-card-desc li { margin-bottom: 0.1rem; }
+        .book-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.45rem 1rem;
+            background: #FFF59D;
+            border: 1.5px solid #c8a600;
+            border-radius: 999px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: #3a2e00;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.15s;
+        }
+        .book-btn:hover { background: #fff176; }
+
+        .book-note {
+            margin-top: 0.875rem;
+            font-size: 0.8125rem;
+            color: #666;
+            line-height: 1.6;
+            max-width: 540px;
+        }
+        .book-note strong { color: #3a2e00; }
+
+        /* ---- Open-to chips ---- */
+        .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.75rem;
+            background: rgba(255,245,157,0.5);
+            border: 1px solid #c8a600;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            color: #3a2e00;
+        }
+
+        @media (max-width: 640px) {
+            .book-card { max-width: 100%; }
+        }
+    </style>
+    <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
 </head>
-
 <body>
-    <div id="navbar-placeholder"></div>
-    <div id="hero-placeholder"></div>
+<div id="navbar-placeholder"></div>
 
-    <main class="connect-page">
-        <div class="container">
+<main class="connect-page">
+<div class="container">
 
-            <!-- ---- Page header ---- -->
-            <div class="connect-header">
-                <h1 class="connect-title">Connect</h1>
-                <p class="connect-intro">Interested in collaboration, speaking invitations, or mentorship? I'd love to hear from you.</p>
+    <!-- Intro -->
+    <div class="connect-intro-block">
+        <h1>Let's Connect</h1>
+        <p>I'm always excited to talk science and collaborate on meaningful research. Reach out through any of the platforms below, or book time directly with me.</p>
+    </div>
+
+    <!-- Small icon row -->
+    <div class="icon-row">
+        <a href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank" rel="noopener" class="icon-link">
+            <i class="ti ti-brand-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao" target="_blank" rel="noopener" class="icon-link">
+            <i class="ti ti-school"></i> Google Scholar
+        </a>
+        <a href="https://github.com/ashleymaeconard" target="_blank" rel="noopener" class="icon-link">
+            <i class="ti ti-brand-github"></i> GitHub
+        </a>
+        <a href="https://x.com/ashleymconard" target="_blank" rel="noopener" class="icon-link">
+            <i class="ti ti-brand-x"></i> X / Twitter
+        </a>
+        <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank" rel="noopener" class="icon-link">
+            <i class="ti ti-building-skyscraper"></i> MSR Profile
+        </a>
+        <a href="mailto:ashleyconard101@gmail.com" class="icon-link">
+            <i class="ti ti-mail"></i> Email
+        </a>
+    </div>
+
+    <!-- Documents -->
+    <h2 class="section-label">Documents</h2>
+    <div class="doc-row">
+        <a href="../../photos/AshleyMaeConard_CV_2025.pdf" target="_blank" class="doc-link">
+            <i class="ti ti-file-cv"></i> Curriculum Vitae (CV)
+        </a>
+        <a href="../../photos/AshleyMaeConard_Resume_2025.pdf" target="_blank" class="doc-link">
+            <i class="ti ti-file-text"></i> Résumé
+        </a>
+    </div>
+
+    <!-- Book Time With Me -->
+    <div class="book-section">
+        <h2 class="section-label">📅 Book Time With Me</h2>
+        <div class="book-cards">
+
+            <div class="book-card">
+                <div class="book-card-title">☕ 30-Minute Session</div>
+                <div class="book-card-price">$100</div>
+                <div class="book-card-desc">
+                    Quick focused consultation
+                    <ul>
+                        <li>Focused Q&amp;A or problem-solving</li>
+                        <li>Career or research advice</li>
+                        <li>Code / method review</li>
+                    </ul>
+                </div>
+                <a href="https://cal.com/ashleymaeconard/30min" target="_blank" rel="noopener" class="book-btn">Book 30 min →</a>
             </div>
 
-            <!-- ---- Social links ---- -->
-            <section class="social-section">
-                <h2 class="section-label">Find me on</h2>
-                <div class="social-grid">
-
-                    <a href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank" rel="noopener" class="social-card social-linkedin">
-                        <div class="social-icon">
-                            <i class="ti ti-brand-linkedin"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">LinkedIn</span>
-                            <span class="social-handle">ashleymaeconard</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
-                    <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao" target="_blank" rel="noopener" class="social-card social-scholar">
-                        <div class="social-icon">
-                            <i class="ti ti-school"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">Google Scholar</span>
-                            <span class="social-handle">Publications &amp; Citations</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
-                    <a href="https://github.com/ashleymaeconard" target="_blank" rel="noopener" class="social-card social-github">
-                        <div class="social-icon">
-                            <i class="ti ti-brand-github"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">GitHub</span>
-                            <span class="social-handle">ashleymaeconard</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
-                    <a href="https://x.com/ashleymconard" target="_blank" rel="noopener" class="social-card social-x">
-                        <div class="social-icon">
-                            <i class="ti ti-brand-x"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">X / Twitter</span>
-                            <span class="social-handle">@ashleymconard</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
-                    <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank" rel="noopener" class="social-card social-msr">
-                        <div class="social-icon">
-                            <i class="ti ti-building-skyscraper"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">Microsoft Research</span>
-                            <span class="social-handle">MSR Profile &amp; Publications</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
-                    <a href="mailto:ashleyconard101@gmail.com" class="social-card social-email">
-                        <div class="social-icon">
-                            <i class="ti ti-mail"></i>
-                        </div>
-                        <div class="social-info">
-                            <span class="social-name">Email</span>
-                            <span class="social-handle">ashleyconard101@gmail.com</span>
-                        </div>
-                        <i class="ti ti-arrow-up-right social-arrow"></i>
-                    </a>
-
+            <div class="book-card">
+                <div class="book-card-title">🔬 1-Hour Session</div>
+                <div class="book-card-price">$200</div>
+                <div class="book-card-desc">
+                    Deep-dive consultation
+                    <ul>
+                        <li>In-depth research or methods discussion</li>
+                        <li>Project scoping &amp; strategy</li>
+                        <li>Manuscript or grant feedback</li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- ---- Documents ---- -->
-            <section class="docs-section">
-                <h2 class="section-label">Documents</h2>
-                <div class="docs-grid">
-
-                    <a href="../../photos/AshleyMaeConard_CV_2025.pdf" target="_blank" class="doc-card">
-                        <div class="doc-icon"><i class="ti ti-file-cv"></i></div>
-                        <div class="doc-info">
-                            <span class="doc-name">Curriculum Vitae (CV)</span>
-                            <span class="doc-desc">Full academic CV — publications, positions, awards</span>
-                        </div>
-                        <i class="ti ti-download doc-dl"></i>
-                    </a>
-
-                    <a href="../../photos/AshleyMaeConard_Resume_2025.pdf" target="_blank" class="doc-card">
-                        <div class="doc-icon"><i class="ti ti-file-text"></i></div>
-                        <div class="doc-info">
-                            <span class="doc-name">Résumé</span>
-                            <span class="doc-desc">Concise industry-style résumé</span>
-                        </div>
-                        <i class="ti ti-download doc-dl"></i>
-                    </a>
-
-                </div>
-            </section>
-
-            <!-- ---- Collaboration interests ---- -->
-            <section class="collab-section">
-                <h2 class="section-label">Open to</h2>
-                <div class="collab-grid">
-                    <div class="collab-item">
-                        <i class="ti ti-flask"></i>
-                        <span>Research collaboration</span>
-                    </div>
-                    <div class="collab-item">
-                        <i class="ti ti-microphone-2"></i>
-                        <span>Speaking invitations</span>
-                    </div>
-                    <div class="collab-item">
-                        <i class="ti ti-heart-handshake"></i>
-                        <span>Mentorship</span>
-                    </div>
-                    <div class="collab-item">
-                        <i class="ti ti-school"></i>
-                        <span>Student advising</span>
-                    </div>
-                    <div class="collab-item">
-                        <i class="ti ti-users-group"></i>
-                        <span>DEI programs</span>
-                    </div>
-                    <div class="collab-item">
-                        <i class="ti ti-podium"></i>
-                        <span>Advisory boards</span>
-                    </div>
-                </div>
-            </section>
+                <a href="https://cal.com/ashleymaeconard/60min" target="_blank" rel="noopener" class="book-btn">Book 1 hour →</a>
+            </div>
 
         </div>
-    </main>
+        <p class="book-note">
+            Payment is collected securely <strong>at the time of booking</strong> via Stripe. You can also pay via <strong>Venmo</strong> (<code>@AshleyConard</code>) before the session.<br>
+            <strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email.
+        </p>
+    </div>
 
-    <div id="footer-placeholder"></div>
-    <script src="../../load-components.js"></script>
+    <!-- Open to -->
+    <h2 class="section-label">Open to</h2>
+    <div class="chips">
+        <span class="chip"><i class="ti ti-flask"></i> Research collaboration</span>
+        <span class="chip"><i class="ti ti-microphone-2"></i> Speaking invitations</span>
+        <span class="chip"><i class="ti ti-heart-handshake"></i> Mentorship</span>
+        <span class="chip"><i class="ti ti-school"></i> Student advising</span>
+        <span class="chip"><i class="ti ti-users-group"></i> DEI programs</span>
+        <span class="chip"><i class="ti ti-podium"></i> Advisory boards</span>
+    </div>
+
+</div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="../../load-components.js"></script>
 </body>
-
 </html>
