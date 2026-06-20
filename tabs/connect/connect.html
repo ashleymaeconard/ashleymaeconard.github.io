@@ -10,85 +10,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
     <style>
-        .connect-page { padding: 2.5rem 0 5rem; }
+        .connect-page { padding: 2rem 0 5rem; }
 
-        /* ---- Intro ---- */
-        .connect-intro-block { margin-bottom: 2.5rem; }
-        .connect-intro-block h1 {
-            font-family: 'Lora', Georgia, serif;
-            font-size: 1.75rem;
-            font-weight: 700;
+        /* ---- Intro: matches other tab pages ---- */
+        .connect-intro { margin-bottom: 1.75rem; }
+        .connect-intro h2 {
+            font-family: 'Lora', Georgia, 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
             color: var(--text-dark);
-            margin: 0 0 0.5rem;
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.625rem;
+            border-bottom: 2px solid var(--primary-bg, #FFF59D);
         }
-        .connect-intro-block p {
+        .connect-intro p {
             font-size: 0.9375rem;
             color: var(--text-medium);
-            max-width: 540px;
-            line-height: 1.65;
+            line-height: 1.7;
             margin: 0;
         }
 
-        /* ---- Small icon row ---- */
-        .icon-row {
+        /* ---- Icon-only social row ---- */
+        .social-icon-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.625rem;
-            margin-bottom: 2.5rem;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
         }
-        .icon-link {
+        .social-icon-btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.45rem;
-            padding: 0.4rem 0.875rem 0.4rem 0.625rem;
+            justify-content: center;
+            width: 2.25rem;
+            height: 2.25rem;
             border: 1.5px solid #E8E8E8;
-            border-radius: 999px;
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: #333;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            color: #444;
             text-decoration: none;
             background: #fafafa;
             transition: background 0.15s, border-color 0.15s, color 0.15s;
-            white-space: nowrap;
         }
-        .icon-link i { font-size: 1rem; }
-        .icon-link:hover { background: #FFF59D; border-color: #c8a600; color: #3a2e00; }
+        .social-icon-btn:hover {
+            background: #FFF59D;
+            border-color: #c8a600;
+            color: #3a2e00;
+        }
 
-        /* ---- Documents ---- */
-        .section-label {
-            font-family: 'Lora', Georgia, serif;
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin: 0 0 0.875rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #E8E8E8;
-        }
-        .doc-row {
+        /* ---- 3 action buttons ---- */
+        .action-btns {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.625rem;
-            margin-bottom: 2.5rem;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
         }
-        .doc-link {
+        .action-btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.45rem;
-            padding: 0.4rem 0.875rem 0.4rem 0.625rem;
-            border: 1.5px solid #E8E8E8;
-            border-radius: 0.5rem;
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: #333;
+            gap: 0.5rem;
+            padding: 0.55rem 1.25rem;
+            border: 1.5px solid #c8a600;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #3a2e00;
+            background: #FFF59D;
             text-decoration: none;
-            background: #fafafa;
-            transition: background 0.15s, border-color 0.15s;
+            transition: background 0.15s;
         }
-        .doc-link i { font-size: 1rem; color: #c8a600; }
-        .doc-link:hover { background: #FFF59D; border-color: #c8a600; }
-
+        .action-btn:hover { background: #fff176; }
+        .action-btn i { font-size: 1rem; }
 
         /* ---- Open-to chips ---- */
+        .open-to-label {
+            font-family: 'Lora', Georgia, 'Times New Roman', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-bg, #FFF59D);
+        }
         .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .chip {
             display: inline-flex;
@@ -101,10 +103,6 @@
             font-size: 0.8rem;
             color: #3a2e00;
         }
-
-        @media (max-width: 640px) {
-            .book-card { max-width: 100%; }
-        }
     </style>
     <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
 </head>
@@ -115,54 +113,36 @@
 <div class="container">
 
     <!-- Intro -->
-    <div class="connect-intro-block">
-        <h1>Let's Connect</h1>
+    <div class="connect-intro">
+        <h2>Connect</h2>
         <p>I'm always excited to talk science and collaborate on meaningful research. Reach out through any of the platforms below, or book time directly with me.</p>
     </div>
 
-    <!-- Small icon row -->
-    <div class="icon-row">
-        <a href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank" rel="noopener" class="icon-link">
-            <i class="ti ti-brand-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao" target="_blank" rel="noopener" class="icon-link">
-            <i class="ti ti-school"></i> Google Scholar
-        </a>
-        <a href="https://github.com/ashleymaeconard" target="_blank" rel="noopener" class="icon-link">
-            <i class="ti ti-brand-github"></i> GitHub
-        </a>
-        <a href="https://x.com/ashleymconard" target="_blank" rel="noopener" class="icon-link">
-            <i class="ti ti-brand-x"></i> X / Twitter
-        </a>
-        <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank" rel="noopener" class="icon-link">
-            <i class="ti ti-building-skyscraper"></i> MSR Profile
-        </a>
-        <a href="mailto:ashleyconard101@gmail.com" class="icon-link">
-            <i class="ti ti-mail"></i> Email
-        </a>
+    <!-- Icon-only social links -->
+    <div class="social-icon-row">
+        <a href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank" rel="noopener" class="social-icon-btn" title="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao" target="_blank" rel="noopener" class="social-icon-btn" title="Google Scholar"><i class="ti ti-school"></i></a>
+        <a href="https://github.com/ashleymaeconard" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub"><i class="ti ti-brand-github"></i></a>
+        <a href="https://x.com/ashleymconard" target="_blank" rel="noopener" class="social-icon-btn" title="X / Twitter"><i class="ti ti-brand-x"></i></a>
+        <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank" rel="noopener" class="social-icon-btn" title="MSR Profile"><i class="ti ti-building-skyscraper"></i></a>
+        <a href="mailto:ashleyconard101@gmail.com" class="social-icon-btn" title="Email"><i class="ti ti-mail"></i></a>
     </div>
 
-    <!-- Documents -->
-    <h2 class="section-label">Documents</h2>
-    <div class="doc-row">
-        <a href="../../photos/AshleyMaeConard_CV_2025.pdf" target="_blank" class="doc-link">
-            <i class="ti ti-file-cv"></i> Curriculum Vitae (CV)
+    <!-- 3 action buttons: CV, Resume, Book -->
+    <div class="action-btns">
+        <a href="../../photos/AshleyMaeConard_CV_2025.pdf" target="_blank" class="action-btn">
+            <i class="ti ti-file-cv"></i> CV
         </a>
-        <a href="../../photos/AshleyMaeConard_Resume_2025.pdf" target="_blank" class="doc-link">
+        <a href="../../photos/AshleyMaeConard_Resume_2025.pdf" target="_blank" class="action-btn">
             <i class="ti ti-file-text"></i> Résumé
         </a>
-    </div>
-
-    <!-- Book Time -->
-    <div style="margin-bottom: 2.5rem;">
-        <h2 class="section-label">Book Time With Me</h2>
-        <a href="/book/" class="icon-link" style="font-size:0.875rem; padding: 0.5rem 1.125rem;">
-            <i class="ti ti-calendar"></i> Book a session →
+        <a href="/book/" class="action-btn">
+            <i class="ti ti-calendar"></i> Book Time With Me
         </a>
     </div>
 
     <!-- Open to -->
-    <h2 class="section-label">Open to</h2>
+    <p class="open-to-label">Open to</p>
     <div class="chips">
         <span class="chip"><i class="ti ti-flask"></i> Research collaboration</span>
         <span class="chip"><i class="ti ti-microphone-2"></i> Speaking invitations</span>
