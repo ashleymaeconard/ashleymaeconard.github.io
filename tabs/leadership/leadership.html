@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,349 +11,423 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
     <style>
-        .lead-page { padding: 2rem 0 4rem; }
+        body { background: var(--bg, #fff); }
+        .lead-page { padding: 1.5rem 0 4rem; }
 
-        /* ---- Quick-jump nav ---- */
-        .page-jump {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.75rem;
-        }
-        .page-jump a {
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: #7a6000;
-            background: rgba(255,245,157,0.45);
-            border: 1px solid #c8a600;
-            border-radius: 999px;
-            padding: 0.25rem 0.8rem;
-            text-decoration: none;
-            transition: background 0.15s;
-        }
-        .page-jump a:hover { background: #FFF59D; }
+        /* ---- Subtab nav ---- */
+        .tab-nav { display: flex; gap: 0; border-bottom: 2px solid #E8E8E8; margin-bottom: 1.5rem; }
+        .tab-btn { background: none; border: none; padding: 0.75rem 1.5rem; font-size: 0.9375rem; font-weight: 600; color: #666; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color 0.15s, border-color 0.15s; }
+        .tab-btn.active { color: #3a2e00; border-bottom-color: #c8a600; }
+        .tab-btn:hover:not(.active) { color: #3a2e00; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
 
-        /* ---- Accordion section ---- */
-        details.acc-section {
-            margin-bottom: 0.625rem;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            border: 1px solid #E8E8E8;
-        }
+        /* ---- View toggle ---- */
+        .view-toggle { display: flex; gap: 0.375rem; margin-bottom: 1.25rem; }
+        .view-btn { background: #f5f5f5; border: 1px solid #E8E8E8; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.8125rem; font-weight: 500; color: #555; cursor: pointer; transition: all 0.15s; }
+        .view-btn.active { background: #FFF59D; border-color: #c8a600; color: #3a2e00; }
 
-        details.acc-section > summary {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.875rem 1.25rem;
-            background: #FFF59D;
-            border-left: 5px solid #c8a600;
-            cursor: pointer;
-            list-style: none;
-            user-select: none;
-            transition: background 0.15s;
-        }
+        /* ---- Accordion ---- */
+        details.acc-section { margin-bottom: 0.625rem; border-radius: 0.5rem; overflow: hidden; border: 1px solid #E8E8E8; }
+        details.acc-section > summary { display: flex; align-items: center; gap: 0.75rem; padding: 0.875rem 1.25rem; background: #FFF59D; border-left: 5px solid #c8a600; cursor: pointer; list-style: none; user-select: none; transition: background 0.15s; }
         details.acc-section > summary::-webkit-details-marker { display: none; }
         details.acc-section > summary:hover { background: #fff176; }
-
-        details.acc-section > summary .acc-icon {
-            font-size: 1.3rem;
-            color: #7a6000;
-            flex-shrink: 0;
-        }
-        details.acc-section > summary .acc-title {
-            font-family: 'Lora', Georgia, serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #3a2e00;
-            flex: 1;
-        }
-        details.acc-section > summary .acc-count {
-            font-size: 0.75rem;
-            color: #7a6000;
-            background: rgba(200,166,0,0.15);
-            border: 1px solid #c8a600;
-            border-radius: 999px;
-            padding: 0.1rem 0.55rem;
-            margin-right: 0.25rem;
-            white-space: nowrap;
-        }
-        details.acc-section > summary .acc-arrow {
-            font-size: 1rem;
-            color: #7a6000;
-            flex-shrink: 0;
-            transition: transform 0.2s;
-        }
-        details.acc-section[open] > summary .acc-arrow {
-            transform: rotate(180deg);
-        }
-
-        .acc-body {
-            background: #fff;
-            padding: 0.875rem 1rem 1rem;
-        }
+        details.acc-section > summary .acc-icon { font-size: 1.3rem; color: #7a6000; flex-shrink: 0; }
+        details.acc-section > summary .acc-title { font-family: 'Lora', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: #3a2e00; flex: 1; }
+        details.acc-section > summary .acc-count { font-size: 0.72rem; color: #7a6000; background: rgba(200,166,0,0.15); border: 1px solid #c8a600; border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; margin-right: 0.25rem; }
+        details.acc-section > summary .acc-arrow { font-size: 1rem; color: #7a6000; flex-shrink: 0; transition: transform 0.2s; }
+        details.acc-section[open] > summary .acc-arrow { transform: rotate(180deg); }
+        .acc-body { background: #fff; padding: 0.875rem 1rem 1rem; }
 
         /* ---- Entry card ---- */
-        .lead-entry {
-            border: 1px solid #E8E8E8;
-            border-radius: 0.5rem;
-            padding: 0.875rem 1rem 0.875rem 1.125rem;
-            margin-bottom: 0.625rem;
-            background: #fafafa;
-            transition: box-shadow 0.15s;
-        }
+        .lead-entry { border: 1px solid #E8E8E8; border-radius: 0.5rem; padding: 0.875rem 1rem 0.875rem 1.125rem; margin-bottom: 0.625rem; background: #fafafa; transition: box-shadow 0.15s; }
         .lead-entry:last-child { margin-bottom: 0; }
         .lead-entry:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); background: #fff; }
-
-        .lead-meta {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.25rem;
-        }
-        .lead-date {
-            font-size: 0.72rem;
-            font-weight: 700;
-            color: #7a6000;
-            background: rgba(255,245,157,0.5);
-            border: 1px solid #c8a600;
-            border-radius: 999px;
-            padding: 0.1rem 0.5rem;
-            white-space: nowrap;
-        }
-        .lead-title {
-            font-family: 'Lora', Georgia, serif;
-            font-size: 0.9375rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin: 0 0 0.3rem;
-            line-height: 1.4;
-        }
-        .lead-desc {
-            font-size: 0.875rem;
-            color: #555;
-            line-height: 1.6;
-            margin: 0;
-        }
-        .lead-link {
-            display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #0070f3;
-            text-decoration: none;
-            margin-top: 0.2rem;
-            margin-right: 0.75rem;
-        }
+        .lead-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-bottom: 0.25rem; }
+        .lead-date { font-size: 0.72rem; font-weight: 700; color: #7a6000; background: rgba(255,245,157,0.5); border: 1px solid #c8a600; border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; }
+        .lead-cat-tag { font-size: 0.68rem; font-weight: 600; border-radius: 999px; padding: 0.1rem 0.45rem; }
+        .tag-board   { background: #E8EAF6; color: #3949AB; border: 1px solid #9FA8DA; }
+        .tag-policy  { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+        .tag-honor   { background: #FFF3E0; color: #E65100; border: 1px solid #FFCC80; }
+        .tag-outreach{ background: #FCE4EC; color: #AD1457; border: 1px solid #F48FB1; }
+        .tag-academic{ background: #F3E5F5; color: #6A1B9A; border: 1px solid #CE93D8; }
+        .tag-teach   { background: #E0F2F1; color: #00695C; border: 1px solid #80CBC4; }
+        .tag-mentor  { background: #E1F5FE; color: #01579B; border: 1px solid #81D4FA; }
+        .lead-title { font-family: 'Lora', Georgia, serif; font-size: 0.9375rem; font-weight: 600; color: #1a1a1a; margin: 0 0 0.3rem; line-height: 1.4; }
+        .lead-desc { font-size: 0.875rem; color: #555; line-height: 1.6; margin: 0; }
+        .lead-link { display: inline-block; font-size: 0.8rem; font-weight: 500; color: #0070f3; text-decoration: none; margin-top: 0.2rem; margin-right: 0.75rem; }
         .lead-link:hover { text-decoration: underline; }
 
-        /* ---- Collapsible sub-details (within an accordion body) ---- */
-        .detail-block {
-            background: #f5f5f5;
-            border: 1px solid #E8E8E8;
-            border-radius: 0.5rem;
-            padding: 0.875rem 1rem;
-            margin-bottom: 0.625rem;
-        }
+        /* ---- Sub-details (within accordion body) ---- */
+        .detail-block { background: #f5f5f5; border: 1px solid #E8E8E8; border-radius: 0.5rem; padding: 0.875rem 1rem; margin-bottom: 0.625rem; }
         .detail-block:last-child { margin-bottom: 0; }
-        .detail-block > summary {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #333;
-            cursor: pointer;
-            padding: 0.1rem 0;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
+        .detail-block > summary { font-size: 0.875rem; font-weight: 600; color: #333; cursor: pointer; padding: 0.1rem 0; list-style: none; display: flex; align-items: center; gap: 0.4rem; }
         .detail-block > summary::-webkit-details-marker { display: none; }
-        .detail-block > summary::after {
-            content: "▾";
-            margin-left: auto;
-            color: #c8a600;
-            font-size: 0.75rem;
-        }
+        .detail-block > summary::after { content: "▾"; margin-left: auto; color: #c8a600; font-size: 0.75rem; }
         .detail-block[open] > summary::after { content: "▴"; }
-        .detail-block ul {
-            margin: 0.625rem 0 0 0;
-            padding: 0 0 0 1.25rem;
-        }
-        .detail-block li {
-            font-size: 0.875rem;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 0.1rem;
-        }
+        .detail-block ul { margin: 0.625rem 0 0; padding: 0 0 0 1.25rem; }
+        .detail-block li { font-size: 0.875rem; color: #555; line-height: 1.6; margin-bottom: 0.1rem; }
 
-        @media (max-width: 640px) {
-            .lead-entry { padding: 0.75rem; }
-        }
+        /* ---- Year view ---- */
+        .year-group { margin-bottom: 1.25rem; }
+        .year-label { display: inline-block; font-size: 0.8125rem; font-weight: 700; color: #7a6000; background: #FFF59D; border: 1.5px solid #c8a600; border-radius: 999px; padding: 0.2rem 0.75rem; margin-bottom: 0.625rem; }
+
+        @media (max-width: 640px) { .lead-entry { padding: 0.75rem; } }
     </style>
-    <script>
-        (function () {
-            const theme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', theme);
-        })();
-    </script>
+    <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
 </head>
-
 <body>
-    <div id="navbar-placeholder"></div>
-    <div id="hero-placeholder"></div>
+<div id="navbar-placeholder"></div>
 
-    <main class="lead-page">
-        <div class="container">
+<main class="lead-page">
+<div class="container">
 
-            <!-- Quick jump links -->
-            <nav class="page-jump" aria-label="Jump to section">
-                <a href="#sec-professional">Professional Organizations</a>
-                <a href="#sec-depauw">DePauw University</a>
-                <a href="#sec-academic">Academic Service</a>
-                <a href="#sec-teaching">Teaching</a>
-                <a href="#sec-mentorship">Mentorship</a>
-                <a href="#sec-outreach">Service &amp; Outreach</a>
-            </nav>
+    <!-- Subtab nav -->
+    <div class="tab-nav">
+        <button class="tab-btn active" data-tab="leadership">Leadership</button>
+        <button class="tab-btn" data-tab="service">Service</button>
+    </div>
 
-            <!-- ============================================================
-                 PROFESSIONAL ORGANIZATIONS
-                 ============================================================ -->
-            <details class="acc-section" id="sec-professional" open>
+    <!-- ===================== LEADERSHIP TAB ===================== -->
+    <div id="leadership-content" class="tab-content active">
+
+        <div class="view-toggle" id="leadership-toggle">
+            <button class="view-btn active" data-view="category" data-section="leadership">By Category</button>
+            <button class="view-btn" data-view="year" data-section="leadership">By Year</button>
+        </div>
+
+        <!-- === LEADERSHIP BY CATEGORY === -->
+        <div id="leadership-category-view">
+
+            <!-- Board & Organizational Leadership -->
+            <details class="acc-section" open>
                 <summary>
-                    <i class="ti ti-users acc-icon"></i>
-                    <span class="acc-title">Professional Organizations and Positions</span>
-                    <span class="acc-count">10 entries</span>
+                    <i class="ti ti-crown acc-icon"></i>
+                    <span class="acc-title">Board &amp; Organizational Leadership</span>
+                    <span class="acc-count">6 roles</span>
                     <i class="ti ti-chevron-down acc-arrow"></i>
                 </summary>
                 <div class="acc-body">
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2022–present</span></div>
+                        <div class="lead-meta"><span class="lead-date">2022–present</span><span class="lead-cat-tag tag-board">Board</span></div>
                         <p class="lead-title">Models, Inference, and Algorithms (MIA) Steering Committee</p>
-                        <p class="lead-desc">Broad Institute of MIT and Harvard's MIA is a prestigious talk and workshop series that supports learning and collaboration across the interface of biology and medicine with mathematics, statistics, machine learning, and computer science.</p>
+                        <p class="lead-desc">Broad Institute of MIT and Harvard. MIA is a prestigious talk and workshop series spanning the interface of biology and medicine with mathematics, statistics, ML, and computer science.</p>
                         <a class="lead-link" href="https://www.broadinstitute.org/talks/fall-2023/mia" target="_blank">Learn more ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2015–present</span></div>
-                        <p class="lead-title">Student of Vision Abie Award Judge and Co-creator</p>
-                        <p class="lead-desc">International award honors students committed to creating a future where the people who envision and build technology mirror the people and societies for which they build. Winners receive a $7000 prize and the chance to go to Grace Hopper.</p>
-                        <a class="lead-link" href="https://anitab.org/awards-grants/abie-awards/student-of-vision-abie-award/guidelines/" target="_blank">Learn more ↗</a>
-                    </div>
-
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2004–present</span></div>
-                        <p class="lead-title">D-Day Ambassador to France</p>
-                        <p class="lead-desc">Selected to represent U.S. for D-Day Commemoration, and to return every 4 years until the 100th anniversary of World War II. International School of Indiana.</p>
-                    </div>
-
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2018–2020</span></div>
-                        <p class="lead-title">Fulbright Board of Directors</p>
-                        <p class="lead-desc">Young professional board member. Fulbright Association.</p>
-                        <a class="lead-link" href="https://fulbright.org/about/board-of-directors/" target="_blank">Learn more ↗</a>
+                        <div class="lead-meta"><span class="lead-date">2018–2020</span><span class="lead-cat-tag tag-board">Board</span></div>
+                        <p class="lead-title">Board of Directors — Fulbright Association</p>
+                        <p class="lead-desc">Young professional board member representing the next generation of Fulbright scholars in program strategy and governance.</p>
+                        <a class="lead-link" href="https://fulbright.org/about/board-of-directors/" target="_blank">Board ↗</a>
                         <a class="lead-link" href="https://fulbright.org/about/board-of-directors/ashley-conard/" target="_blank">Profile ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2018</span></div>
-                        <p class="lead-title">Science Writer</p>
-                        <p class="lead-desc">Wrote two articles on scientific advances targeted at advanced high school students. Infobase Learning, Science News Today.</p>
-                    </div>
-
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2017–2018</span></div>
-                        <p class="lead-title">Princeton Citizen Scientists member</p>
-                        <p class="lead-desc">Helped grow a group of scientists interested in policy, mobilizing at Princeton and beyond to advocate for science.</p>
-                    </div>
-
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2016–2018</span></div>
-                        <p class="lead-title">International Society of Computational Biology (ISCB) Student Symposium Finance Chair</p>
-                        <p class="lead-desc">Led a team to build new strategies bringing four new and important sponsors. We gave &gt;20 scholarships to support international and domestic travel to the conference.</p>
-                    </div>
-
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2015–2017</span></div>
-                        <p class="lead-title">AnitaB.org Board of Trustees</p>
-                        <p class="lead-desc">Student board member in program and strategies committees. Focused efforts to build the Student of Vision Awards (an Abie Award), BRAID, Top Companies, and ABI.local.</p>
+                        <div class="lead-meta"><span class="lead-date">2015–2017</span><span class="lead-cat-tag tag-board">Board</span></div>
+                        <p class="lead-title">Board of Trustees — AnitaB.org</p>
+                        <p class="lead-desc">Student board member in programs and strategies committees. Focused on building the Student of Vision Awards (an Abie Award), BRAID, Top Companies, and ABI.local chapters.</p>
                         <a class="lead-link" href="https://anitab.org/our-team/board-of-trustees/" target="_blank">Learn more ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">February 2015</span></div>
-                        <p class="lead-title">US-EU-NATO Affairs Delegate</p>
-                        <p class="lead-desc">Fulbright grantee to engage in EU Seminar in international diplomacy. Fulbright and EU Commission.</p>
+                        <div class="lead-meta"><span class="lead-date">2016–2018</span><span class="lead-cat-tag tag-board">Board</span></div>
+                        <p class="lead-title">Finance Chair — ISCB Student Council Symposium</p>
+                        <p class="lead-desc">Led team to build new strategies, securing four new sponsors. Awarded 20+ scholarships for international and domestic travel to the conference. International Society of Computational Biology.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2008–2011</span></div>
-                        <p class="lead-title">Venture Crew President (2010), Vice President (2009)</p>
-                        <p class="lead-desc">Venture Crew 1121. Boy Scouts of America.</p>
+                        <div class="lead-meta"><span class="lead-date">2014</span><span class="lead-cat-tag tag-board">Board</span></div>
+                        <p class="lead-title">Vice President — Mortar Board Honor Society, DePauw University</p>
+                        <p class="lead-desc">Helped establish structure for new chapter focused on achievement in scholarship, leadership, and service. Coordinated programs across academic and community initiatives.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <p class="lead-title" style="font-size:0.875rem;font-family:inherit;font-weight:600;margin-bottom:0.25rem;">Current Professional Memberships</p>
-                        <p class="lead-desc">ISCB, ISBA, IEEE, AAAS, ACS, SIAM member; made Chemistry Day Workshop ('10), ushered IEEE Computing Workshop ('13).</p>
+                        <div class="lead-meta"><span class="lead-date">2008–2011</span><span class="lead-cat-tag tag-board">Board</span></div>
+                        <p class="lead-title">President (2010) &amp; Vice President (2009) — Venture Crew 1121, Boy Scouts of America</p>
+                        <p class="lead-desc">Led operations, programs, and membership for Venture Crew 1121 over three years of progressive leadership responsibility.</p>
                     </div>
 
                 </div>
             </details>
 
-            <!-- ============================================================
-                 DEPAUW UNIVERSITY
-                 ============================================================ -->
-            <details class="acc-section" id="sec-depauw" open>
+            <!-- Science Policy & Advocacy -->
+            <details class="acc-section" open>
                 <summary>
-                    <i class="ti ti-school acc-icon"></i>
-                    <span class="acc-title">DePauw University Organizations and Positions</span>
-                    <span class="acc-count">5 entries</span>
+                    <i class="ti ti-world acc-icon"></i>
+                    <span class="acc-title">Science Policy &amp; Public Advocacy</span>
+                    <span class="acc-count">7 activities</span>
                     <i class="ti ti-chevron-down acc-arrow"></i>
                 </summary>
                 <div class="acc-body">
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2014</span></div>
-                        <p class="lead-title">Mortar Board Vice President</p>
-                        <p class="lead-desc">Helped establish structure for new society focused on achievement in scholarship, leadership, and service. DePauw University.</p>
+                        <div class="lead-meta"><span class="lead-date">October 2019</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">Advocating "The Value and Impact of the Fulbright Program" — with Sen. Chris Van Hollen (D-MD)</p>
+                        <p class="lead-desc">Participated in Congressional advocacy day representing the Fulbright Association's mission before members of the U.S. Senate.</p>
+                        <a class="lead-link" href="https://www.youtube.com/watch?v=5B53ZO7Rw_c" target="_blank">Watch ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2011–2014</span></div>
-                        <p class="lead-title">DePauw Organic Farm Co-founder</p>
-                        <p class="lead-desc">Founded and built business plan for ~2-acre farm, where 25% of produce is given to local Greencastle Indiana food pantries.</p>
-                        <a class="lead-link" href="https://www.depauw.edu/news-media/latest-news/details/30458/" target="_blank">Learn more ↗</a>
+                        <div class="lead-meta"><span class="lead-date">November 2019</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">Host — Fulbright Talks (TEDx-style), Fulbright Association Annual Conference</p>
+                        <p class="lead-desc">Hosted talks by distinguished Fulbright speakers at the 42nd Annual Conference advocacy day.</p>
+                        <a class="lead-link" href="https://fulbright.org/2019/11/07/fulbright-association-42nd-annual-conference-advocacy-day/" target="_blank">Learn more ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2011–2013</span></div>
-                        <p class="lead-title">Robotics Club Co-founder &amp; Vice President</p>
-                        <p class="lead-desc">Students are provided with free tools to make whatever they wish. We visit local schools for outreach days. DePauw University. Mostly Arduino and 3D printing.</p>
+                        <div class="lead-meta"><span class="lead-date">February 2015</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">US-EU-NATO Affairs Delegate — EU Seminar in International Diplomacy</p>
+                        <p class="lead-desc">Fulbright grantee selected to engage in EU diplomacy seminar. Fulbright Commission and European Commission.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">January 2011</span></div>
+                        <div class="lead-meta"><span class="lead-date">2017–2018</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">Member — Princeton Citizen Scientists</p>
+                        <p class="lead-desc">Helped grow an interdisciplinary group of scientists interested in policy, mobilizing at Princeton and beyond to advocate for science-informed governance.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">January 2011</span><span class="lead-cat-tag tag-policy">Policy</span></div>
                         <p class="lead-title">DePauw Environmental Policy Program</p>
-                        <p class="lead-desc">Testified scientific bills at Indiana Statehouse, created website. DePauw University.</p>
-                        <a class="lead-link" href="https://incitizenconnect.wordpress.com/" target="_blank">Learn more ↗</a>
+                        <p class="lead-desc">Testified on scientific bills at the Indiana Statehouse and created advocacy website for environmental legislation. DePauw University.</p>
+                        <a class="lead-link" href="https://incitizenconnect.wordpress.com/" target="_blank">Website ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2010–2014</span></div>
-                        <p class="lead-title">University Athletics</p>
-                        <p class="lead-desc">Soccer (2010–2012) and Track (2013–2014). DePauw University.</p>
+                        <div class="lead-meta"><span class="lead-date">2004–present</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">D-Day Ambassador to France</p>
+                        <p class="lead-desc">Selected to represent the U.S. at the D-Day Commemoration in Normandy, returning every 4 years through the 100th anniversary of World War II. International School of Indiana.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">2018</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                        <p class="lead-title">Science Writer — Science News Today (Infobase Learning)</p>
+                        <p class="lead-desc">Wrote two articles on scientific advances targeted at advanced high school students, bridging cutting-edge research and public understanding.</p>
                     </div>
 
                 </div>
             </details>
 
-            <!-- ============================================================
-                 ACADEMIC SERVICE
-                 ============================================================ -->
-            <details class="acc-section" id="sec-academic">
+            <!-- Distinguished Honors & Ceremonial Roles -->
+            <details class="acc-section">
+                <summary>
+                    <i class="ti ti-medal acc-icon"></i>
+                    <span class="acc-title">Distinguished Honors &amp; Ceremonial Roles</span>
+                    <span class="acc-count">4 events</span>
+                    <i class="ti ti-chevron-down acc-arrow"></i>
+                </summary>
+                <div class="acc-body">
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">November 2019</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                        <p class="lead-title">Lifetime Achievement Award Presenter — Fulbright Association</p>
+                        <p class="lead-desc">Presented award to President of Croatia Kolinda Grabar-Kitarović, NPR's Melissa Block, and Architect James S. Polshek, with the Fulbright Board of Directors.</p>
+                        <a class="lead-link" href="https://fulbright.org/lifetime-achievement-award/" target="_blank">Learn more ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">January 2019</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                        <p class="lead-title">Fulbright Prize — Presented to German Chancellor Angela Merkel</p>
+                        <p class="lead-desc">Presented award alongside the Fulbright Board of Directors. Fulbright Association Annual Ceremony, Washington D.C.</p>
+                        <a class="lead-link" href="https://fulbright.org/wp-content/uploads/2019/01/2018-Fulbright-Prize-Program-Jan-28-2019.pdf" target="_blank">Program ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">2015–present</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                        <p class="lead-title">Judge &amp; Co-creator — Student of Vision Abie Award, AnitaB.org</p>
+                        <p class="lead-desc">International award for students committed to building a technology future that mirrors society. Winners receive a $7,000 prize and the chance to attend Grace Hopper Celebration.</p>
+                        <a class="lead-link" href="https://anitab.org/awards-grants/abie-awards/student-of-vision-abie-award/guidelines/" target="_blank">Award info ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">October 2016</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                        <p class="lead-title">Top Companies Award Presenter — AnitaB.org Grace Hopper Celebration</p>
+                        <p class="lead-desc">Presented Top Companies award on stage before an audience of ~15,000. AnitaB.org Grace Hopper Celebration.</p>
+                        <a class="lead-link" href="https://anitab.org/news/press-release/abi-seven-new-board-members/" target="_blank">Learn more ↗</a>
+                    </div>
+
+                </div>
+            </details>
+
+        </div><!-- end #leadership-category-view -->
+
+        <!-- === LEADERSHIP BY YEAR === -->
+        <div id="leadership-year-view" style="display:none">
+
+            <div class="year-group">
+                <div class="year-label">2022–present</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2022–present</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">MIA Steering Committee — Broad Institute of MIT and Harvard</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2019</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Nov 2019</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                <p class="lead-title">Lifetime Achievement Award Presenter — Fulbright Association</p><p class="lead-desc">President of Croatia, NPR's Melissa Block, and Architect James S. Polshek.</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Nov 2019</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">Host — Fulbright Talks (TEDx-style), Annual Fulbright Conference</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Oct 2019</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">Advocacy — "Value and Impact of Fulbright" with Sen. Chris Van Hollen (D-MD)</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2018–2020</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2018–2020</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">Board of Directors — Fulbright Association</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2018</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2018</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">Science Writer — Science News Today (Infobase Learning)</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2017–2018</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2017–2018</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">Member — Princeton Citizen Scientists</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2016–2018</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2016–2018</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">Finance Chair — ISCB Student Council Symposium</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2016</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Oct 2016</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                <p class="lead-title">Top Companies Award Presenter — AnitaB.org / Grace Hopper Celebration (~15,000 audience)</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2015–present</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2015–present</span><span class="lead-cat-tag tag-honor">Honor</span></div>
+                <p class="lead-title">Judge &amp; Co-creator — Student of Vision Abie Award, AnitaB.org</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2015–2017</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2015–2017</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">Board of Trustees — AnitaB.org</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2015</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Feb 2015</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">US-EU-NATO Affairs Delegate — Fulbright / EU Commission</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2014</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2014</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">Vice President — Mortar Board Honor Society, DePauw University</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2011</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Jan 2011</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">DePauw Environmental Policy Program — Indiana Statehouse testimony</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2008–2011</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2008–2011</span><span class="lead-cat-tag tag-board">Board</span></div>
+                <p class="lead-title">President (2010) &amp; Vice President (2009) — Venture Crew 1121, Boy Scouts of America</p></div>
+            </div>
+
+            <div class="year-group">
+                <div class="year-label">2004–present</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2004–present</span><span class="lead-cat-tag tag-policy">Policy</span></div>
+                <p class="lead-title">D-Day Ambassador to France — International School of Indiana</p></div>
+            </div>
+
+        </div><!-- end #leadership-year-view -->
+
+    </div><!-- end #leadership-content -->
+
+    <!-- ===================== SERVICE TAB ===================== -->
+    <div id="service-content" class="tab-content">
+
+        <div class="view-toggle" id="service-toggle">
+            <button class="view-btn active" data-view="category" data-section="service">By Category</button>
+            <button class="view-btn" data-view="year" data-section="service">By Year</button>
+        </div>
+
+        <!-- === SERVICE BY CATEGORY === -->
+        <div id="service-category-view">
+
+            <!-- STEM Education & Outreach -->
+            <details class="acc-section" open>
+                <summary>
+                    <i class="ti ti-rocket acc-icon"></i>
+                    <span class="acc-title">STEM Education &amp; Outreach</span>
+                    <span class="acc-count">8 activities</span>
+                    <i class="ti ti-chevron-down acc-arrow"></i>
+                </summary>
+                <div class="acc-body">
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">June 2018</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Raspberry Pi Robotics Workshop — Virginia Tech Philosophy &amp; Physical Computing Workshop, Roanoke VA</p>
+                        <p class="lead-desc">Taught ~20 students; each student kept their Raspberry Pi kit. Featured on the DiVa Tech Talk podcast.</p>
+                        <a class="lead-link" href="http://www.divatechtalk.com/blog/ep73" target="_blank">Podcast ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">Summers 2013–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Arduino Workshop Creator &amp; Instructor — Google Computer Science Summer Institute (CSSI), Cambridge MA</p>
+                        <p class="lead-desc">Created, recruited for, implemented, and led Arduino workshop for 40+ students at Google's CSSI program.</p>
+                        <a class="lead-link" href="https://github.com/ashleymaeconard/cssi-2014" target="_blank">GitHub ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">2011–2013</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Co-founder &amp; Vice President — Robotics Club, DePauw University</p>
+                        <p class="lead-desc">Students provided free tools (Arduino, 3D printing) to build whatever they wish. Visited local schools for outreach days.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">2012–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">STARS Computing Corps — DePauw University</p>
+                        <p class="lead-desc">Student-led regional outreach group to broaden participation in computing across Indiana and surrounding regions.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">November 2012</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Organizer — National Chemistry Week High School Competition, American Chemical Society</p>
+                        <p class="lead-desc">Organized and executed a video and essay competition at the Children's Museum of Indianapolis for a full day of chemistry activities.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">October 2013</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Conference Volunteer — IEEE High Performance Computing Conference (HPEC)</p>
+                        <p class="lead-desc">Served as usher and engaged with the HPC research community at the IEEE HPEC conference.</p>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">2011–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Co-founder — DePauw Organic Farm</p>
+                        <p class="lead-desc">Founded and built business plan for ~2-acre farm; 25% of produce donated to local Greencastle Indiana food pantries.</p>
+                        <a class="lead-link" href="https://www.depauw.edu/news-media/latest-news/details/30458/" target="_blank">Learn more ↗</a>
+                    </div>
+
+                    <div class="lead-entry">
+                        <div class="lead-meta"><span class="lead-date">Summer 2010</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                        <p class="lead-title">Service Trip to Costa Rica — Servicio en Las Américas, DePauw University</p>
+                        <p class="lead-desc">Built a septic tank for 'Estación de las tortugas', worked on a pineapple plantation, and recorded nesting behavior of Leather Back and Green Sea Turtle hatchlings.</p>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- Academic Service & Memberships -->
+            <details class="acc-section">
                 <summary>
                     <i class="ti ti-notes acc-icon"></i>
-                    <span class="acc-title">Academic Service and Memberships</span>
+                    <span class="acc-title">Academic Service &amp; Memberships</span>
                     <span class="acc-count">4 sub-sections</span>
                     <i class="ti ti-chevron-down acc-arrow"></i>
                 </summary>
@@ -364,7 +437,7 @@
                         <summary><i class="ti ti-eye-check" style="color:#c8a600;font-size:1rem;"></i> Journal and conference reviewer</summary>
                         <ul>
                             <li>IEEE HPEC, 2023</li>
-                            <li>Intelligent Systems for Molecular Biology/European Conference on Computational Biology (ISMB/ECCB), 2021 (assisted advisor)</li>
+                            <li>ISMB/ECCB, 2021 (assisted advisor)</li>
                             <li>AISTATS, 2020 (assisted advisor)</li>
                             <li>Nature Communications, 2019 (assisted advisor)</li>
                             <li>Genes and Development, 2019 (assisted advisor)</li>
@@ -376,210 +449,240 @@
                         <ul>
                             <li>Grace Hopper Celebration, 2015–present</li>
                             <li>Fulbright Conference, 2019, 2020, 2021</li>
-                            <li>International Society of Computational Biology (ISCB) Student Council Symposium, 2016–2018</li>
+                            <li>ISCB Student Council Symposium, 2016–2018</li>
                             <li>Indiana Women in Computing Conference (InWIC), 2014</li>
                         </ul>
                     </details>
 
                     <details class="detail-block">
-                        <summary><i class="ti ti-id-badge" style="color:#c8a600;font-size:1rem;"></i> Memberships</summary>
+                        <summary><i class="ti ti-id-badge" style="color:#c8a600;font-size:1rem;"></i> Professional memberships</summary>
                         <ul>
-                            <li>Institute of Electrical and Electronics Engineers (IEEE), 2020–present</li>
-                            <li>International Society for Computational Biology (ISCB), 2015–2016, 2020–present</li>
-                            <li>Association for Computing Machinery (ACM), 2010, 2020–present</li>
-                            <li>American Association for the Advancement of Science (AAAS), 2017–present</li>
-                            <li>Fulbright Association, 2016–present</li>
-                            <li>AnitaB.org, 2012–present</li>
-                            <li>International Society for Bayesian Analysis (ISBA), 2021–2023</li>
-                            <li>Institute for Mathematical and Statistical Innovation (IMSI), 2021–2023</li>
-                            <li>Genetics Society for America (GSA), 2019–2023</li>
-                            <li>Society for Industrial and Applied Mathematics (SIAM), 2020–2023</li>
-                            <li>American Society for Biochemistry and Molecular Biology (ASBMB), 2018–2023</li>
-                            <li>National Science Policy Network (NSPN), 2020–2023</li>
+                            <li>IEEE — 2020–present</li>
+                            <li>ISCB — 2015–2016, 2020–present</li>
+                            <li>ACM — 2010, 2020–present</li>
+                            <li>AAAS — 2017–present</li>
+                            <li>Fulbright Association — 2016–present</li>
+                            <li>AnitaB.org — 2012–present</li>
+                            <li>ISBA — 2021–2023</li>
+                            <li>IMSI — 2021–2023</li>
+                            <li>Genetics Society of America (GSA) — 2019–2023</li>
+                            <li>SIAM — 2020–2023</li>
+                            <li>ASBMB — 2018–2023</li>
+                            <li>National Science Policy Network (NSPN) — 2020–2023</li>
+                            <li>ACS — Chemistry Day Workshop (2010); IEEE — Computing Workshop usher (2013)</li>
                         </ul>
                     </details>
 
                     <details class="detail-block">
                         <summary><i class="ti ti-building-community" style="color:#c8a600;font-size:1rem;"></i> Ph.D. program service</summary>
                         <ul>
-                            <li>CCMB Presenter Series founder, CCMB, Brown University, 2019–2022</li>
-                            <li>Graduate student recruiting, CCMB, Brown University, 2018–2022</li>
+                            <li>CCMB Presenter Series — founder, Brown University, 2019–2022</li>
+                            <li>Graduate student recruiting — CCMB, Brown University, 2018–2022</li>
                         </ul>
                     </details>
 
                 </div>
             </details>
 
-            <!-- ============================================================
-                 TEACHING
-                 ============================================================ -->
-            <details class="acc-section" id="sec-teaching">
+            <!-- Teaching -->
+            <details class="acc-section">
                 <summary>
                     <i class="ti ti-chalkboard acc-icon"></i>
                     <span class="acc-title">Teaching Experience</span>
-                    <span class="acc-count">5 entries</span>
+                    <span class="acc-count">5 courses</span>
                     <i class="ti ti-chevron-down acc-arrow"></i>
                 </summary>
                 <div class="acc-body">
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">Spring 2021</span></div>
-                        <p class="lead-title">Applied Math 2080, Inference in Genomics and Molecular Biology</p>
-                        <p class="lead-desc">Graduate and undergraduate course, Brown University. Assisted in course content creation for Fall 2021.</p>
+                        <div class="lead-meta"><span class="lead-date">Spring 2021</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                        <p class="lead-title">Applied Math 2080 — Inference in Genomics and Molecular Biology, Brown University</p>
+                        <p class="lead-desc">Graduate and undergraduate course. Teaching assistant and content creator; also assisted in creating content for Fall 2021.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">Spring 2019</span></div>
-                        <p class="lead-title">Applied Math 0650, Statistical Inference II</p>
-                        <p class="lead-desc">Undergraduate course at Brown University. Lecture on causation and estimation calculations.</p>
+                        <div class="lead-meta"><span class="lead-date">Spring 2019</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                        <p class="lead-title">Applied Math 0650 — Statistical Inference II, Brown University</p>
+                        <p class="lead-desc">Undergraduate course. Guest lecture on causation and estimation calculations.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">Summer 2013, 2014</span></div>
-                        <p class="lead-title">Arduino Programming Workshop</p>
-                        <p class="lead-desc">Student workshop for Google's Computer Science Summer Institute. Created, recruited, implemented, and led Arduino workshop for more than 40 students.</p>
+                        <div class="lead-meta"><span class="lead-date">Summers 2013–2014</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                        <p class="lead-title">Arduino Programming Workshop — Google Computer Science Summer Institute (CSSI)</p>
+                        <p class="lead-desc">Created, recruited, implemented, and led hands-on Arduino workshop for 40+ students.</p>
                         <a class="lead-link" href="https://github.com/ashleymaeconard/cssi-2014" target="_blank">GitHub ↗</a>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2012–2014</span></div>
-                        <p class="lead-title">Biology 325, Bioinformatics Teacher's Assistant</p>
-                        <p class="lead-desc">Undergraduate course at DePauw University. Devised laboratory sessions, homework, helped grade, and tutored students.</p>
+                        <div class="lead-meta"><span class="lead-date">2012–2014</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                        <p class="lead-title">Biology 325 — Bioinformatics Teaching Assistant, DePauw University</p>
+                        <p class="lead-desc">Devised laboratory sessions and homework problems, helped grade, and tutored students in undergraduate Bioinformatics.</p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2011–2014</span></div>
-                        <p class="lead-title">Tutor</p>
-                        <p class="lead-desc">Created personalized lesson plans to tutor 10 students in Chemistry, Computer Science, Biology, French and Spanish at DePauw University.</p>
+                        <div class="lead-meta"><span class="lead-date">2011–2014</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                        <p class="lead-title">Private Tutor — DePauw University</p>
+                        <p class="lead-desc">Created personalized lesson plans for 10 students in Chemistry, Computer Science, Biology, French, and Spanish.</p>
                     </div>
 
                 </div>
             </details>
 
-            <!-- ============================================================
-                 STUDENT MENTORSHIP
-                 ============================================================ -->
-            <details class="acc-section" id="sec-mentorship">
+            <!-- Student Mentorship -->
+            <details class="acc-section">
                 <summary>
                     <i class="ti ti-user-heart acc-icon"></i>
                     <span class="acc-title">Student Mentorship</span>
-                    <span class="acc-count">4 cohorts</span>
+                    <span class="acc-count">7 students</span>
                     <i class="ti ti-chevron-down acc-arrow"></i>
                 </summary>
                 <div class="acc-body">
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2023</span></div>
+                        <div class="lead-meta"><span class="lead-date">2023</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
                         <p class="lead-desc"><strong>Angela Mastrianni</strong>, graduate student — <em>AI-Enhanced Sensemaking: Exploring the Design of a Generative AI-Based Assistant to Support Whole Genome Sequencing Analysis</em></p>
-                        <p class="lead-desc" style="margin-top:0.4rem;"><strong>Shadi Zabad</strong>, graduate student — <em>Leveraging Genome-wide Complex Trait Association Signals to Inform Variant Prioritization in Rare Disease</em></p>
+                        <p class="lead-desc" style="margin-top:0.4rem"><strong>Shadi Zabad</strong>, graduate student — <em>Leveraging Genome-wide Complex Trait Association Signals to Inform Variant Prioritization in Rare Disease</em></p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2021</span></div>
+                        <div class="lead-meta"><span class="lead-date">2021</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
                         <p class="lead-desc"><strong>Helen Xi</strong>, undergraduate — <em>Multi-omic Visualization of Interpretable Biological Neural Networks</em></p>
-                        <p class="lead-desc" style="margin-top:0.4rem;"><strong>Lee Ding</strong>, undergraduate — <em>Efficient Multi-Trait Learning with Biologically Annotated Neural Networks</em></p>
+                        <p class="lead-desc" style="margin-top:0.4rem"><strong>Lee Ding</strong>, undergraduate — <em>Efficient Multi-Trait Learning with Biologically Annotated Neural Networks</em></p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2020</span></div>
+                        <div class="lead-meta"><span class="lead-date">2020</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
                         <p class="lead-desc"><strong>Dominique Pablito</strong>, graduate — <em>Uncovering temporal sex-specific differences across multiple species</em></p>
-                        <p class="lead-desc" style="margin-top:0.4rem;"><strong>Isaac Nathoo</strong>, undergraduate — <em>Regulation of alternate sex specific splicing by DNA binding protein CLAMP during early embryonic development determines transcriptome heterogeneity between sexes</em></p>
+                        <p class="lead-desc" style="margin-top:0.4rem"><strong>Isaac Nathoo</strong>, undergraduate — <em>Regulation of alternate sex-specific splicing by DNA binding protein CLAMP during early embryonic development</em></p>
                     </div>
 
                     <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2019</span></div>
+                        <div class="lead-meta"><span class="lead-date">2019</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
                         <p class="lead-desc"><strong>Nathaniel Goodman</strong>, undergraduate — <em>TIMEOR: a web-based tool to uncover regulatory mechanisms from temporal and multi-omics data</em></p>
                     </div>
 
                 </div>
             </details>
 
-            <!-- ============================================================
-                 SERVICE & OUTREACH
-                 ============================================================ -->
-            <details class="acc-section" id="sec-outreach">
-                <summary>
-                    <i class="ti ti-heart-handshake acc-icon"></i>
-                    <span class="acc-title">Service and Outreach</span>
-                    <span class="acc-count">10 entries</span>
-                    <i class="ti ti-chevron-down acc-arrow"></i>
-                </summary>
-                <div class="acc-body">
+        </div><!-- end #service-category-view -->
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">November 2019</span></div>
-                        <p class="lead-title">Lifetime Achievement Award Presenter</p>
-                        <p class="lead-desc">Presented award to President of Croatia Kolinda Grabar-Kitarović, NPR's Melissa Block, and Architect James S. Polshek with Fulbright Board of Directors.</p>
-                        <a class="lead-link" href="https://fulbright.org/lifetime-achievement-award/" target="_blank">Learn more ↗</a>
-                    </div>
+        <!-- === SERVICE BY YEAR === -->
+        <div id="service-year-view" style="display:none">
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">November 2019</span></div>
-                        <p class="lead-title">Fulbright Talks host</p>
-                        <p class="lead-desc">Similar to TEDx. Fulbright Association.</p>
-                        <a class="lead-link" href="https://fulbright.org/2019/11/07/fulbright-association-42nd-annual-conference-advocacy-day/" target="_blank">Learn more ↗</a>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2023</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2023</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
+                <p class="lead-title">Mentored Angela Mastrianni &amp; Shadi Zabad (graduate students)</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">January 2019</span></div>
-                        <p class="lead-title">Fulbright Prize to German Chancellor Angela Merkel</p>
-                        <p class="lead-desc">Presented award with Fulbright Board of Directors. Fulbright Association.</p>
-                        <a class="lead-link" href="https://fulbright.org/wp-content/uploads/2019/01/2018-Fulbright-Prize-Program-Jan-28-2019.pdf" target="_blank">Learn more ↗</a>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2021</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Spring 2021</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                <p class="lead-title">Applied Math 2080 — Inference in Genomics and Molecular Biology, Brown University</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2021</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
+                <p class="lead-title">Mentored Helen Xi &amp; Lee Ding (undergraduates)</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">October 2019</span></div>
-                        <p class="lead-title">Advocating the "Value and Impact of the Fulbright Program"</p>
-                        <p class="lead-desc">With U.S. Senator Chris Van Hollen (D-MD). Fulbright Association.</p>
-                        <a class="lead-link" href="https://www.youtube.com/watch?v=5B53ZO7Rw_c" target="_blank">Watch ↗</a>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2020</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2020</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
+                <p class="lead-title">Mentored Dominique Pablito &amp; Isaac Nathoo</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">June 2018</span></div>
-                        <p class="lead-title">Raspberry Pi Robotics Outreach</p>
-                        <p class="lead-desc">Taught ~20 students in Roanoke VA. They got to keep their Raspberry Pi. Virginia Tech Philosophy and Physical Computing Workshop.</p>
-                        <a class="lead-link" href="http://www.divatechtalk.com/blog/ep73" target="_blank">Learn more ↗</a>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2019</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Spring 2019</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                <p class="lead-title">Applied Math 0650 — Statistical Inference II, Brown University</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2019</span><span class="lead-cat-tag tag-mentor">Mentor</span></div>
+                <p class="lead-title">Mentored Nathaniel Goodman (undergraduate)</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">October 2016</span></div>
-                        <p class="lead-title">Presented Top Companies award</p>
-                        <p class="lead-desc">Audience of ~15,000. AnitaB.org.</p>
-                        <a class="lead-link" href="https://anitab.org/news/press-release/abi-seven-new-board-members/" target="_blank">Learn more ↗</a>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2018</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">June 2018</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">Raspberry Pi Robotics Workshop — Virginia Tech, Roanoke VA</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">October 2013</span></div>
-                        <p class="lead-title">IEEE High Performance Computing Conference (HPEC)</p>
-                        <p class="lead-desc">Served as usher and attended. IEEE.</p>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2013–2014</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Summers 2013–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                <p class="lead-title">Arduino Workshop — Google CSSI, Cambridge MA (40+ students)</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">2012–2014</span></div>
-                        <p class="lead-title">STARS Computing Corps</p>
-                        <p class="lead-desc">Student-led regional outreach group to broaden participation in computing. DePauw University.</p>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2013</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Oct 2013</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">IEEE HPEC Conference Volunteer</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">November 2012</span></div>
-                        <p class="lead-title">National Chemistry Week High School Competition</p>
-                        <p class="lead-desc">Organized and executed a video and essay competition for high school students to come to the Children's Museum of Indianapolis for a day of chemistry and fun. American Chemical Society.</p>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2012–2014</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2012–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">STARS Computing Corps — DePauw University</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2012–2014</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                <p class="lead-title">Biology 325 Bioinformatics TA — DePauw University</p></div>
+            </div>
 
-                    <div class="lead-entry">
-                        <div class="lead-meta"><span class="lead-date">Summer 2010</span></div>
-                        <p class="lead-title">Service Trip to Costa Rica</p>
-                        <p class="lead-desc">Created a septic tank for 'Estación de las tortugas', worked on pineapple plantation, and helped record nesting behavior of Leather Back and Green Sea Turtle hatchlings. Servicio en Las Américas Program, DePauw University.</p>
-                    </div>
+            <div class="year-group">
+                <div class="year-label">2012</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Nov 2012</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">National Chemistry Week High School Competition — American Chemical Society</p></div>
+            </div>
 
-                </div>
-            </details>
+            <div class="year-group">
+                <div class="year-label">2011–2014</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2011–2014</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">Co-founder — DePauw Organic Farm (25% produce donated locally)</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2011–2013</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">Co-founder &amp; VP — Robotics Club, DePauw University</p></div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">2011–2014</span><span class="lead-cat-tag tag-teach">Teaching</span></div>
+                <p class="lead-title">Private Tutor — Chemistry, CS, Biology, French, Spanish at DePauw</p></div>
+            </div>
 
-        </div>
-    </main>
+            <div class="year-group">
+                <div class="year-label">2010</div>
+                <div class="lead-entry"><div class="lead-meta"><span class="lead-date">Summer 2010</span><span class="lead-cat-tag tag-outreach">Outreach</span></div>
+                <p class="lead-title">Service Trip to Costa Rica — Sea turtle conservation &amp; community service</p></div>
+            </div>
 
-    <div id="footer-placeholder"></div>
-    <script src="../../load-components.js"></script>
+        </div><!-- end #service-year-view -->
+
+    </div><!-- end #service-content -->
+
+</div><!-- .container -->
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="../../load-components.js"></script>
+<script>
+(function(){
+    // Subtab switching
+    document.querySelectorAll('.tab-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var tab = this.dataset.tab;
+            document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+            document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+            this.classList.add('active');
+            document.getElementById(tab + '-content').classList.add('active');
+        });
+    });
+    // View toggle — separate for leadership and service
+    document.querySelectorAll('.view-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var view    = this.dataset.view;
+            var section = this.dataset.section;
+            var toggle  = this.closest('.view-toggle');
+            toggle.querySelectorAll('.view-btn').forEach(function(b){ b.classList.remove('active'); });
+            this.classList.add('active');
+            document.getElementById(section + '-category-view').style.display = (view === 'category') ? '' : 'none';
+            document.getElementById(section + '-year-view').style.display     = (view === 'year')     ? '' : 'none';
+        });
+    });
+    // Handle ?tab= URL param
+    var params = new URLSearchParams(window.location.search);
+    var tab = params.get('tab');
+    if(tab){ var btn = document.querySelector('.tab-btn[data-tab="'+tab+'"]'); if(btn) btn.click(); }
+})();
+</script>
 </body>
-
 </html>
