@@ -87,70 +87,6 @@
         .doc-link i { font-size: 1rem; color: #c8a600; }
         .doc-link:hover { background: #FFF59D; border-color: #c8a600; }
 
-        /* ---- Book Time section ---- */
-        .book-section { margin-bottom: 2.5rem; }
-        .book-cards {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .book-card {
-            flex: 1;
-            min-width: 220px;
-            max-width: 320px;
-            border: 1.5px solid #E8E8E8;
-            border-radius: 0.75rem;
-            padding: 1.25rem 1.25rem 1rem;
-            background: #fafafa;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            transition: box-shadow 0.15s, border-color 0.15s;
-        }
-        .book-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: #c8a600; }
-        .book-card-title {
-            font-family: 'Lora', Georgia, serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: #1a1a1a;
-        }
-        .book-card-price {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #7a6000;
-        }
-        .book-card-desc {
-            font-size: 0.8125rem;
-            color: #555;
-            line-height: 1.55;
-            flex: 1;
-        }
-        .book-card-desc ul { margin: 0.3rem 0 0 1rem; padding: 0; }
-        .book-card-desc li { margin-bottom: 0.1rem; }
-        .book-btn {
-            display: inline-block;
-            margin-top: 0.5rem;
-            padding: 0.45rem 1rem;
-            background: #FFF59D;
-            border: 1.5px solid #c8a600;
-            border-radius: 999px;
-            font-size: 0.8125rem;
-            font-weight: 600;
-            color: #3a2e00;
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.15s;
-        }
-        .book-btn:hover { background: #fff176; }
-
-        .book-note {
-            margin-top: 0.875rem;
-            font-size: 0.8125rem;
-            color: #666;
-            line-height: 1.6;
-            max-width: 540px;
-        }
-        .book-note strong { color: #3a2e00; }
 
         /* ---- Open-to chips ---- */
         .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
@@ -217,44 +153,12 @@
         </a>
     </div>
 
-    <!-- Book Time With Me -->
-    <div class="book-section">
-        <h2 class="section-label">📅 Book Time With Me</h2>
-        <div class="book-cards">
-
-            <div class="book-card">
-                <div class="book-card-title">☕ 30-Minute Session</div>
-                <div class="book-card-price">$100</div>
-                <div class="book-card-desc">
-                    Quick focused consultation
-                    <ul>
-                        <li>Focused Q&amp;A or problem-solving</li>
-                        <li>Career or research advice</li>
-                        <li>Code / method review</li>
-                    </ul>
-                </div>
-                <a href="https://cal.com/ashleymaeconard/30min" target="_blank" rel="noopener" class="book-btn">Book 30 min →</a>
-            </div>
-
-            <div class="book-card">
-                <div class="book-card-title">🔬 1-Hour Session</div>
-                <div class="book-card-price">$200</div>
-                <div class="book-card-desc">
-                    Deep-dive consultation
-                    <ul>
-                        <li>In-depth research or methods discussion</li>
-                        <li>Project scoping &amp; strategy</li>
-                        <li>Manuscript or grant feedback</li>
-                    </ul>
-                </div>
-                <a href="https://cal.com/ashleymaeconard/60min" target="_blank" rel="noopener" class="book-btn">Book 1 hour →</a>
-            </div>
-
-        </div>
-        <p class="book-note">
-            Payment is collected securely <strong>at the time of booking</strong> via Stripe. You can also pay via <strong>Venmo</strong> (<code>@AshleyConard</code>) before the session.<br>
-            <strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email.
-        </p>
+    <!-- Book Time -->
+    <div style="margin-bottom: 2.5rem;">
+        <h2 class="section-label">Book Time With Me</h2>
+        <a href="/book/" class="icon-link" style="font-size:0.875rem; padding: 0.5rem 1.125rem;">
+            <i class="ti ti-calendar"></i> Book a session →
+        </a>
     </div>
 
     <!-- Open to -->

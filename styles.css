@@ -336,18 +336,15 @@ body {
    MAIN CONTENT
    ===================== */
 .main-content {
-    padding: 3rem 0 2rem;
+    padding: 1.5rem 0 1rem;
 }
 
-/* About Box */
+/* About Box — no card, just text */
 .about-box {
-    background-color: var(--bg-white);
-    padding: 2.25rem 2.5rem;
-    border-radius: var(--radius);
+    background-color: transparent;
+    padding: 0;
     border: 1px solid var(--border);
     margin-bottom: 1.75rem;
-    box-shadow: var(--shadow-sm);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .about-box h2 {
@@ -634,10 +631,6 @@ body {
         padding: 2rem 0 1.5rem;
     }
 
-    .about-box {
-        padding: 1.5rem;
-    }
-
     .publications-box,
     .contact-box {
         padding: 1.5rem;
@@ -727,17 +720,19 @@ a.research-card {
 
 /* Icon + title on same line */
 .research-card-header {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.45rem;
     margin-bottom: 0.375rem;
 }
 
-.research-card-icon {
-    font-size: 1.1rem;
+.research-card-header i {
+    font-size: 1rem;
     color: var(--primary-dark);
     line-height: 1;
     flex-shrink: 0;
+    display: inline-block;
 }
 
 .research-card h3 {
@@ -747,6 +742,7 @@ a.research-card {
     color: var(--text-dark);
     margin: 0;
     line-height: 1.3;
+    display: inline;
 }
 
 .research-card p {
