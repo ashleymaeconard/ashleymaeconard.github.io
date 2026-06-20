@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Time With Me - Ashley Mae Conard, Ph.D.</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+    <style>
+        .book-page { padding: 2rem 0 5rem; }
+
+        .book-intro { margin-bottom: 2rem; }
+        .book-intro h2 {
+            font-family: 'Lora', Georgia, 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.625rem;
+            border-bottom: 2px solid var(--primary-bg, #FFF59D);
+        }
+        .book-intro p {
+            font-size: 0.9375rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .session-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+        .session-card {
+            border: 1.5px solid #E8E8E8;
+            border-radius: 12px;
+            padding: 1.5rem;
+            background: #fafafa;
+        }
+        .session-card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .session-card-header h3 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        .session-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3a2e00;
+            margin-bottom: 0.25rem;
+        }
+        .session-tagline {
+            font-size: 0.8rem;
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+        .session-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.25rem;
+        }
+        .session-card ul li {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+            padding: 0.2rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+        }
+        .session-card ul li::before {
+            content: "·";
+            color: #c8a600;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .book-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.55rem 1.25rem;
+            border: 1.5px solid #c8a600;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #3a2e00;
+            background: #FFF59D;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+        .book-btn:hover { background: #fff176; }
+
+        .book-section-heading {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-bg, #FFF59D);
+        }
+        .book-info {
+            margin-bottom: 2rem;
+        }
+        .book-info p {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin: 0 0 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.875rem;
+            color: var(--text-medium);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+        }
+        .back-link:hover { color: var(--text-dark); }
+    </style>
+    <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+<main class="book-page">
+<div class="container">
+
+    <a href="/tabs/connect/connect.html" class="back-link">
+        <i class="ti ti-arrow-left"></i> Back to Connect
+    </a>
+
+    <div class="book-intro">
+        <h2>Book Time With Me</h2>
+        <p>I offer <strong>1:1 consultations</strong> on biomedical AI, interpretable ML, epigenomics, career advice for researchers, and navigating industry research roles.</p>
+    </div>
+
+    <!-- Session cards -->
+    <div class="session-grid">
+        <div class="session-card">
+            <div class="session-card-header">
+                <span style="font-size:1.3rem;">☕</span>
+                <h3>30-Minute Session</h3>
+            </div>
+            <div class="session-price">$100</div>
+            <div class="session-tagline">Quick focused consultation</div>
+            <ul>
+                <li>Focused Q&amp;A or problem-solving</li>
+                <li>Career or research advice</li>
+                <li>Code / method review</li>
+            </ul>
+            <a href="https://cal.com/ashleymaeconard/30min" target="_blank" rel="noopener" class="book-btn">
+                <i class="ti ti-calendar"></i> Book 30 min →
+            </a>
+        </div>
+
+        <div class="session-card">
+            <div class="session-card-header">
+                <span style="font-size:1.3rem;">🔬</span>
+                <h3>1-Hour Session</h3>
+            </div>
+            <div class="session-price">$200</div>
+            <div class="session-tagline">Deep-dive consultation</div>
+            <ul>
+                <li>In-depth research or methods discussion</li>
+                <li>Project scoping &amp; strategy</li>
+                <li>Manuscript or grant feedback</li>
+            </ul>
+            <a href="https://cal.com/ashleymaeconard/60min" target="_blank" rel="noopener" class="book-btn">
+                <i class="ti ti-calendar"></i> Book 1 hour →
+            </a>
+        </div>
+    </div>
+
+    <!-- Payment -->
+    <p class="book-section-heading">Payment</p>
+    <div class="book-info">
+        <p>Payment is collected securely <strong>at the time of booking</strong> via Stripe (credit/debit card). You can also pay via <strong>Venmo</strong> (<code>@AshleyConard</code>) before the session — just note your booking date in the Venmo description.</p>
+        <p><strong>Cancellation policy:</strong> Please cancel or reschedule at least 24 hours in advance via the confirmation email you receive after booking.</p>
+    </div>
+
+    <!-- What to expect -->
+    <p class="book-section-heading">What to Expect</p>
+    <div class="book-info">
+        <p>After booking you'll receive a calendar invite with a Zoom link. Come with your questions ready — I'll come prepared to make the most of our time together.</p>
+        <p>Questions before booking? Reach out via the <a href="/tabs/connect/connect.html">Connect</a> page.</p>
+    </div>
+
+</div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="/load-components.js"></script>
+</body>
+</html>
