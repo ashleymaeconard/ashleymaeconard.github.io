@@ -7,14 +7,11 @@
     <title>Ashley Mae Conard, Ph.D.</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="components/hero.css">
-    <!-- Inter (body) + Lora (headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Tabler Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
     <script>
-        // Apply theme immediately to prevent flash
         (function () {
             const theme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', theme);
@@ -23,45 +20,91 @@
 </head>
 
 <body>
-    <!-- Navbar Component (loaded dynamically) -->
     <div id="navbar-placeholder"></div>
 
-    <!-- Hero Component (loaded dynamically) -->
-    <div id="hero-placeholder"></div>
-
-    <!-- About -->
-    <section class="main-content" id="about">
-        <div class="container">
-            <div class="about-box">
-                <h2>About</h2>
-                <p>
-                    I am building a world where people age healthily, without protracted illness or disability.
-                    With my wet- and dry-lab background, I do this by creating
-                    <b>expert-centered interpretable AI methods and interactive platforms</b> that enable more
-                    effective <b>human-in-the-loop <em>in-silico</em> hypothesis testing and downstream
-                    decision-making in biomedical and clinical</b> settings, integrating <b>genomic, epigenomic,
-                    transcriptomic, clinical, and environmental data</b>.
-                </p>
-                <p>
-                    ☀️ By day, I am a Senior Researcher on the <a
-                        href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/"
-                        target="_blank">Biomedical ML</a> team at <a
-                        href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/"
-                        target="_blank">Microsoft Research Health Futures</a> (New England Research Division) in
-                    Cambridge, MA.
-                </p>
-                <p>
-                    🌙 By night, I serve on Boards and develop programs to empower the next generation
-                    of underrepresented groups in science.<br>
-                    <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/"
-                        target="_blank">Read more on my MSR page</a>, or connect on <a
-                        href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank">LinkedIn</a>.
-                </p>
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <span class="hero-eyebrow">Senior Researcher · Cambridge, MA</span>
+                <h1 class="hero-name">Ashley Mae<br>Conard, Ph.D.</h1>
+                <p class="hero-role">Biomedical ML · Microsoft Research Health Futures</p>
+                <p class="hero-mission">I build interpretable AI methods and platforms that help scientists and clinicians make better decisions — faster. My work spans epigenomics, rare disease, cancer therapeutics, and human-in-the-loop ML.</p>
+                <div class="hero-ctas">
+                    <a href="tabs/publications/publications.html" class="cta-btn cta-primary">
+                        <i class="ti ti-file-text" aria-hidden="true"></i> Publications
+                    </a>
+                    <a href="tabs/connect/connect.html" class="cta-btn cta-ghost">
+                        <i class="ti ti-mail" aria-hidden="true"></i> Connect
+                    </a>
+                    <a href="/book/" class="cta-btn cta-ghost">
+                        <i class="ti ti-calendar" aria-hidden="true"></i> Book Time
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img
+                    src="https://www.microsoft.com/en-us/research/wp-content/uploads/2023/07/ashleymaeconard_square_2-scaled.jpeg"
+                    alt="Ashley Mae Conard, Ph.D. — Senior Researcher at Microsoft Research"
+                    class="hero-photo">
             </div>
         </div>
     </section>
 
-    <!-- Research Focus Areas -->
+    <!-- ============================================================
+         STATS BAR
+    ============================================================ -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-num">25+</span>
+            <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Students Mentored</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Board &amp; Leadership Roles</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">2</span>
+            <span class="stat-label">NSF GRFP &amp; Fulbright</span>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="main-content" id="about">
+        <div class="container">
+            <div class="about-cols">
+                <div class="about-text-col">
+                    <h2>About</h2>
+                    <p>
+                        ☀️ By day, I'm a Senior Researcher on the <a href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/" target="_blank">Biomedical ML</a> team at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/" target="_blank">Microsoft Research Health Futures</a> (New England) in Cambridge, MA — building AI that integrates genomic, epigenomic, transcriptomic, and clinical data to support human-in-the-loop decision-making.
+                    </p>
+                    <p>
+                        🌙 By night, I serve on Boards and build programs to empower the next generation of underrepresented groups in science — particularly in computer science.<br>
+                        <a href="https://www.microsoft.com/en-us/research/people/ashleyconard/" target="_blank">Read more on my MSR page</a>, or connect on <a href="https://www.linkedin.com/in/ashleymaeconard/" target="_blank">LinkedIn</a>.
+                    </p>
+                </div>
+                <div>
+                    <img
+                        src="https://i0.wp.com/fulbright.org/wp-content/uploads/2019/07/harrison.jpeg"
+                        alt="Ashley Mae Conard with WWII Veteran John Harrison at the D-Day commemoration in Normandy, France"
+                        class="about-action-photo">
+                    <p class="about-photo-caption">With WWII Veteran John Harrison · D-Day Commemoration, Normandy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         RESEARCH FOCUS
+    ============================================================ -->
     <section class="research-section">
         <div class="container">
             <h2 class="research-section-label">Research Focus</h2>
@@ -125,7 +168,49 @@
         </div>
     </section>
 
-    <!-- Publications & Connect Row -->
+    <!-- ============================================================
+         MOMENTS
+    ============================================================ -->
+    <section class="moments-section">
+        <div class="container">
+            <h2 class="moments-section-label">Moments</h2>
+            <div class="moments-grid">
+
+                <figure class="moment-item">
+                    <img
+                        src="https://i0.wp.com/fulbright.org/wp-content/uploads/2019/07/D-Day-3-banner.jpg"
+                        alt="Ashley Mae Conard at the 75th D-Day Commemoration ceremony in Normandy, France, 2019">
+                    <figcaption class="moment-caption">75th D-Day Commemoration · Normandy, 2019</figcaption>
+                </figure>
+
+                <figure class="moment-item">
+                    <img
+                        src="https://i0.wp.com/fulbright.org/wp-content/uploads/2019/07/D-Day-2.png"
+                        alt="Ashley Conard at Colleville Cemetery, Normandy">
+                    <figcaption class="moment-caption">Colleville Cemetery · Normandy</figcaption>
+                </figure>
+
+                <figure class="moment-item">
+                    <img
+                        src="https://i0.wp.com/fulbright.org/wp-content/uploads/2019/07/harrison.jpeg"
+                        alt="Ashley Conard with WWII Veteran John Harrison at D-Day Commemoration">
+                    <figcaption class="moment-caption">With Veteran John Harrison · Normandy</figcaption>
+                </figure>
+
+                <figure class="moment-item">
+                    <img
+                        src="https://i0.wp.com/fulbright.org/wp-content/uploads/2019/07/D-day-5.png"
+                        alt="D-Day reenactment with X-35 Airborne School team, Normandy 2019">
+                    <figcaption class="moment-caption">X-35 Airborne Reenactment · Normandy, 2019</figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PUBLICATIONS & CONNECT
+    ============================================================ -->
     <section class="main-content">
         <div class="container">
             <div class="bottom-row">
@@ -134,8 +219,7 @@
                     <div class="pub-links">
                         <a href="tabs/publications/publications.html">Publications</a>
                         <a href="tabs/publications/publications.html#software">Software</a>
-                        <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao"
-                            target="_blank">Google Scholar</a>
+                        <a href="https://scholar.google.com/citations?user=aRp47GEAAAAJ&hl=en&authuser=1&oi=ao" target="_blank">Google Scholar</a>
                     </div>
                 </div>
                 <div class="contact-box">
@@ -149,7 +233,6 @@
         </div>
     </section>
 
-    <!-- Footer Component (loaded dynamically) -->
     <div id="footer-placeholder"></div>
 
     <script src="/load-components.js"></script>
