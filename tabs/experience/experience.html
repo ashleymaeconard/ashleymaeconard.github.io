@@ -160,6 +160,12 @@
             .two-col { grid-template-columns: 1fr; }
             .exp-entry, .edu-degree { flex-direction: column; }
         }
+
+        /* ---- Category pill nav ---- */
+        .cat-nav-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid #EEF2F7; }
+        .cat-nav-pill { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.875rem; background: rgba(255,245,157,0.4); border: 1.5px solid #c8a600; border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: #3a2e00; text-decoration: none; transition: background 0.15s; }
+        .cat-nav-pill:hover { background: #FFF59D; }
+        .cat-nav-pill i { font-size: 0.875rem; }
     </style>
     <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
 </head>
@@ -168,9 +174,6 @@
 
 <main class="exp-page">
 <div class="container">
-
-    <p style="font-size:0.875rem;color:#555;line-height:1.65;margin-bottom:0.4rem;"><strong>Research Theme:</strong> Building expert-centered interpretable methods and platforms to enable more effective decision-making in biomedical and clinical settings.</p>
-    <p style="font-size:0.875rem;color:#555;line-height:1.65;margin-bottom:1.25rem;"><strong>Research Interests:</strong> Temporal and multi-omics integration, rare disease research, interpretable statistical &amp; Bayesian models, large language models, time-series models, human-in-the-loop computation, gene regulatory networks, visualization and perturbation, reproducibility, HPC, game theory, protein binding prediction.</p>
 
     <!-- Subtab nav -->
     <div class="tab-nav">
@@ -189,8 +192,15 @@
         <!-- === BY CATEGORY === -->
         <div id="exp-category-view">
 
+            <!-- Category pill nav -->
+            <div class="cat-nav-pills">
+                <a href="#exp-cat-industry" class="cat-nav-pill" onclick="document.getElementById('exp-cat-industry').setAttribute('open','');setTimeout(()=>document.getElementById('exp-cat-industry').scrollIntoView({behavior:'smooth',block:'start'}),60);return false;"><i class="ti ti-cpu"></i> Industry Research</a>
+                <a href="#exp-cat-academic" class="cat-nav-pill" onclick="document.getElementById('exp-cat-academic').setAttribute('open','');setTimeout(()=>document.getElementById('exp-cat-academic').scrollIntoView({behavior:'smooth',block:'start'}),60);return false;"><i class="ti ti-school"></i> Academic Research</a>
+                <a href="#exp-cat-pharma" class="cat-nav-pill" onclick="document.getElementById('exp-cat-pharma').setAttribute('open','');setTimeout(()=>document.getElementById('exp-cat-pharma').scrollIntoView({behavior:'smooth',block:'start'}),60);return false;"><i class="ti ti-flask"></i> Pharmaceutical</a>
+            </div>
+
             <!-- AI & Technology Industry Research -->
-            <details class="acc-section" open>
+            <details class="acc-section" id="exp-cat-industry" open>
                 <summary>
                     <i class="ti ti-cpu acc-icon"></i>
                     <span class="acc-title">AI &amp; Technology Industry Research</span>
@@ -203,7 +213,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2023–present</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Senior Researcher — Health Futures, Microsoft Research, Cambridge MA</p>
+                            <p class="exp-title">Senior Researcher, Health Futures, Microsoft Research, Cambridge MA</p>
                             <p class="exp-desc">Building novel methods and pipelines to improve rare disease solve and diagnostic rates in partnership with the Broad Institute of MIT and Harvard, and the Centre for Population Genomics, Australia.</p>
                             <a class="exp-link" href="https://www.broadinstitute.org/news/broad-institute-and-microsoft-collaborate-help-accelerate-disease-research-scalable-analytical" target="_blank">Learn more ↗</a>
                         </div>
@@ -213,7 +223,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/phenome_health_logo.jpg" alt="Phenome Health"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Spring 2022</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Computational Biologist, Data Infrastructure &amp; ML — Phenome Health / Deloitte, San Francisco CA</p>
+                            <p class="exp-title">Computational Biologist, Data Infrastructure &amp; ML, Phenome Health / Deloitte, San Francisco CA</p>
                             <p class="exp-desc">Developed scientific and business strategy for healthcare and life science start-up under Dr. Leroy Hood.</p>
                         </div>
                     </div>
@@ -222,7 +232,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/googleCloud.jpg" alt="Google Cloud"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Fall 2021</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Researcher and Creator — Google Cloud, Palo Alto CA</p>
+                            <p class="exp-title">Researcher and Creator, Google Cloud, Palo Alto CA</p>
                             <p class="exp-desc">Developed new computational biology frameworks in collaboration with biotech companies and Google Cloud.</p>
                         </div>
                     </div>
@@ -231,7 +241,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft Research"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2021</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Research Intern — Biomedical Computing, Health Futures, Microsoft Research, Redmond WA</p>
+                            <p class="exp-title">Research Intern, Biomedical Computing, Health Futures, Microsoft Research, Redmond WA</p>
                             <p class="exp-desc">Developed three interpretable Bayesian inference models leveraging temporal and multi-omic data to uncover dysregulation in breast cancer, ALS, and Parkinson's disease.</p>
                         </div>
                     </div>
@@ -240,7 +250,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/lincoln lab.png" alt="MIT Lincoln Laboratory"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summers 2013–2014</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Bioinformatics Researcher — MIT Lincoln Laboratory, MA</p>
+                            <p class="exp-title">Bioinformatics Researcher, MIT Lincoln Laboratory, MA</p>
                             <p class="exp-desc">Developed a fast protein analysis algorithm using Dynamic Distributed Dimensional Data Model (Dr. Jeremy Kepner), merging sparse algebra, associative and distributed arrays, and triplestore/NoSQL databases (Accumulo).</p>
                         </div>
                     </div>
@@ -249,7 +259,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Google__G__logo.svg.png" alt="Google"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summers 2013–2014</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Arduino Workshop Creator — Google Computer Science Summer Institute (CSSI), Cambridge MA</p>
+                            <p class="exp-title">Arduino Workshop Creator, Google Computer Science Summer Institute (CSSI), Cambridge MA</p>
                             <p class="exp-desc">Created, recruited, implemented, and led Arduino workshop for 40+ students at Google's Summer Institute.</p>
                             <a class="exp-link" href="https://github.com/ashleymaeconard/cssi-2014" target="_blank">GitHub ↗</a>
                         </div>
@@ -259,7 +269,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/JDS-Uniphase-logo.jpg" alt="JDS Uniphase"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                            <p class="exp-title">Technology Sales and Marketing Associate — JDS Uniphase, TX / NY</p>
+                            <p class="exp-title">Technology Sales and Marketing Associate, JDS Uniphase, TX / NY</p>
                             <p class="exp-desc">Researched, tested, taught, and marketed communication software, services, and solutions for Verizon and AT&amp;T.</p>
                         </div>
                     </div>
@@ -268,7 +278,7 @@
             </details>
 
             <!-- Academic Research -->
-            <details class="acc-section" open>
+            <details class="acc-section" id="exp-cat-academic" open>
                 <summary>
                     <i class="ti ti-microscope acc-icon"></i>
                     <span class="acc-title">Academic Research</span>
@@ -281,7 +291,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2022</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Post-doctoral Researcher — Biostatistics, Brown University, Providence RI</p>
+                            <p class="exp-title">Post-doctoral Researcher, Biostatistics, Brown University, Providence RI</p>
                             <p class="exp-desc">Developed interpretable Bayesian machine learning and statistical models from multi-omics data. Advisor: Dr. Lorin Crawford.</p>
                         </div>
                     </div>
@@ -290,7 +300,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2019–2022</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Ph.D. Researcher — CCMB, Brown University, Providence RI</p>
+                            <p class="exp-title">Ph.D. Researcher, CCMB, Brown University, Providence RI</p>
                             <p class="exp-desc">Developed interpretable Bayesian ML models for longitudinal multi-omic studies and platforms to understand gene regulation. Advisors: Dr. Lorin Crawford, Dr. Erica Larschan, Dr. Charles Lawrence.</p>
                         </div>
                     </div>
@@ -299,7 +309,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Logo_of_the_Rhode_Island_Department_of_Health.svg.png" alt="RI DoH"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Fall 2018</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Machine Learning Scholar — Rhode Island Department of Health</p>
+                            <p class="exp-title">Machine Learning Scholar, Rhode Island Department of Health</p>
                             <p class="exp-desc">Designed predictive model to address a need in Rhode Island's hospital systems. Findings aimed to inform state legislation.</p>
                         </div>
                     </div>
@@ -308,7 +318,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown/Princeton"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2015–2017</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Graduate Student — Computer Science, Princeton University &amp; Brown University</p>
+                            <p class="exp-title">Graduate Student, Computer Science, Princeton University &amp; Brown University</p>
                             <p class="exp-desc">Designed deep learning model to improve DNA single-cell sequencing data for copy-number inference. Developed pipeline to identify subclonal driver mutations in bulk sequencing tumor samples across nine cancer types.</p>
                         </div>
                     </div>
@@ -317,7 +327,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2014–2015</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Game Theory Researcher (Fulbright Scholar) — Département d'Informatique, ULB, Belgium</p>
+                            <p class="exp-title">Game Theory Researcher (Fulbright Scholar), Département d'Informatique, ULB, Belgium</p>
                             <p class="exp-desc">Created a method to uncover binding specificities in SH3 protein domains using machine learning, cooperative game theory, and structural bioinformatics.</p>
                         </div>
                     </div>
@@ -326,7 +336,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Spring 2012</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Visiting Scholar — Département d'Informatique, ULB, Belgium</p>
+                            <p class="exp-title">Visiting Scholar, Département d'Informatique, ULB, Belgium</p>
                             <p class="exp-desc">Analyzed the role of core amino acids in a FYN SH3 protein domain using structural bioinformatics and game theory techniques.</p>
                         </div>
                     </div>
@@ -335,7 +345,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">2012–2014</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Bioinformatics Researcher &amp; Tutor — DePauw University, Dr. Chester Fornari, IN</p>
+                            <p class="exp-title">Bioinformatics Researcher &amp; Tutor, DePauw University, Dr. Chester Fornari, IN</p>
                             <p class="exp-desc">Devised labs &amp; tutored Bioinformatics and Cells &amp; Genes. Integrated MEGA and Chimera to analyze TP53.</p>
                         </div>
                     </div>
@@ -344,7 +354,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Behavioral Ecology Researcher — Science Research Fellowship, DePauw University, IN</p>
+                            <p class="exp-title">Behavioral Ecology Researcher, Science Research Fellowship, DePauw University, IN</p>
                             <p class="exp-desc">Developed procedures to test and analyze calling patterns of <em>Acris blanchardi</em>. Tested parachuting behavior across three frog species.</p>
                         </div>
                     </div>
@@ -353,7 +363,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Fall 2010</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Inorganic Chemistry Researcher — Science Research Fellowship, DePauw University, IN</p>
+                            <p class="exp-title">Inorganic Chemistry Researcher, Science Research Fellowship, DePauw University, IN</p>
                             <p class="exp-desc">Synthesized ionogel and determined chemical and physical properties for use as a catalyst for biosensing, optics, and electrolytes.</p>
                         </div>
                     </div>
@@ -362,7 +372,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2013</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                            <p class="exp-title">Chemical Inventory Database Creator — Senior Project, DePauw University, IN</p>
+                            <p class="exp-title">Chemical Inventory Database Creator, Senior Project, DePauw University, IN</p>
                             <p class="exp-desc">Designed, built, and deployed database (Parse Platform) and front end (HTML, CSS) used by ~2,000 users across many departments.</p>
                             <a class="exp-link" href="https://www.depauw.edu/academics/departments-programs/computer-science/for-students/senior-projects/2013--2014-abstracts/ashley-conard-chemical-inventory-management-program/" target="_blank">Learn more ↗</a>
                         </div>
@@ -372,7 +382,7 @@
             </details>
 
             <!-- Pharmaceutical Research -->
-            <details class="acc-section">
+            <details class="acc-section" id="exp-cat-pharma">
                 <summary>
                     <i class="ti ti-flask acc-icon"></i>
                     <span class="acc-title">Pharmaceutical Research</span>
@@ -385,7 +395,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2012</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                            <p class="exp-title">Quality Control Researcher — Eli Lilly and Company (Elanco), IN</p>
+                            <p class="exp-title">Quality Control Researcher, Eli Lilly and Company (Elanco), IN</p>
                             <p class="exp-desc">Designed, tested, and implemented two software programs for deviation documentation and instrument control. The deviation documentation program went GLOBAL for Elanco plants in Nov. 2012. Worked with GC, AA Spectroscopy, and HPLC.</p>
                         </div>
                     </div>
@@ -394,7 +404,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/vanderbilt-university-1-logo-png-transparent.png" alt="Vanderbilt"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">January 2013</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                            <p class="exp-title">Visiting Scholar — Center for Structural Biology, Vanderbilt University, TN</p>
+                            <p class="exp-title">Visiting Scholar, Center for Structural Biology, Vanderbilt University, TN</p>
                             <p class="exp-desc">Assisted in development of new structure prediction algorithms in RosettaLigand and proposed new ML techniques in Biochemical Library (BCL) drug discovery project.</p>
                         </div>
                     </div>
@@ -403,7 +413,7 @@
                         <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
                         <div class="exp-body">
                             <div class="exp-meta"><span class="exp-date">Summer 2008</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                            <p class="exp-title">Inorganic Chemistry Researcher — Eli Lilly and Company, IN</p>
+                            <p class="exp-title">Inorganic Chemistry Researcher, Eli Lilly and Company, IN</p>
                             <p class="exp-desc">Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized an acyclovir prodrug and evaluated a ghrelin O-acyltransferase inhibitor as a therapeutic target for obesity and diabetes.</p>
                         </div>
                     </div>
@@ -422,7 +432,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2023–present</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Senior Researcher — Health Futures, Microsoft Research, Cambridge MA</p>
+                        <p class="exp-title">Senior Researcher, Health Futures, Microsoft Research, Cambridge MA</p>
                         <p class="exp-desc">Building novel methods and pipelines to improve rare disease solve and diagnostic rates in partnership with the Broad Institute of MIT and Harvard.</p>
                     </div>
                 </div>
@@ -434,7 +444,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2022</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Post-doctoral Researcher — Biostatistics, Brown University, Providence RI</p>
+                        <p class="exp-title">Post-doctoral Researcher, Biostatistics, Brown University, Providence RI</p>
                         <p class="exp-desc">Developed interpretable Bayesian ML and statistical models from multi-omics data. Advisor: Dr. Lorin Crawford.</p>
                     </div>
                 </div>
@@ -442,7 +452,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/phenome_health_logo.jpg" alt="Phenome Health"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Spring 2022</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Computational Biologist — Phenome Health / Deloitte, San Francisco CA</p>
+                        <p class="exp-title">Computational Biologist, Phenome Health / Deloitte, San Francisco CA</p>
                         <p class="exp-desc">Developed scientific and business strategy for healthcare start-up under Dr. Leroy Hood.</p>
                     </div>
                 </div>
@@ -454,7 +464,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/googleCloud.jpg" alt="Google Cloud"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Fall 2021</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Researcher and Creator — Google Cloud, Palo Alto CA</p>
+                        <p class="exp-title">Researcher and Creator, Google Cloud, Palo Alto CA</p>
                         <p class="exp-desc">Developed new computational biology frameworks with biotech companies and Google Cloud.</p>
                     </div>
                 </div>
@@ -462,7 +472,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Microsoft_logo.svg.png" alt="Microsoft Research"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2021</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Research Intern — Biomedical Computing, Health Futures, Microsoft Research</p>
+                        <p class="exp-title">Research Intern, Biomedical Computing, Health Futures, Microsoft Research</p>
                         <p class="exp-desc">Three interpretable Bayesian inference models for temporal multi-omic data in breast cancer, ALS, and Parkinson's disease.</p>
                     </div>
                 </div>
@@ -474,7 +484,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2019–2022</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Ph.D. Researcher — CCMB, Brown University, Providence RI</p>
+                        <p class="exp-title">Ph.D. Researcher, CCMB, Brown University, Providence RI</p>
                         <p class="exp-desc">Interpretable Bayesian ML models for longitudinal multi-omic studies and platforms to understand gene regulation. Advisors: Dr. Crawford, Dr. Larschan, Dr. Lawrence.</p>
                     </div>
                 </div>
@@ -486,7 +496,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Logo_of_the_Rhode_Island_Department_of_Health.svg.png" alt="RI DoH"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Fall 2018</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Machine Learning Scholar — Rhode Island Department of Health</p>
+                        <p class="exp-title">Machine Learning Scholar, Rhode Island Department of Health</p>
                         <p class="exp-desc">Designed predictive model for RI hospital systems; findings aimed to inform state legislation.</p>
                     </div>
                 </div>
@@ -498,7 +508,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/brownlogo.png" alt="Brown/Princeton"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2015–2017</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Graduate Student — Computer Science, Princeton &amp; Brown Universities</p>
+                        <p class="exp-title">Graduate Student, Computer Science, Princeton &amp; Brown Universities</p>
                         <p class="exp-desc">Deep learning for DNA single-cell copy-number inference; pipeline for subclonal driver mutations across nine cancer types.</p>
                     </div>
                 </div>
@@ -510,7 +520,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2014–2015</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Game Theory Researcher (Fulbright Scholar) — ULB, Belgium</p>
+                        <p class="exp-title">Game Theory Researcher (Fulbright Scholar), ULB, Belgium</p>
                         <p class="exp-desc">ML and cooperative game theory to uncover binding specificities in SH3 protein domains.</p>
                     </div>
                 </div>
@@ -522,7 +532,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/lincoln lab.png" alt="MIT LL"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summers 2013–2014</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Bioinformatics Researcher — MIT Lincoln Laboratory, MA</p>
+                        <p class="exp-title">Bioinformatics Researcher, MIT Lincoln Laboratory, MA</p>
                         <p class="exp-desc">Fast protein analysis algorithm using Dynamic Distributed Dimensional Data Model with sparse algebra and NoSQL databases.</p>
                     </div>
                 </div>
@@ -530,7 +540,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Google__G__logo.svg.png" alt="Google"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summers 2013–2014</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Arduino Workshop Creator — Google CSSI, Cambridge MA</p>
+                        <p class="exp-title">Arduino Workshop Creator, Google CSSI, Cambridge MA</p>
                         <p class="exp-desc">Created and led Arduino workshop for 40+ students at Google's Computer Science Summer Institute.</p>
                     </div>
                 </div>
@@ -538,7 +548,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">2012–2014</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Bioinformatics Researcher &amp; Tutor — DePauw University, IN</p>
+                        <p class="exp-title">Bioinformatics Researcher &amp; Tutor, DePauw University, IN</p>
                         <p class="exp-desc">Devised labs &amp; tutored Bioinformatics and Cells &amp; Genes. Analyzed TP53 with MEGA and Chimera.</p>
                     </div>
                 </div>
@@ -550,7 +560,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/vanderbilt-university-1-logo-png-transparent.png" alt="Vanderbilt"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">January 2013</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                        <p class="exp-title">Visiting Scholar — Center for Structural Biology, Vanderbilt University, TN</p>
+                        <p class="exp-title">Visiting Scholar, Center for Structural Biology, Vanderbilt University, TN</p>
                         <p class="exp-desc">RosettaLigand structure prediction and BCL drug discovery project at Vanderbilt.</p>
                     </div>
                 </div>
@@ -558,7 +568,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2013</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Chemical Inventory DB Senior Project — DePauw University, IN</p>
+                        <p class="exp-title">Chemical Inventory DB Senior Project, DePauw University, IN</p>
                         <p class="exp-desc">Designed, built, and deployed database and front-end used by ~2,000 users.</p>
                     </div>
                 </div>
@@ -570,7 +580,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2012</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                        <p class="exp-title">Quality Control Researcher — Eli Lilly / Elanco, IN</p>
+                        <p class="exp-title">Quality Control Researcher, Eli Lilly / Elanco, IN</p>
                         <p class="exp-desc">Software for deviation documentation (went global) and instrument control. GC, AA Spectroscopy, HPLC.</p>
                     </div>
                 </div>
@@ -578,7 +588,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/Université_libre_de_Bruxelles_seal.svg.png" alt="ULB"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Spring 2012</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Visiting Scholar — Département d'Informatique, ULB, Belgium</p>
+                        <p class="exp-title">Visiting Scholar, Département d'Informatique, ULB, Belgium</p>
                         <p class="exp-desc">Analyzed core amino acids in FYN SH3 protein domain using structural bioinformatics and game theory.</p>
                     </div>
                 </div>
@@ -590,7 +600,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Behavioral Ecology Researcher — Science Research Fellowship, DePauw University, IN</p>
+                        <p class="exp-title">Behavioral Ecology Researcher, Science Research Fellowship, DePauw University, IN</p>
                         <p class="exp-desc">Analyzed calling patterns of <em>Acris blanchardi</em> and parachuting behavior across three frog species.</p>
                     </div>
                 </div>
@@ -598,7 +608,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/JDS-Uniphase-logo.jpg" alt="JDS Uniphase"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2011</span><span class="exp-cat-tag tag-ai">AI &amp; Tech</span></div>
-                        <p class="exp-title">Technology Sales and Marketing Associate — JDS Uniphase, TX / NY</p>
+                        <p class="exp-title">Technology Sales and Marketing Associate, JDS Uniphase, TX / NY</p>
                         <p class="exp-desc">Researched, tested, and marketed communication software and solutions for Verizon and AT&amp;T.</p>
                     </div>
                 </div>
@@ -610,7 +620,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/depaw.png" alt="DePauw"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Fall 2010</span><span class="exp-cat-tag tag-acad">Academic</span></div>
-                        <p class="exp-title">Inorganic Chemistry Researcher — Science Research Fellowship, DePauw University, IN</p>
+                        <p class="exp-title">Inorganic Chemistry Researcher, Science Research Fellowship, DePauw University, IN</p>
                         <p class="exp-desc">Synthesized ionogel for use as a catalyst for biosensing, optics, and electrolytes.</p>
                     </div>
                 </div>
@@ -622,7 +632,7 @@
                     <div class="exp-logo"><img src="../../photos/experience/lilly.png" alt="Eli Lilly"></div>
                     <div class="exp-body">
                         <div class="exp-meta"><span class="exp-date">Summer 2008</span><span class="exp-cat-tag tag-pharma">Pharma</span></div>
-                        <p class="exp-title">Inorganic Chemistry Researcher — Eli Lilly and Company, IN</p>
+                        <p class="exp-title">Inorganic Chemistry Researcher, Eli Lilly and Company, IN</p>
                         <p class="exp-desc">Assessed hydrolytic stability of cyclopropanecarboxylic acid esters as potential prodrugs. Synthesized acyclovir prodrug; evaluated ghrelin O-acyltransferase inhibitor for obesity and diabetes.</p>
                     </div>
                 </div>
@@ -722,7 +732,7 @@
                             <li><strong>2014–2019</strong> NSF Graduate Research Fellowship (NSF GRFP)</li>
                             <li><strong>2014–2015</strong> Fulbright Research Scholar, Belgium</li>
                             <li><strong>2015</strong> Belgian American Education Foundation Fellow</li>
-                            <li><strong>2014</strong> SMART Fellowship (declined — NSF GRFP)</li>
+                            <li><strong>2014</strong> SMART Fellowship (declined, NSF GRFP)</li>
                             <li><strong>2013</strong> Grace Hopper Poster Award; NSF (2010), Xerox (2012), Intel (2013) scholarships</li>
                             <li><strong>2011</strong> Ohio Celebration of Women in Computing scholarship</li>
                             <li><strong>2010</strong> Science National Honor Society; NSCS</li>
@@ -735,7 +745,7 @@
                             <li><strong>2014</strong> Old Gold Award: academic excellence and high achievement</li>
                             <li><strong>2012</strong> Internships in Francophone Europe fellowship</li>
                             <li><strong>2010–2014</strong> Dean's List (every semester)</li>
-                            <li>ITAP and SRF — selective honors programs</li>
+                            <li>ITAP and SRF, selective honors programs</li>
                             <li>Mortar Board, Chi Alpha Sigma, Phi Eta Sigma, Order of Omega, NSCS, Alpha Lambda Delta</li>
                         </ul>
                     </div>

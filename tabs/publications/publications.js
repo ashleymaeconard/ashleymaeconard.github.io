@@ -32,27 +32,64 @@ function buildCategoryView() {
 
     const allCards = Array.from(document.querySelectorAll('#year-view .pub-card'));
 
+    // --- Category pill nav ---
+    const navDiv = document.createElement('div');
+    navDiv.className = 'cat-nav-pills';
+
+    const presentCats = CATEGORIES.filter(cat =>
+        allCards.some(card => (card.dataset.cats || '').split(' ').includes(cat.id))
+    );
+
+    presentCats.forEach(cat => {
+        const count = allCards.filter(card =>
+            (card.dataset.cats || '').split(' ').includes(cat.id)
+        ).length;
+        const pill = document.createElement('a');
+        pill.href = `#cat-${cat.id}`;
+        pill.className = 'cat-nav-pill';
+        pill.innerHTML = `<i class="ti ${cat.icon}" aria-hidden="true"></i> ${cat.label} <span class="cat-pill-count">${count}</span>`;
+        pill.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.getElementById(`cat-${cat.id}`);
+            if (target) {
+                target.setAttribute('open', '');
+                setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+            }
+        });
+        navDiv.appendChild(pill);
+    });
+    container.appendChild(navDiv);
+
+    // --- Collapsible accordion sections ---
     CATEGORIES.forEach(cat => {
         const matching = allCards.filter(card =>
             (card.dataset.cats || '').split(' ').includes(cat.id)
         );
         if (matching.length === 0) return;
 
-        const section = document.createElement('div');
-        section.className = 'category-section';
-        section.id = `cat-${cat.id}`;
+        const details = document.createElement('details');
+        details.className = 'acc-section';
+        details.id = `cat-${cat.id}`;
+        details.setAttribute('open', '');
 
-        const heading = document.createElement('h2');
-        heading.className = 'category-heading';
-        heading.innerHTML = `<i class="ti ${cat.icon}" aria-hidden="true"></i> ${cat.label} <span class="cat-count">${matching.length}</span>`;
-        section.appendChild(heading);
+        const summary = document.createElement('summary');
+        summary.innerHTML = `
+            <i class="ti ${cat.icon} acc-icon" aria-hidden="true"></i>
+            <span class="acc-title">${cat.label}</span>
+            <span class="acc-count">${matching.length} papers</span>
+            <i class="ti ti-chevron-down acc-arrow" aria-hidden="true"></i>
+        `;
+        details.appendChild(summary);
 
+        const body = document.createElement('div');
+        body.className = 'acc-body pub-acc-body';
         matching.forEach(card => {
             const clone = card.cloneNode(true);
-            section.appendChild(clone);
+            body.appendChild(clone);
         });
+        details.appendChild(body);
 
-        container.appendChild(section);
+        container.appendChild(details);
     });
 
     wireCardExpand(container);
