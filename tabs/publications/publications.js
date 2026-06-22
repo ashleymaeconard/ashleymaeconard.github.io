@@ -3,7 +3,7 @@
 // ============================================================
 
 const CATEGORIES = [
-    { id: 'epigenomics',      label: 'Epigenomics AI',              icon: 'ti-dna' },
+    { id: 'epigenomics',      label: 'Epigenomics Tooling &amp; AI', icon: 'ti-dna' },
     { id: 'rare-disease',     label: 'Rare Disease Diagnostics',    icon: 'ti-stethoscope' },
     { id: 'cancer',           label: 'Cancer Therapeutics',         icon: 'ti-microscope' },
     { id: 'platforms',        label: 'Interactive Platforms',       icon: 'ti-device-desktop-analytics' },
