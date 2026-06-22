@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researcher Website Template · Ashley Mae Conard, Ph.D.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --primary: #FFF59D;
+            --primary-dark: #c8a600;
+            --navy: #1B2A4A;
+            --text: #1a1a2e;
+            --text-medium: #4a5568;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --bg: #ffffff;
+            --bg-soft: #FDFAF3;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        /* ---- NAV ---- */
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: white; border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-brand { font-family: 'Lora', serif; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+        .nav-back { font-size: 0.85rem; color: var(--text-medium); display: flex; align-items: center; gap: 0.4rem; }
+        .nav-back:hover { color: var(--navy); }
+
+        /* ---- HERO ---- */
+        .hero {
+            background: var(--bg-soft);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            border: 1.5px solid var(--primary-dark);
+            border-radius: 999px;
+            padding: 0.3rem 1rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: #3a2e00;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        .hero h1 {
+            font-family: 'Lora', serif;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+            max-width: 700px;
+            margin-left: auto; margin-right: auto;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 560px;
+            margin: 0 auto 2.5rem;
+        }
+        .buy-btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            background: var(--navy); color: white;
+            padding: 0.9rem 2.25rem;
+            border-radius: 0.5rem;
+            font-size: 1rem; font-weight: 600;
+            transition: background 0.15s, transform 0.1s;
+            box-shadow: 0 4px 14px rgba(27,42,74,0.25);
+        }
+        .buy-btn:hover { background: #263a5e; transform: translateY(-1px); }
+        .buy-btn .price { background: var(--primary); color: #3a2e00; border-radius: 0.3rem; padding: 0.1rem 0.5rem; font-size: 0.9rem; margin-left: 0.25rem; }
+        .hero-note { margin-top: 1rem; font-size: 0.8rem; color: var(--text-light); }
+
+        /* ---- PREVIEW ---- */
+        .preview-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+        .section-label {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+        }
+        .section-title {
+            font-family: 'Lora', serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .preview-frame {
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 0 0 1px var(--border);
+        }
+        .preview-bar {
+            background: #f1f3f5;
+            padding: 0.75rem 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red { background: #ff5f57; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #28c840; }
+        .url-bar {
+            flex: 1; background: white; border-radius: 0.3rem;
+            padding: 0.25rem 0.75rem; font-size: 0.78rem; color: var(--text-light);
+            margin-left: 0.5rem;
+        }
+        .preview-content {
+            background: var(--bg-soft);
+            padding: 2rem;
+            min-height: 320px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 1rem;
+        }
+        .mock-navbar {
+            width: 100%; background: white; border-radius: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            display: flex; align-items: center; justify-content: space-between;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        .mock-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); border: 2px solid var(--primary-dark); }
+        .mock-name { font-family: 'Lora', serif; font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+        .mock-links { display: flex; gap: 1rem; }
+        .mock-link { font-size: 0.72rem; color: var(--text-medium); }
+        .mock-hero {
+            width: 100%; display: flex; gap: 1.5rem; align-items: center;
+        }
+        .mock-hero-left { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+        .mock-bar { height: 10px; border-radius: 4px; background: var(--navy); }
+        .mock-bar.short { width: 55%; background: var(--text-light); }
+        .mock-bar.med { width: 75%; }
+        .mock-bar.thin { height: 7px; background: var(--text-light); }
+        .mock-photo {
+            width: 100px; height: 120px;
+            border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%;
+            background: linear-gradient(135deg, #1B2A4A 0%, #3a5298 100%);
+            border: 3px solid var(--primary);
+            flex-shrink: 0;
+        }
+        .mock-stats {
+            width: 100%; background: var(--primary); border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            display: flex; justify-content: space-around;
+        }
+        .mock-stat { text-align: center; }
+        .mock-stat-num { font-size: 1rem; font-weight: 700; color: var(--navy); }
+        .mock-stat-label { font-size: 0.6rem; color: #7a6000; text-transform: uppercase; letter-spacing: 0.05em; }
+
+        /* ---- FEATURES ---- */
+        .features-section {
+            padding: 4rem 2rem;
+            background: var(--bg-soft);
+        }
+        .features-grid {
+            max-width: 860px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+        }
+        .feature-icon {
+            width: 40px; height: 40px;
+            background: var(--primary);
+            border-radius: 0.5rem;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem;
+            color: var(--navy);
+            margin-bottom: 0.875rem;
+        }
+        .feature-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; }
+        .feature-card p { font-size: 0.83rem; color: var(--text-medium); line-height: 1.5; }
+
+        /* ---- WHATS INCLUDED ---- */
+        .included-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+        .included-list {
+            max-width: 560px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+        .included-item {
+            display: flex; align-items: flex-start; gap: 0.875rem;
+            padding: 1rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 0.625rem;
+            background: var(--bg-soft);
+        }
+        .check { color: var(--primary-dark); font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+        .included-item strong { font-size: 0.92rem; color: var(--navy); display: block; margin-bottom: 0.2rem; }
+        .included-item span { font-size: 0.82rem; color: var(--text-medium); }
+
+        /* ---- LICENSE NOTE ---- */
+        .license-section {
+            padding: 2rem;
+            background: #fffbeb;
+            border-top: 1px solid #f6e05e;
+            border-bottom: 1px solid #f6e05e;
+            text-align: center;
+        }
+        .license-section p { font-size: 0.83rem; color: #7a6000; max-width: 600px; margin: 0 auto; }
+        .license-section a { color: var(--primary-dark); text-decoration: underline; }
+
+        /* ---- CTA BOTTOM ---- */
+        .cta-section {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: var(--navy);
+        }
+        .cta-section h2 { font-family: 'Lora', serif; font-size: 2rem; color: white; margin-bottom: 0.75rem; }
+        .cta-section p { color: #94a3b8; margin-bottom: 2rem; font-size: 1rem; }
+        .buy-btn-light {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            background: var(--primary); color: #3a2e00;
+            padding: 0.9rem 2.25rem;
+            border-radius: 0.5rem;
+            font-size: 1rem; font-weight: 700;
+            transition: background 0.15s, transform 0.1s;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+        }
+        .buy-btn-light:hover { background: #fff176; transform: translateY(-1px); }
+
+        /* ---- FOOTER ---- */
+        .page-footer {
+            background: #f8fafc; border-top: 1px solid var(--border);
+            padding: 1.5rem 2rem; text-align: center;
+            font-size: 0.8rem; color: var(--text-light);
+        }
+        .page-footer a { color: var(--primary-dark); }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <span class="nav-brand">Researcher Website Template</span>
+        <a href="/" class="nav-back"><i class="ti ti-arrow-left"></i> Back to ashleymaeconard.com</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">For Researchers &amp; Scientists</div>
+        <h1>A clean, professional website template built by a researcher, for researchers.</h1>
+        <p>Skip months of design work. Get a polished academic website with publications, experience, leadership, and more — deployed on GitHub Pages in minutes.</p>
+        <a href="https://YOUR_GUMROAD_LINK" class="buy-btn" target="_blank" rel="noopener">
+            <i class="ti ti-shopping-cart"></i> Buy Template <span class="price">$49</span>
+        </a>
+        <p class="hero-note">One-time purchase · Instant download · Personal use license</p>
+    </section>
+
+    <!-- PREVIEW -->
+    <section class="preview-section">
+        <p class="section-label">Preview</p>
+        <h2 class="section-title">What your site will look like</h2>
+        <div class="preview-frame">
+            <div class="preview-bar">
+                <div class="dot dot-red"></div>
+                <div class="dot dot-yellow"></div>
+                <div class="dot dot-green"></div>
+                <div class="url-bar">yourname.github.io</div>
+            </div>
+            <div class="preview-content">
+                <div class="mock-navbar">
+                    <div style="display:flex;align-items:center;gap:0.75rem;">
+                        <div class="mock-avatar"></div>
+                        <div>
+                            <div class="mock-name">Your Name, Ph.D.</div>
+                            <div style="font-size:0.65rem;color:#718096;">Senior Researcher · Your Institution</div>
+                        </div>
+                    </div>
+                    <div class="mock-links">
+                        <span class="mock-link">Publications</span>
+                        <span class="mock-link">Experience</span>
+                        <span class="mock-link">Leadership</span>
+                        <span class="mock-link">Connect</span>
+                    </div>
+                </div>
+                <div class="mock-hero">
+                    <div class="mock-hero-left">
+                        <div class="mock-bar" style="width:80%;height:14px;"></div>
+                        <div class="mock-bar" style="width:90%;height:14px;"></div>
+                        <div class="mock-bar thin" style="width:65%;"></div>
+                        <div class="mock-bar thin" style="width:90%;"></div>
+                        <div class="mock-bar thin" style="width:80%;"></div>
+                    </div>
+                    <div class="mock-photo"></div>
+                </div>
+                <div class="mock-stats">
+                    <div class="mock-stat"><div class="mock-stat-num">25+</div><div class="mock-stat-label">Publications</div></div>
+                    <div class="mock-stat"><div class="mock-stat-num">10+</div><div class="mock-stat-label">Students</div></div>
+                    <div class="mock-stat"><div class="mock-stat-num">10+</div><div class="mock-stat-label">Leadership</div></div>
+                    <div class="mock-stat"><div class="mock-stat-num">10+</div><div class="mock-stat-label">Awards</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section">
+        <p class="section-label">Features</p>
+        <h2 class="section-title">Everything a researcher needs</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-file-text"></i></div>
+                <h3>Publications &amp; Software</h3>
+                <p>Sort papers by year or category. Collapsible accordion sections. Google Scholar link integration.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-briefcase"></i></div>
+                <h3>Experience &amp; Education</h3>
+                <p>Timeline-style experience section with category filtering and subtabs for industry vs. academic roles.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-crown"></i></div>
+                <h3>Leadership &amp; Service</h3>
+                <p>Board roles, science policy, teaching, mentorship — all organized with pill navigation and accordions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-moon"></i></div>
+                <h3>Dark Mode</h3>
+                <p>Fully themed dark mode with a single toggle. Looks great on any device or OS preference.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-devices"></i></div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-friendly layout that adapts gracefully from desktop to phone screens.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ti ti-brand-github"></i></div>
+                <h3>GitHub Pages Ready</h3>
+                <p>Deploy for free with GitHub Pages. Includes a deploy script — no server or hosting costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
+    <section class="included-section">
+        <p class="section-label">What's included</p>
+        <h2 class="section-title">Everything you need to launch</h2>
+        <div class="included-list">
+            <div class="included-item">
+                <i class="ti ti-code check"></i>
+                <div>
+                    <strong>Full source code</strong>
+                    <span>All HTML, CSS, and JavaScript — clean and well-commented for easy customization.</span>
+                </div>
+            </div>
+            <div class="included-item">
+                <i class="ti ti-rocket check"></i>
+                <div>
+                    <strong>Deploy script</strong>
+                    <span>One-command deploy to GitHub Pages. Your site live in under 5 minutes.</span>
+                </div>
+            </div>
+            <div class="included-item">
+                <i class="ti ti-book check"></i>
+                <div>
+                    <strong>Setup guide</strong>
+                    <span>Step-by-step instructions for customizing content, colors, and photos.</span>
+                </div>
+            </div>
+            <div class="included-item">
+                <i class="ti ti-palette check"></i>
+                <div>
+                    <strong>Design system</strong>
+                    <span>CSS custom properties for easy color and typography changes — no design experience needed.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LICENSE NOTE -->
+    <div class="license-section">
+        <p><i class="ti ti-shield-lock"></i> &nbsp;This template is proprietary. Purchase grants a personal-use license for one website. Redistribution or resale is prohibited. <a href="/LICENSE.md">View full license →</a></p>
+    </div>
+
+    <!-- CTA BOTTOM -->
+    <section class="cta-section">
+        <h2>Ready to launch your researcher site?</h2>
+        <p>One-time purchase. No subscriptions. No hosting fees.</p>
+        <a href="https://YOUR_GUMROAD_LINK" class="buy-btn-light" target="_blank" rel="noopener">
+            <i class="ti ti-shopping-cart"></i> Get the Template — $49
+        </a>
+    </section>
+
+    <footer class="page-footer">
+        <p>Designed &amp; built by <a href="/">Ashley Mae Conard, Ph.D.</a> · © 2026 All rights reserved</p>
+    </footer>
+
+</body>
+</html>
