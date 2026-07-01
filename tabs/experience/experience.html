@@ -11,14 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
     <style>
-        body { background: var(--bg, #fff); }
+        /* body bg handled by styles.css */
         .exp-page { padding: 1.5rem 0 4rem; }
 
         /* ---- Subtab nav (matches publications style) ---- */
         .tab-nav {
             display: flex;
             gap: 0;
-            border-bottom: 2px solid #E8E8E8;
+            justify-content: center;
+            border-bottom: 2px solid var(--border);
             margin-bottom: 1.5rem;
         }
         .tab-btn {
@@ -27,7 +28,7 @@
             padding: 0.75rem 1.5rem;
             font-size: 0.9375rem;
             font-weight: 600;
-            color: #666;
+            color: var(--text-medium);
             cursor: pointer;
             border-bottom: 3px solid transparent;
             margin-bottom: -2px;
@@ -45,13 +46,13 @@
             margin-bottom: 1.25rem;
         }
         .view-btn {
-            background: #f5f5f5;
-            border: 1px solid #E8E8E8;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
             border-radius: 999px;
             padding: 0.3rem 0.9rem;
             font-size: 0.8125rem;
             font-weight: 500;
-            color: #555;
+            color: var(--text-medium);
             cursor: pointer;
             transition: all 0.15s;
         }
@@ -66,7 +67,7 @@
             margin-bottom: 0.625rem;
             border-radius: 0.5rem;
             overflow: hidden;
-            border: 1px solid #E8E8E8;
+            border: 1px solid var(--border);
         }
         details.acc-section > summary {
             display: flex;
@@ -87,22 +88,22 @@
         details.acc-section > summary .acc-count { font-size: 0.72rem; color: #7a6000; background: rgba(200,166,0,0.15); border: 1px solid #c8a600; border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; margin-right: 0.25rem; }
         details.acc-section > summary .acc-arrow { font-size: 1rem; color: #7a6000; flex-shrink: 0; transition: transform 0.2s; }
         details.acc-section[open] > summary .acc-arrow { transform: rotate(180deg); }
-        .acc-body { background: #fff; padding: 0.875rem 1rem 1rem; }
+        .acc-body { background: var(--bg-white); padding: 0.875rem 1rem 1rem; }
 
         /* ---- Entry card ---- */
         .exp-entry {
             display: flex;
             gap: 1rem;
             padding: 0.875rem 1rem;
-            border: 1px solid #E8E8E8;
+            border: 1px solid var(--border);
             border-radius: 0.5rem;
             margin-bottom: 0.625rem;
-            background: #fafafa;
+            background: var(--bg-light);
             transition: box-shadow 0.15s;
         }
         .exp-entry:last-child { margin-bottom: 0; }
-        .exp-entry:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); background: #fff; }
-        .exp-logo { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #E8E8E8; border-radius: 0.375rem; background: #fff; padding: 3px; overflow: hidden; }
+        .exp-entry:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); background: var(--bg-white); }
+        .exp-logo { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 0.375rem; background: var(--bg-white); padding: 3px; overflow: hidden; }
         .exp-logo img { width: 100%; height: 100%; object-fit: contain; }
         .exp-body { flex: 1; min-width: 0; }
         .exp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-bottom: 0.2rem; }
@@ -111,9 +112,9 @@
         .tag-ai    { background: #E8EAF6; color: #3949AB; border: 1px solid #9FA8DA; }
         .tag-acad  { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
         .tag-pharma{ background: #FFF3E0; color: #E65100; border: 1px solid #FFCC80; }
-        .exp-title { font-family: 'Lora', Georgia, serif; font-size: 0.9rem; font-weight: 600; color: #1a1a1a; margin: 0 0 0.2rem; line-height: 1.4; }
-        .exp-desc { font-size: 0.84rem; color: #555; line-height: 1.6; margin: 0; }
-        .exp-link { display: inline-block; font-size: 0.775rem; font-weight: 500; color: #0070f3; text-decoration: none; margin-top: 0.2rem; margin-right: 0.6rem; }
+        .exp-title { font-family: 'Lora', Georgia, serif; font-size: 0.9rem; font-weight: 600; color: var(--text-dark); margin: 0 0 0.2rem; line-height: 1.4; }
+        .exp-desc { font-size: 0.84rem; color: var(--text-medium); line-height: 1.6; margin: 0; }
+        .exp-link { display: inline-block; font-size: 0.775rem; font-weight: 500; color: var(--link-color); text-decoration: none; margin-top: 0.2rem; margin-right: 0.6rem; }
         .exp-link:hover { text-decoration: underline; }
 
         /* ---- Year view ---- */
@@ -126,34 +127,34 @@
             display: flex;
             gap: 1rem;
             padding: 1rem;
-            border: 1px solid #E8E8E8;
+            border: 1px solid var(--border);
             border-radius: 0.5rem;
             margin-bottom: 0.625rem;
-            background: #fafafa;
+            background: var(--bg-light);
             transition: box-shadow 0.15s;
         }
-        .edu-degree:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); background: #fff; }
-        .edu-logo { width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid #E8E8E8; border-radius: 0.375rem; background: #fff; padding: 4px; overflow: hidden; }
+        .edu-degree:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); background: var(--bg-white); }
+        .edu-logo { width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 0.375rem; background: var(--bg-white); padding: 4px; overflow: hidden; }
         .edu-logo img { width: 100%; height: 100%; object-fit: contain; }
         .edu-body { flex: 1; }
-        .edu-degree-name { font-family: 'Lora', Georgia, serif; font-size: 0.9375rem; font-weight: 700; color: #1a1a1a; margin: 0 0 0.2rem; }
-        .edu-institution { font-size: 0.84rem; color: #555; margin: 0 0 0.25rem; }
-        .edu-detail { font-size: 0.82rem; color: #666; line-height: 1.6; margin: 0; }
+        .edu-degree-name { font-family: 'Lora', Georgia, serif; font-size: 0.9375rem; font-weight: 700; color: var(--text-dark); margin: 0 0 0.2rem; }
+        .edu-institution { font-size: 0.84rem; color: var(--text-medium); margin: 0 0 0.25rem; }
+        .edu-detail { font-size: 0.82rem; color: var(--text-medium); line-height: 1.6; margin: 0; }
 
         /* ---- Skills ---- */
-        .skills-block { background: #fafafa; border: 1px solid #E8E8E8; border-radius: 0.5rem; padding: 0.875rem 1rem; margin-bottom: 0.625rem; }
-        .skills-block h3 { font-size: 0.8125rem; font-weight: 600; color: #1a1a1a; margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.3rem; }
+        .skills-block { background: var(--bg-light); border: 1px solid var(--border); border-radius: 0.5rem; padding: 0.875rem 1rem; margin-bottom: 0.625rem; }
+        .skills-block h3 { font-size: 0.8125rem; font-weight: 600; color: var(--text-dark); margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.3rem; }
         .skills-block h3 i { color: #c8a600; }
         .skill-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-        .skill-tags span { font-size: 0.75rem; padding: 0.15rem 0.5rem; background: #FFFDE7; border: 1px solid #E8E8E8; border-radius: 999px; color: #555; }
+        .skill-tags span { font-size: 0.75rem; padding: 0.15rem 0.5rem; background: #FFFDE7; border: 1px solid var(--border); border-radius: 999px; color: var(--text-medium); }
         .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.625rem; }
 
         /* ---- Honors ---- */
-        .honors-block { background: #fafafa; border: 1px solid #E8E8E8; border-radius: 0.5rem; padding: 0.875rem 1rem; margin-bottom: 0.625rem; }
-        .honors-block h3 { font-size: 0.8125rem; font-weight: 600; color: #1a1a1a; margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.3rem; }
+        .honors-block { background: var(--bg-light); border: 1px solid var(--border); border-radius: 0.5rem; padding: 0.875rem 1rem; margin-bottom: 0.625rem; }
+        .honors-block h3 { font-size: 0.8125rem; font-weight: 600; color: var(--text-dark); margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.3rem; }
         .honors-block h3 i { color: #c8a600; }
         .honors-block ul { list-style: none; padding: 0; margin: 0; }
-        .honors-block li { font-size: 0.85rem; color: #555; line-height: 1.55; padding: 0.15rem 0 0.15rem 1rem; position: relative; }
+        .honors-block li { font-size: 0.85rem; color: var(--text-medium); line-height: 1.55; padding: 0.15rem 0 0.15rem 1rem; position: relative; }
         .honors-block li::before { content: "·"; position: absolute; left: 0; color: #c8a600; font-weight: 700; }
 
         @media (max-width: 700px) {
@@ -162,12 +163,19 @@
         }
 
         /* ---- Category pill nav ---- */
-        .cat-nav-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid #EEF2F7; }
+        .cat-nav-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); }
         .cat-nav-pill { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.875rem; background: rgba(255,245,157,0.4); border: 1.5px solid #c8a600; border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: #3a2e00; text-decoration: none; transition: background 0.15s; }
         .cat-nav-pill:hover { background: #FFF59D; }
         .cat-nav-pill i { font-size: 0.875rem; }
     </style>
-    <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <!-- GoatCounter Analytics -->
     <script data-goatcounter="https://ashleymaeconard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <!-- Microsoft Clarity -->
@@ -762,7 +770,7 @@
                 </div>
                 <div class="honors-block" style="margin-top:0.625rem">
                     <h3><i class="ti ti-books"></i> Relevant Coursework</h3>
-                    <p style="font-size:0.85rem;color:#555;margin:0;line-height:1.65;">
+                    <p style="font-size:0.85rem;color:var(--text-medium);margin:0;line-height:1.65;">
                         <strong>CS/Math:</strong> Bayesian Inference in Genomics &amp; Molecular Biology, Advanced Probabilistic Methods, Computational Molecular Biology, Advanced Algorithms in Computational Biology, Coalescent Theory, Statistical Inference, Bioinformatics<br>
                         <strong>Biochemistry/Biology:</strong> Genetics, Function &amp; Structure of Biomolecules, Ecology &amp; Evolution, Cells &amp; Genes, Enzyme Mechanisms<br>
                         <strong>Lab skills:</strong> NMR, Mass Spectroscopy, IR Spectroscopy, Chromatography, PCR, Gel Electrophoresis, GC, HPLC, AA Spectrometry

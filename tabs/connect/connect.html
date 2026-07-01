@@ -43,12 +43,12 @@
             justify-content: center;
             width: 2.25rem;
             height: 2.25rem;
-            border: 1.5px solid #E8E8E8;
+            border: 1.5px solid var(--border);
             border-radius: 50%;
             font-size: 1.1rem;
-            color: #444;
+            color: var(--text-medium);
             text-decoration: none;
-            background: #fafafa;
+            background: var(--bg-light);
             transition: background 0.15s, border-color 0.15s, color 0.15s;
         }
         .social-icon-btn:hover {
@@ -104,7 +104,14 @@
             color: #3a2e00;
         }
     </style>
-    <script>(function(){ const t=localStorage.getItem('theme')||'light'; document.documentElement.setAttribute('data-theme',t); })();</script>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <!-- GoatCounter Analytics -->
     <script data-goatcounter="https://ashleymaeconard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <!-- Microsoft Clarity -->
