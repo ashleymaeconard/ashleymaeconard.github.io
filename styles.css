@@ -838,6 +838,18 @@ a.research-card {
     max-width: 480px;
 }
 
+.hero-mission a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-mission a:hover {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+}
+
 .hero-ctas {
     display: flex;
     gap: 0.625rem;
