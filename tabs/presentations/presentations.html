@@ -1,530 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentations & Media - Ashley Mae Conard, Ph.D.</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../../components/hero.css">
-    <link rel="stylesheet" href="presentations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+    <style>
+        /* body bg handled by styles.css */
+        .pres-page { padding: 1.5rem 0 4rem; }
+
+        /* ---- Page header ---- */
+        .pres-header {
+            margin-bottom: 2rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--primary-bg);
+        }
+        .pres-header h2 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.5rem;
+        }
+        .pres-header p {
+            font-size: 0.9375rem;
+            color: var(--text-medium);
+            margin: 0;
+            line-height: 1.65;
+        }
+
+        /* ---- Section heading ---- */
+        .section-heading {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-bg);
+        }
+
+        /* ---- Talk card ---- */
+        .talk-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+        .talk-card {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 1.125rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            background: var(--bg-light);
+            transition: box-shadow 0.15s, background 0.15s;
+        }
+        .talk-card:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            background: var(--bg-white);
+        }
+        .talk-icon {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.375rem;
+            background: rgba(255,245,157,0.35);
+            border: 1px solid #c8a600;
+            font-size: 1.2rem;
+            color: #7a6000;
+        }
+        [data-theme="dark"] .talk-icon {
+            background: rgba(255,245,157,0.1);
+            color: var(--primary-dark);
+        }
+        .talk-body { flex: 1; min-width: 0; }
+        .talk-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 0.25rem;
+        }
+        .talk-date {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #7a6000;
+            background: rgba(255,245,157,0.5);
+            border: 1px solid #c8a600;
+            border-radius: 999px;
+            padding: 0.1rem 0.45rem;
+            white-space: nowrap;
+        }
+        [data-theme="dark"] .talk-date {
+            color: var(--primary-dark);
+            background: rgba(255,245,157,0.1);
+        }
+        .talk-tag {
+            font-size: 0.68rem;
+            font-weight: 600;
+            border-radius: 999px;
+            padding: 0.1rem 0.45rem;
+        }
+        .tag-keynote  { background: #E8EAF6; color: #3949AB; border: 1px solid #9FA8DA; }
+        .tag-invited  { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+        .tag-panel    { background: #FFF3E0; color: #E65100; border: 1px solid #FFCC80; }
+        .tag-podcast  { background: #FCE4EC; color: #AD1457; border: 1px solid #F48FB1; }
+        .talk-title {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.2rem;
+            line-height: 1.4;
+        }
+        .talk-venue {
+            font-size: 0.84rem;
+            color: var(--text-medium);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .talk-link {
+            display: inline-block;
+            font-size: 0.775rem;
+            font-weight: 500;
+            color: var(--link-color);
+            text-decoration: none;
+            margin-top: 0.3rem;
+        }
+        .talk-link:hover { text-decoration: underline; }
+    </style>
     <script>
-        // Apply theme immediately to prevent flash
         (function () {
-            const theme = localStorage.getItem('theme') || 'light';
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
+    <!-- GoatCounter Analytics -->
+    <script data-goatcounter="https://ashleymaeconard.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "xfs2r8uvn8");
+    </script>
 </head>
-
 <body>
-    <!-- Navbar Component (loaded dynamically) -->
-    <div id="navbar-placeholder"></div>
+<div id="navbar-placeholder"></div>
 
-    <!-- Hero Component (loaded dynamically) -->
-    <div id="hero-placeholder"></div>
+<main class="pres-page">
+<div class="container">
 
-    <!-- Presentations & Media Content -->
-    <section class="presentations-section">
-        <div class="container">
-            <!-- Tab Navigation -->
-            <div class="tab-nav">
-                <button class="tab-btn active" data-tab="presentations">Presentations</button>
-                <button class="tab-btn" data-tab="media">Media</button>
-            </div>
+    <div class="pres-header">
+        <h2>Presentations &amp; Media</h2>
+        <p>Selected invited talks, keynotes, panel discussions, and media appearances.</p>
+    </div>
 
-            <!-- Presentations Tab Content -->
-            <div id="presentations-content" class="tab-content active">
-                <!-- Invited Talks -->
-                <div class="content-section presentations-section-group">
-                    <h2 class="section-title">Invited Talks</h2>
-                    <div class="presentations-list">
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>September 2023 A spectrum of explainable and interpretable machine learning
-                                    approaches for genomic studies</h3>
-                            </div>
-                            <p class="presentation-details">ACM Conference on Bioinformatics, Comp. Biology, & Health
-                                Informatics (ACM BCB), TX, USA.</p>
-                        </div>
+    <!-- ======= 2025 ======= -->
+    <h3 class="section-heading">2025</h3>
+    <div class="talk-list">
 
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>November 2020 BIOGRINN: Bayesian model to interpret and predict genomics features
-                                    from multi-omics data</h3>
-                            </div>
-                            <p class="presentation-details">International Society for Bayesian Analysis (ISBA), Virtual.
-                            </p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>November 2020 TIMEOR: a web-based tool to uncover temporal regulatory mechanisms
-                                    from multi-omics data</h3>
-                            </div>
-                            <p class="presentation-details">Biological Data Science Conference, Cold Spring Harbor
-                                Laboratory, Virtual.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>March 2020 TIMEOR: web-based tool to uncover regulatory mechanisms from temporal &
-                                    multi-omics data</h3>
-                            </div>
-                            <p class="presentation-details">Adelman-Bender-Cole-Kuroda-Larschan Joint Lab Meeting,
-                                Harvard University, MA, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>January 2020 Trajectory Inference and Mechanism Exploration with Omics Data in R. A
-                                    computational method to uncover regulatory mechanisms of transcription factors
-                                    during development</h3>
-                            </div>
-                            <p class="presentation-details">Perrimon Lab Group Meeting (collaborator), Harvard
-                                University, MA, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>October 2019 Trajectory Inference and Mechanism Exploration with Omics Data in R.
-                                    Its about time!</h3>
-                            </div>
-                            <p class="presentation-details">Epigenomics Club, Brown University, RI, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>August 2019 Trajectory Inference and Mechanism Exploration with Omics Data in R - A
-                                    method to uncover regulatory mechanisms over time</h3>
-                            </div>
-                            <p class="presentation-details">Dana-Farber Cancer Institute, MA, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>August 2019 Time course model of alcoholism in neural development of Drosophila
-                                    melanogaster</h3>
-                            </div>
-                            <p class="presentation-details">Kaun Lab Group Meeting, Brown University, RI, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>June 2019 Trajectory Inference and Mechanism Exploration with Omics Data in R - A
-                                    method to analyze how transcription factors influence development</h3>
-                            </div>
-                            <p class="presentation-details">Boston Area Drosophila Meeting, Brown University, RI, USA.
-                                Flash talk.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>June 2019 Trajectory Inference and Mechanism Exploration with Omics Data in R - A
-                                    method to analyze how transcription factors influence development</h3>
-                            </div>
-                            <p class="presentation-details">Adelman-Bender-Cole-Kuroda-Larschan Joint Lab Meeting,
-                                Harvard University, MA, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>March 2019 KO or OK? A pipeline to analyze how the CLAMP transcription factors
-                                    influences development</h3>
-                            </div>
-                            <p class="presentation-details">Epigenomics Club, Brown University, RI, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>October 2019 Student of Vision Abie Award</h3>
-                            </div>
-                            <p class="presentation-details">Grace Hopper Celebration, FL, USA. Moderator and panelist.
-                            </p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>October 2018 Student of Vision Abie Award</h3>
-                            </div>
-                            <p class="presentation-details">Grace Hopper Celebration, TX, USA. Moderator and panelist.
-                            </p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>October 2016 Subclonal Driver Events Across 9 Cancer Types</h3>
-                            </div>
-                            <p class="presentation-details">IB2 Student Day, Université Libre de Bruxelles, Belgium.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>August 2015 Applying for National and International Awards</h3>
-                            </div>
-                            <p class="presentation-details">DePauw University, IN, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>December 2014 Determining winning SH3 coalition using Game Theory</h3>
-                            </div>
-                            <p class="presentation-details">Benelux Bioinformatics Conference, Belgium.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>June 2015 Determining the winning SH3 Coalition with Game Theory</h3>
-                            </div>
-                            <p class="presentation-details">Regional Student Group, Belgium.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>December 2014 Determining winning SH3 coalition using Game Theory</h3>
-                            </div>
-                            <p class="presentation-details">Benelux Bioinformatics Conference, Belgium.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>May 2014 Chemical Inventory Database System and School-Wide Integration</h3>
-                            </div>
-                            <p class="presentation-details">DePauw University, IN, USA. Presentation and poster <a
-                                    href="https://www.depauw.edu/academics/departments-programs/computer-science/for-students/senior-projects/2013--2014-abstracts/ashley-conard-chemical-inventory-management-program/"
-                                    target="_blank" rel="noopener noreferrer" class="experience-link">Learn more</a>
-                            </p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>January 2014 Essential Residues within Fyn SH3 Protein Domain using Game Theory</h3>
-                            </div>
-                            <p class="presentation-details">Indiana Women in Computing Conference (InWIC), IN, USA. Won
-                                1st prize <a
-                                    href="https://www.depauw.edu/academics/departments-programs/computer-science/news-stories/seven-depauw-computer-science-majors-attend-inwic-and-ashley-conard-wins-two-awards-sping-2014/"
-                                    target="_blank" rel="noopener noreferrer" class="experience-link">Learn
-                                    more</a></p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>January 2014 No Fomo - User Experience Challenge</h3>
-                            </div>
-                            <p class="presentation-details">Microsoft International Imagine Cup, DePauw University, IN.
-                                Honorable mention <a
-                                    href="https://www.depauw.edu/academics/departments-programs/computer-science/news-stories/majors-win-honorable-mention-at-imagine-cup-spring-2014/"
-                                    target="_blank" rel="noopener noreferrer" class="experience-link">Learn more</a></p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>May 2012 Coalitional Game Theory and Feature Selection to Describe the Dependencies
-                                    Between Amino Acids Within the SH3 FYN Protein Domain</h3>
-                            </div>
-                            <p class="presentation-details">Chicago Women in Computing (ChiWIC), IL, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>May 2012 Synergistic & Antagonistic Dependencies Analyzed via Game Theory in FYN
-                                    Protein Domain (Presented in French and English). Thesis in French.</h3>
-                            </div>
-                            <p class="presentation-details">Université Libre de Bruxelles, Belgium.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>June 2011 Censorship between China and Google</h3>
-                            </div>
-                            <p class="presentation-details">Ohio Celebration of Women in Computing (OCWiC), OH, USA.</p>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" data-section="talks">View More</button>
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-presentation"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2025</span>
+                    <span class="talk-tag tag-invited">Invited Talk</span>
                 </div>
-
-                <!-- Posters -->
-                <div class="content-section presentations-section-group">
-                    <h2 class="section-title">Posters</h2>
-                    <div class="presentations-list">
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>March 2021 XvsY: tool to identify shared and distinct genomic signatures from
-                                    multiple expression and protein-DNA interaction information over time</h3>
-                            </div>
-                            <p class="presentation-details">Annual Drosophila Meeting, Virtual.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>April 2020 TIMEOR: web-based tool to uncover regulatory mechanisms from temporal &
-                                    multi-omics data</h3>
-                            </div>
-                            <p class="presentation-details">The Allied Genetics Conference (TAGC), Virtual.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>November 2019 TIMEOR: method to uncover regulatory mechanisms from temporal and
-                                    multi-omics data</h3>
-                            </div>
-                            <p class="presentation-details">Fulbright Association Conference, DC, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>May 2019 Method characterize how transcription factors influence development with
-                                    RNA & ChIP-seq</h3>
-                            </div>
-                            <p class="presentation-details">RECOMB, DC, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>March 2019 Method characterize how transcription factors influence development with
-                                    RNA & ChIP-seq</h3>
-                            </div>
-                            <p class="presentation-details">Annual Drosophila Meeting, TX, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>November 2017 Determining the winning SH3 coalition: how cooperative game theory
-                                    reveals the importance of domain residues in peptide binding</h3>
-                            </div>
-                            <p class="presentation-details">Fulbright Association Conference, DC, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>October 2016 Coalitional Game Theory and Feature Selection to Describe the
-                                    Dependencies Between Amino Acids Within the SH3 FYN Protein Domain</h3>
-                            </div>
-                            <p class="presentation-details">Grace Hopper Celebration, TX, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>July 2015 Determining the winning SH3 Coalition with Game Theory</h3>
-                            </div>
-                            <p class="presentation-details">International Society for Molecular Biology (ISMB), Ireland.
-                                Won RSCB PDB Prize <a
-                                    href="https://www.iscb.org/ismbeccb2015-program/award-winners#rcsb" target="_blank"
-                                    rel="noopener noreferrer" class="experience-link">Learn more</a></p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>January 2015 Using a Big Data Database to Identify Pathogens in Protein Data Space
-                                </h3>
-                            </div>
-                            <p class="presentation-details">New England Database Day, MA, USA.</p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>January 2014 Creation and Implementation of D4M Algorithm for Protein Analysis</h3>
-                            </div>
-                            <p class="presentation-details">Indiana Women in Computing Conference (InWIC), IN, USA. Won
-                                1st prize <a
-                                    href="https://www.depauw.edu/academics/departments-programs/computer-science/news-stories/seven-depauw-computer-science-majors-attend-inwic-and-ashley-conard-wins-two-awards-sping-2014/"
-                                    target="_blank" rel="noopener noreferrer" class="experience-link">Learn
-                                    more</a></p>
-                        </div>
-
-                        <div class="presentation-item">
-                            <div class="presentation-header">
-                                <h3>May 2012 Coalitional Game Theory and Feature Selection to Describe the Dependencies
-                                    Between Amino Acids Within the SH3 FYN Protein Domain</h3>
-                            </div>
-                            <p class="presentation-details">OurCS Conference, Carnegie Mellon, PA, USA. Won 1st prize <a
-                                    href="https://www.starscomputingcorps.org/ashley-conard-wins-ourcs-poster-competition-1"
-                                    target="_blank" rel="noopener noreferrer" class="experience-link">Learn more</a>
-                            </p>
-                        </div>
-                    </div>
-                    <button class="view-more-btn" data-section="posters">View More</button>
-                </div>
-            </div>
-
-            <!-- Media Tab Content -->
-            <div id="media-content" class="tab-content">
-                <div class="content-section">
-                    <h2 class="section-title">Media</h2>
-                    <div class="media-grid">
-                        <a href="https://www.facebook.com/100064052589833/posts/hosted-by-harvard-stats-cs-applied-math-our-women-in-tech-ai-career-panel-featur/939704751507936/"
-                            target="_blank" rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/deptofstats.jpg" alt="Harvard Biostats and AI Panel"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">Harvard Biostats and AI Panel</h3>
-                                <p class="media-description">Women in Tech AI Career Panel</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.tellewhitney.com/appearances-media" target="_blank"
-                            rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/TelleWhitney-2019-13.webp"
-                                    alt="November 2021 Women and People of Color Still Experience Difficulty Advancing in Technology"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">November 2021 Women and People of Color Still Experience
-                                    Difficulty Advancing in Technology</h3>
-                                <p class="media-description">I assisted Grace Hopper Celebration co-Founder and former
-                                    CEO of AnitaB.org, Telle Whitney in report</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.youtube.com/watch?v=p3zBdW-ENtU" target="_blank" rel="noopener noreferrer"
-                            class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/july2019.gif"
-                                    alt="July 2019 Center for Computational and Molecular Biology Ph.D. Program"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">July 2019 Center for Computational and Molecular Biology Ph.D.
-                                    Program</h3>
-                                <p class="media-description">Brown University</p>
-                            </div>
-                        </a>
-
-                        <a href="https://fulbright.org/2019/07/30/remembering-d-day/" target="_blank"
-                            rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/D-day-8.webp" alt="July 2019 Remembering D-Day"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">July 2019 Remembering D-Day</h3>
-                                <p class="media-description">Fulbright Association</p>
-                            </div>
-                        </a>
-
-                        <a href="https://fulbright.org/2019/01/29/alumni-profile-ashley-mae-conard/" target="_blank"
-                            rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/alumniprofile.webp"
-                                    alt="January 2019 Alumni Profile: Ashley Mae Conard" class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">January 2019 Alumni Profile: Ashley Mae Conard</h3>
-                                <p class="media-description">Fulbright Association</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.youtube.com/watch?v=pE4SWFcVmsI" target="_blank" rel="noopener noreferrer"
-                            class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/gracehopper.gif"
-                                    alt="October 2016 Grace Hopper Interview as AnitaB.org Board Member"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">October 2016 Grace Hopper Interview as AnitaB.org Board Member
-                                </h3>
-                                <p class="media-description">The Cube</p>
-                            </div>
-                        </a>
-
-                        <a href="https://reinvented-magazine.medium.com/women-who-reign-ashley-conrad-cefcc2400f24"
-                            target="_blank" rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/alloftheabove.jpg"
-                                    alt="October 2016 Women Who Reign: Ashley Conard" class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">October 2016 Women Who Reign: Ashley Conard</h3>
-                                <p class="media-description">ReigningIt</p>
-                            </div>
-                        </a>
-
-                        <a href="https://legacy.anitab.org/profile/ashley-conard-new-student-board-member/"
-                            target="_blank" rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/nov2015.jpg"
-                                    alt="November 2015 Meet Ashley Conard, AnitaB.org's New Student Board Member"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">November 2015 Meet Ashley Conard, AnitaB.org's New Student Board
-                                    Member</h3>
-                                <p class="media-description">AnitaB.org</p>
-                            </div>
-                        </a>
-
-                        <a href="https://siliconangle.com/2015/10/15/putting-women-and-computer-science-in-every-field-ghc15/"
-                            target="_blank" rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/october2015.jpg"
-                                    alt="October 2015 Putting women and computer science in every field"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">October 2015 Putting women and computer science in every field
-                                </h3>
-                                <p class="media-description">SiliconANGLE</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.youtube.com/watch?v=-_hx9kswDuc" target="_blank" rel="noopener noreferrer"
-                            class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/2015gracehopper.gif"
-                                    alt="October 2015 Grace Hopper Interview as AnitaB.org Board Member"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">October 2015 Grace Hopper Interview as AnitaB.org Board Member
-                                </h3>
-                                <p class="media-description">The Cube</p>
-                            </div>
-                        </a>
-
-                        <a href="https://thedepauw.com/university-farm-to-grow-local-food-for-campus-community/"
-                            target="_blank" rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/grow farm.jpg"
-                                    alt="December 2011 University farm to grow local food for campus, community"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">December 2011 University farm to grow local food for campus,
-                                    community</h3>
-                                <p class="media-description">The DePauw</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.depauw.edu/news-media/latest-news/details/30949/" target="_blank"
-                            rel="noopener noreferrer" class="media-card">
-                            <div class="media-thumbnail">
-                                <img src="../../photos/media/alloftheaboveNEW.jpg" alt="October 2015 All of the Above"
-                                    class="media-image">
-                            </div>
-                            <div class="media-content">
-                                <h3 class="media-title">October 2015 All of the Above</h3>
-                                <p class="media-description">DePauw University</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <p class="talk-title">MIA 10-Year Anniversary Speaker</p>
+                <p class="talk-venue">Broad Institute of MIT and Harvard · Cambridge, MA</p>
             </div>
         </div>
-    </section>
 
-    <!-- Footer Component (loaded dynamically) -->
-    <div id="footer-placeholder"></div>
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-cpu"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2025</span>
+                    <span class="talk-tag tag-invited">Invited Talk</span>
+                </div>
+                <p class="talk-title">AI in Rare Disease Diagnostics</p>
+                <p class="talk-venue">IEEE Supercomputing · 2025</p>
+            </div>
+        </div>
 
-    <script src="../../components/load-components.js"></script>
-    <script src="../../script.js"></script>
-    <script src="presentations.js"></script>
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-bulb"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2025</span>
+                    <span class="talk-tag tag-panel">Panel</span>
+                </div>
+                <p class="talk-title">AI, Research, and Entrepreneurship in Biotech</p>
+                <p class="talk-venue">StartUp Week Boston · 2025</p>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-dna"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2025</span>
+                    <span class="talk-tag tag-invited">Invited Talk</span>
+                </div>
+                <p class="talk-title">Rare Disease Research for the Patient Community</p>
+                <p class="talk-venue">flok Patient Community · 2025</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======= 2024 ======= -->
+    <h3 class="section-heading">2024</h3>
+    <div class="talk-list">
+
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-presentation"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2024</span>
+                    <span class="talk-tag tag-invited">Invited Talk</span>
+                </div>
+                <p class="talk-title">Epigenomics-Based Disease Diagnostics and Therapeutics</p>
+                <p class="talk-venue">Microsoft Research Health Futures · Cambridge, MA</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======= Earlier ======= -->
+    <h3 class="section-heading">Earlier</h3>
+    <div class="talk-list">
+
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-users"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2023</span>
+                    <span class="talk-tag tag-panel">Panel</span>
+                </div>
+                <p class="talk-title">Panel Speaker</p>
+                <p class="talk-venue">Grace Hopper Celebration</p>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-world"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2019</span>
+                    <span class="talk-tag tag-invited">Invited</span>
+                </div>
+                <p class="talk-title">U.S. D-Day Ambassador &amp; Commemorative Address</p>
+                <p class="talk-venue">75th D-Day Commemoration · Normandy, France</p>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-icon"><i class="ti ti-building"></i></div>
+            <div class="talk-body">
+                <div class="talk-meta">
+                    <span class="talk-date">2018</span>
+                    <span class="talk-tag tag-panel">Panel</span>
+                </div>
+                <p class="talk-title">Science Policy &amp; Technology Translation Panel</p>
+                <p class="talk-venue">European Parliament · Brussels, Belgium</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="../../load-components.js"></script>
 </body>
-
 </html>
