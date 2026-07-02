@@ -6,9 +6,11 @@
 (function () {
     'use strict';
 
-    // Restore theme immediately (before paint)
-    const saved = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', saved);
+    // Restore theme immediately (before paint) — respect system preference if no saved preference
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
 
     // ---- Helper: fetch a component and insert it ----
     function loadComponent(id, url, callback) {
@@ -80,19 +82,22 @@
             });
         }
 
-        // Hamburger / mobile menu
+        // Hamburger / mobile menu — use 'active' class to match CSS
         var hamburger = document.getElementById('hamburger');
         var navLinks  = document.getElementById('nav-links');
         if (hamburger && navLinks) {
+            // Defer transition so the initial off-screen state has no animation
+            setTimeout(function () { navLinks.classList.add('nav-ready'); }, 50);
+
             hamburger.addEventListener('click', function () {
-                navLinks.classList.toggle('open');
-                hamburger.classList.toggle('open');
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
             });
             // Close on nav link click
             navLinks.querySelectorAll('a').forEach(function (a) {
                 a.addEventListener('click', function () {
-                    navLinks.classList.remove('open');
-                    hamburger.classList.remove('open');
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
                 });
             });
         }
