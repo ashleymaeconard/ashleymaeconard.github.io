@@ -83,6 +83,8 @@
 }
 .cat-nav-pill:hover { background: #FFF59D; }
 .cat-nav-pill i { font-size: 0.875rem; }
+[data-theme="dark"] .cat-nav-pill { color: var(--text-dark); background: rgba(255,245,157,0.12); }
+[data-theme="dark"] .cat-nav-pill:hover { background: rgba(255,245,157,0.22); }
 .cat-pill-count {
     font-size: 0.7rem;
     background: rgba(200,166,0,0.2);

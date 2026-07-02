@@ -34,8 +34,8 @@
             margin-bottom: -2px;
             transition: color 0.15s, border-color 0.15s;
         }
-        .tab-btn.active { color: #3a2e00; border-bottom-color: #c8a600; }
-        .tab-btn:hover:not(.active) { color: #3a2e00; }
+        .tab-btn.active { color: var(--text-dark); border-bottom-color: var(--primary-dark); }
+        .tab-btn:hover:not(.active) { color: var(--primary-dark); }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
@@ -167,6 +167,8 @@
         .cat-nav-pill { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.875rem; background: rgba(255,245,157,0.4); border: 1.5px solid #c8a600; border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: #3a2e00; text-decoration: none; transition: background 0.15s; }
         .cat-nav-pill:hover { background: #FFF59D; }
         .cat-nav-pill i { font-size: 0.875rem; }
+        [data-theme="dark"] .cat-nav-pill { color: var(--text-dark); background: rgba(255,245,157,0.12); }
+        [data-theme="dark"] .cat-nav-pill:hover { background: rgba(255,245,157,0.22); }
     </style>
     <script>
         (function () {
